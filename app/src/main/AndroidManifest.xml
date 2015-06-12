@@ -42,6 +42,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.samish.teleeducation.MainActivity" />
         </activity>
+        <activity
+        android:name=".Ques_Taluk"
+        android:label="@string/title_activity_ques"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.samish.teleeducation.MainActivity" />
+    </activity>
     </application>
 
 </manifest>

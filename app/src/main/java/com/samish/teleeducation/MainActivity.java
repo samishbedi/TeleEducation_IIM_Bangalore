@@ -108,7 +108,11 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
 
         alertDialog.setItems(R.array.survey_choice, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                if (which == 1) {
+                if (which == 0) {
+                    Intent TalukSurveyActivity = new Intent(getApplicationContext(), Ques_Taluk.class);
+                    TalukSurveyActivity.putExtra("Name", a);
+                    startActivity(TalukSurveyActivity);
+                } else if (which == 1) {
 
                     Intent VillageListActivity = new Intent(getApplicationContext(), Village.class);
                     switch (a) {
