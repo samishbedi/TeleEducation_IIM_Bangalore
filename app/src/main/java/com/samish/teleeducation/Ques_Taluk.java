@@ -68,7 +68,7 @@ public class Ques_Taluk extends ActionBarActivity {
             super.onCreate(savedInstanceState);
 
             // Load the preferences from an XML resource
-            addPreferencesFromResource(R.xml.preferences_ques_taluk);
+            addPreferencesFromResource(R.xml.pref_ques_taluk);
 
 
 
