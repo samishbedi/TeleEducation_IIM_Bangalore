@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tele Education</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_devanahalli">Devanahalli</string>
+    <string name="title_activity_village">Village</string>
+    <string name="title_activity_school">School</string>
+    <string name="title_activity_ques">Questionnaire</string>
+</resources>

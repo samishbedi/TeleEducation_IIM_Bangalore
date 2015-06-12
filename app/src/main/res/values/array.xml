@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="taluk">
+        <item>Devanahalli</item>
+        <item>Kanakpura</item>
+        <item>Challakere</item>
+        <item>Chitradurga</item>
+        <item>Channagiri</item>
+        <item>Honnali</item>
+        <item>Chikkaballapur</item>
+        <item>Srinivasapur</item>
+        <item>Soraba</item>
+        <item>Thirthahalli</item>
+        <item>Pavgada</item>
+        <item>Tumkur</item>
+        <item>Bilagi</item>
+        <item>Hunagund</item>
+        <item>Bailhongal</item>
+        <item>Soundatti</item>
+        <item>Basavana Bagewadi</item>
+        <item>Sindagi</item>
+        <item>Byadagi</item>
+        <item>Haveri</item>
+        <item>Haliyal</item>
+        <item>Honnavar</item>
+        <item>Kudligi</item>
+        <item>Sandur</item>
+        <item>Aurad</item>
+        <item>Basavakalyan</item>
+        <item>Chittapur</item>
+        <item>Shorapur</item>
+        <item>Koppal</item>
+        <item>Yelburga</item>
+        <item>Devadurga</item>
+        <item>Lingasagur</item>
+        <item>Chamaraja Nagar</item>
+        <item>Yelandur</item>
+        <item>H.D.Kote</item>
+        <item>T.N. Pura</item>
+    </string-array>
+
+    <string-array name="devan_vill">
+        <item>Avathi</item>
+        <item>Bidaluru</item>
+        <item>Bijjavara</item>
+        <item>Boodigere</item>
+        <item>Channahalli</item>
+        <item>Channarayapatna</item>
+        <item>Channarayapatna</item>
+        <item>Jalige</item>
+        <item>Karahalli</item>
+        <item>Kundana</item>
+        <item>Sadahalli</item>
+        <item>Vishwanathapura</item>
+        <item>Vishwanathapura</item>
+    </string-array>
+
+    <string-array name="kanak_vill">
+    <item>Achalu</item>
+    <item>Atthihalli</item>
+    <item>Dodda Alahalli</item>
+    <item>Doddamaralavadi</item>
+    <item>Dyavasandra</item>
+    <item>Goravinapura</item>
+    <item>Harobele</item>
+    <item>Harohalli</item>
+    <item>Herindyapanahalli</item>
+    <item>Honniganahalli</item>
+    <item>Hukunda</item>
+    <item>Kabbalu</item>
+    <item>Kaggalahalli</item>
+    <item>Kallanakuppe</item>
+    <item>Kodihalli</item>
+    <item>Kottanoor</item>
+    <item>Sathanuru</item>
+    <item>Shivanahalli</item>
+    <item>Thigalarahosahalli</item>
+    <item>Tungani</item>
+    <item>Uyyamballi</item>
+    </string-array>
+
+    <string-array name="bij_school">
+        <item>G HS NARAYANAPURA</item>
+    </string-array>
+
+
+    <string-array name="sathanuru_school">
+    <item>RURAL HIGH SCHOOL</item>
+    <item>G MPS SATHANURU</item>
+    </string-array>
+
+
+</resources>
