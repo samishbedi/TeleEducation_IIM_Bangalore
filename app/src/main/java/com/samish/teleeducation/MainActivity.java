@@ -1,9 +1,12 @@
 package com.samish.teleeducation;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -43,27 +46,13 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                final String a = (String) parent.getItemAtPosition(position);
+                showSurvey(a);
 
-                // Then you start a new Activity via Intent
-                String a = (String) parent.getItemAtPosition(position);
-
-                Intent VillageListActivity = new Intent(getApplicationContext(), Village.class);
-                switch (a) {
-                    case "Devanahalli":
-
-                        VillageListActivity.putExtra("Name", a);
-                        startActivity(VillageListActivity);
-                        break;
-
-
-                    case "Kanakpura":
-                        VillageListActivity.putExtra("Name", a);
-                        startActivity(VillageListActivity);
-                        break;
-
-                }
             }
         });
+
+
 
         inputSearch.addTextChangedListener(new TextWatcher() {
 
@@ -111,6 +100,35 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
     }
 
 
+    public void showSurvey(final String a){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+
+        // Setting Dialog Title
+        alertDialog.setTitle(R.string.title_dia_survey);
+
+        alertDialog.setItems(R.array.survey_choice, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                if (which == 1) {
+
+                    Intent VillageListActivity = new Intent(getApplicationContext(), Village.class);
+                    switch (a) {
+                        case "Devanahalli":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+                        case "Kanakpura":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+                    }
+                }
+
+            }
+        });
+
+        // Showing Alert Message
+        alertDialog.create().show();
+    }
 
 
 }

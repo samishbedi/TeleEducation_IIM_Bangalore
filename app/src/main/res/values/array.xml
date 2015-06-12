@@ -89,5 +89,9 @@
     <item>G MPS SATHANURU</item>
     </string-array>
 
+    <string-array name="survey_choice">
+        <item>Taluk Survey</item>
+        <item>School Survey</item>
+    </string-array>
 
 </resources>

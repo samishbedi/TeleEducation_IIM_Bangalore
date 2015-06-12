@@ -7,4 +7,5 @@
     <string name="title_activity_village">Village</string>
     <string name="title_activity_school">School</string>
     <string name="title_activity_ques">Questionnaire</string>
+    <string name="title_dia_survey">Choose the survey:</string>
 </resources>
