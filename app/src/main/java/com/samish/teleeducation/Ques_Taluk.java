@@ -16,7 +16,9 @@ import android.widget.Toast;
 
 public class Ques_Taluk extends ActionBarActivity {
 
-
+String foname;
+    String tiname;
+    int t1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,7 @@ public class Ques_Taluk extends ActionBarActivity {
         super.onBackPressed();
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.remove("pref_key_fo_name");
+        editor.clear();
         editor.commit();
 
     }
@@ -57,6 +59,7 @@ public class Ques_Taluk extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_ques, menu);
+        menu.findItem(R.id.action_settings).setTitle("Display Values");
         return true;
     }
 
@@ -70,8 +73,17 @@ public class Ques_Taluk extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-            String a  = sharedPref.getString("pref_key_fo_name","null");
-            Toast.makeText(getApplicationContext(), a, Toast.LENGTH_LONG).show();
+            foname = sharedPref.getString("pref_key_fo_name", " ");
+            tiname  = sharedPref.getString("pref_key_ti_name", " ");
+            boolean t2=sharedPref.getBoolean("pref_key_t1", false);
+            String t2a = (t2) ? "Yes" : "No";
+
+
+
+
+
+
+            Toast.makeText(getApplicationContext(), t2a, Toast.LENGTH_LONG).show();
             return true;
         }
 
