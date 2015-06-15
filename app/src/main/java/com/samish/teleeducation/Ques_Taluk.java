@@ -3,12 +3,15 @@ package com.samish.teleeducation;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class Ques_Taluk extends ActionBarActivity {
@@ -27,17 +30,27 @@ public class Ques_Taluk extends ActionBarActivity {
 
         FragmentManager mFragmentManager = getFragmentManager();
         FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
-        SettingsFragment mPrefsFragment = new SettingsFragment();
-        mFragmentTransaction.replace(android.R.id.content, mPrefsFragment);
+        SettingsFragment mPrefsFragment1 = new SettingsFragment();
+        mFragmentTransaction.replace(android.R.id.content, mPrefsFragment1);
         mFragmentTransaction.commit();
 
 
-        }
 
 
 
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.remove("pref_key_fo_name");
+        editor.commit();
+
+    }
 
 
     @Override
@@ -56,6 +69,9 @@ public class Ques_Taluk extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+            String a  = sharedPref.getString("pref_key_fo_name","null");
+            Toast.makeText(getApplicationContext(), a, Toast.LENGTH_LONG).show();
             return true;
         }
 
