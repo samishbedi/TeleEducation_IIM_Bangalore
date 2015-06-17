@@ -28,7 +28,7 @@ public class Village extends ActionBarActivity {
         setContentView(R.layout.activity_village);
 
         android.support.v7.app.ActionBar ab = getSupportActionBar(); //supportActionBar s vaid for all apis
-
+        ab.setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
         String name = intent.getStringExtra("Name");
