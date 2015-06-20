@@ -11,7 +11,7 @@
         <item>Srinivasapur</item>
         <item>Soraba</item>
         <item>Thirthahalli</item>
-        <item>Pavgada</item>
+        <item>Thirthahalli</item>
         <item>Tumkur</item>
         <item>Bilagi</item>
         <item>Hunagund</item>
@@ -93,5 +93,752 @@
         <item>Taluk Survey</item>
         <item>School Survey</item>
     </string-array>
+
+    <string-array name="challakere_vill">
+        <item>B.N Pura</item>
+        <item>Balaenahally</item>
+        <item>Gataparthy</item>
+        <item>Gopanahalli</item>
+        <item>Gowrasamudra</item>
+        <item>Mahaddevapura</item>
+        <item>Mallurahatty</item>
+        <item>Meerasabhihally</item>
+        <item>N.Devarahally</item>
+        <item>Narayanapura</item>
+        <item>Nayakanahatty</item>
+        <item>Obalapura</item>
+        <item>Parasharampura</item>
+        <item>Ramjogihally</item>
+        <item>Renukapura</item>
+        <item>T.N.Kote</item>
+        <item>Thalak</item>
+        <item>Torekolammanahalli</item>
+    </string-array>
+
+    <string-array name="chitradurga_vill">
+        <item>Alagavadi</item>
+        <item>Annehal</item>
+        <item>Bahuduragatta</item>
+        <item>Baramasagara</item>
+        <item>Belagatta</item>
+        <item>Bhimasamudra</item>
+        <item>Chavalihalli Gollarahatti</item>
+        <item>Chitradurga</item>
+        <item>D.S.Hally</item>
+        <item>Dyamavvanahalli</item>
+        <item>Godabanal</item>
+        <item>Guddadarangavanahally</item>
+        <item>Guddadarangvanahally</item>
+        <item>Guthinadu G.Hatti</item>
+        <item>Hireguntanur</item>
+        <item>J.N.Kote</item>
+        <item>Janukonda</item>
+        <item>Kalagere</item>
+        <item>Kogunde</item>
+        <item>Kolahala</item>
+        <item>Konabevu</item>
+        <item>Kurabarahally</item>
+        <item>Kurubarahally</item>
+        <item>Lakshmisagar</item>
+        <item>Madakaripura</item>
+        <item>Madanayakanahally</item>
+        <item>Managangi</item>
+        <item>Maragatta</item>
+        <item>Muddapur</item>
+        <item>Siddapura</item>
+        <item>Sirigere</item>
+        <item>Sondekola</item>
+        <item>Sulthanipura</item>
+        <item>Thuruvanuru</item>
+        <item>Vijapura</item>
+        <item>Yellagodu</item>
+    </string-array>
+
+
+
+
+    <string-array name="channagiri_vill">
+        <item>Ajji Halli</item>
+        <item>Balliganudu</item>
+        <item>Basavapattana</item>
+        <item>Belalagere</item>
+        <item>Channeshpura</item>
+        <item>Chikkanguru</item>
+        <item>Chiradoni</item>
+        <item>Daginakatte</item>
+        <item>Devarahalli</item>
+        <item>Doddabbagere</item>
+        <item>Doddaghatta</item>
+        <item>Durvigere</item>
+        <item>G K Halli</item>
+        <item>Goppenahalli</item>
+        <item>Gullehalli</item>
+        <item>Hebbalagere</item>
+        <item>Hirekogaluru</item>
+        <item>Hodigere</item>
+        <item>Joladahal</item>
+        <item>Kagaturu</item>
+        <item>Kakanur</item>
+        <item>Kanchagaranahalli</item>
+        <item>Kanchiganahal</item>
+        <item>Kanivebilachi</item>
+        <item>Karekatte</item>
+        <item>Kariganuru</item>
+        <item>Katthaleger</item>
+        <item>Kerebilachi</item>
+        <item>Kondadahalli</item>
+        <item>Kotihal</item>
+        <item>Mavina Hole</item>
+        <item>Medikere</item>
+        <item>Medugondanahalli</item>
+        <item>Mudigere</item>
+        <item>Nalkudure</item>
+        <item>Nalluru</item>
+        <item>Navile Hal</item>
+        <item>Nidigere</item>
+        <item>Santhebennuru</item>
+        <item>Somalapura</item>
+        <item>Thanigere</item>
+        <item>Thavarekere</item>
+        <item>Thyavanige</item>
+        <item>Vadnal</item>
+        <item>Yalodahalli</item>
+    </string-array>
+
+    <string-array name="honalli_vill">
+
+    <item>Lingapura</item>
+    <item>Arabagatte</item>
+    <item>Kenchikoppa</item>
+    <item>Kathige</item>
+    <item>Hiregonigere</item>
+    <item>Kundur</item>
+    <item>Sasavehalli</item>
+    <item>Govinkovi</item>
+    <item>Marigondanahalli</item>
+    <item>Tavaragopagondanahalli</item>
+    <item>Sowlanga</item>
+    <item>Belaguthi</item>
+    <item>Nyamathi</item>
+    <item>Tharaganahalli</item>
+    <item>Rampura</item>
+    <item>Benakanahalli</item>
+    <item>Chilur</item>
+    <item>Kumblur</item>
+    <item>Kulagatte</item>
+    <item>Kyasainakere</item>
+    <item>Hirematta</item>
+        </string-array>
+
+    <string-array name="chikkaballapur_vill">
+
+    <item>Avalagurki</item>
+    <item>Dibbur</item>
+    <item>Hosahudya</item>
+    <item>Mandikal</item>
+    <item>Muddenahalli</item>
+    <item>Nandi</item>
+    <item>Peresandra</item>
+    <item>Reddy Gollavarahalli</item>
+    <item>Angarkanahalli</item>
+    <item>Hale Peresandra</item>
+    <item>Manchanabele</item>
+    <item>Kuppahalli</item>
+    <item>Porshathalli</item>
+</string-array>
+
+<string-array name="srinivaspur_vill">
+
+    <item>Addagal</item>
+    <item>Alavatta</item>
+    <item>Arikunte</item>
+    <item>Byraganapalli</item>
+    <item>Dalasanur</item>
+    <item>Gownipalli</item>
+    <item>Lakshmipura</item>
+    <item>Mastenahalli</item>
+    <item>Mudimadudu</item>
+    <item>Muthakapalli</item>
+    <item>Nambihalli</item>
+    <item>Rayalpadu</item>
+    <item>Ronur</item>
+    <item>Somayajilapalli</item>
+    <item>Thadigol</item>
+    <item>Kurigepalli</item>
+    <item>Puligurkote</item>
+    <item>Yeldur</item>
+    </string-array>
+<string-array name="soraba_vill">
+
+    <item>Anavatti</item>
+    <item>Chikkashakuna</item>
+    <item>Harishi</item>
+    <item>Kadasuru</item>
+    <item>Kotipura</item>
+    <item>Kamaruru</item>
+    <item>Ulavi</item>
+    <item>Jade</item>
+    <item>Shakunavalli</item>
+    <item>Thavanandi</item>
+    <item>Kuppagadde</item>
+    <item>Chandraguthi</item>
+    <item>Mavali</item>
+    <item>Nisarani</item>
+    <item>Bharangi</item>
+    <item>Hosabale</item>
+    <item>Udri Vaddigere</item>
+    <item>Tattur</item>
+    </string-array>
+<string-array name="thirthahalli_vill">
+
+    <item>Humchadakatte</item>
+    <item>Konandur</item>
+    <item>Guddekoppa</item>
+    <item>Kannangi</item>
+    <item>Kudumallige</item>
+    <item>Thuduru</item>
+    <item>Kodlu</item>
+    <item>Melige</item>
+    <item>Megaravalli</item>
+    <item>Bavikaisaru</item>
+    <item>Guddekeri</item>
+    <item>Kattehakklu</item>
+    <item>Kondlur</item>
+    <item>Mandagadde</item>
+    <item>Nonaburu</item>
+    <item>Araga</item>
+    <item>Basavani</item>
+    <item>Mattigaru</item>
+    <item>Ramakrishnapura</item>
+    <item>Kammaradi</item>
+    <item>Agumbe</item>
+    <item>Melinakuruvalli</item>
+    </string-array>
+
+<string-array name="pavgada_vill">
+
+    <item>Venkatapura</item>
+    <item>Gangasagara</item>
+    <item>Arasikere</item>
+    <item>Kotagudda</item>
+    <item>Nagalamadike</item>
+    <item>Y.N.Hoskote</item>
+    <item>Thirumani</item>
+    <item>Dommathamari</item>
+    <item>Ponnasamudra</item>
+    <item>Bellibattlu</item>
+    <item>J.Hosahalli</item>
+    <item>Kilarlahalli</item>
+    <item>Mangalawada</item>
+    <item>Sasalakunte</item>
+    <item>Veerlagondi</item>
+    <item>Vallur</item>
+    </string-array>
+
+<string-array name="tumkur_vill">
+
+    <item>Hebburu</item>
+    <item>Bellavi</item>
+    <item>Heggere</item>
+    <item>Thippadasarahalli</item>
+    <item>Kestooru</item>
+    <item>Bugudanahalli</item>
+    <item>Yellapura (Belagumba)</item>
+    <item>Hirehalli</item>
+    <item>Kesaramadu</item>
+    <item>Beladhara</item>
+    <item>Obalapura</item>
+    <item>Chikkaseebi</item>
+    <item>Kora</item>
+    <item>Oorukere</item>
+    <item>Gulur</item>
+    <item>Mallasandra</item>
+    <item>Nagavalli</item>
+    <item>Guleharavi</item>
+    <item>Siddaganga Mata</item>
+    <item>Byatha</item>
+    <item>Haralooru</item>
+    <item>Areyur</item>
+    <item>Arakere</item>
+    <item>C.T.Kere</item>
+    </string-array>
+
+<string-array name="billagi_vill">
+
+    <item>Rolli</item>
+    <item>Siddapur</item>
+    <item>Budihal (Sa)</item>
+    <item>Hanchinal (Inam)</item>
+    <item>Herakal</item>
+    <item>Teggi</item>
+    <item>Kolur</item>
+    <item>Girisagar</item>
+    <item>Bilagi Cross</item>
+    <item>Chikalgundi</item>
+    <item>Katarki</item>
+    <item>Galagali</item>
+    <item>Kundargi</item>
+    <item>Heggur</item>
+    </string-array>
+<string-array name="hunagund_vill">
+
+    <item>Chittargi</item>
+    <item>Dhannur</item>
+    <item>Ganjihal</item>
+    <item>Bevinamatti</item>
+    <item>Hire Kodagali</item>
+    <item>Hire Magi</item>
+    <item>Hire Singanagutti</item>
+    <item>Karadi</item>
+    <item>Marol</item>
+    <item>Nagur</item>
+    <item>Nandawadgi</item>
+    <item>Sangam</item>
+    <item>Sulebhavi</item>
+    <item>Kandagal</item>
+    <item>Ingalgi</item>
+    <item>Aiholli</item>
+    <item>Aminagad</item>
+    <item>Kamatgi</item>
+
+    </string-array>
+<string-array name="bailhongal_vill">
+
+    <item>Amatur</item>
+    <item>Bailwad</item>
+    <item>Belavadi</item>
+    <item>Devalapur</item>
+    <item>Hunasikatti</item>
+    <item>Kadaravalli</item>
+    <item>Lakkundi</item>
+    <item>Nesargi</item>
+    <item>Turamari</item>
+    <item>Anigol</item>
+    <item>Bhavihal</item>
+    <item>Ghs Mallapur</item>
+    <item>Sanikopp</item>
+    <item>Vannur</item>
+    <item>Naganur</item>
+    <item>Holihosur</item>
+    <item>Dodwad</item>
+    <item>Neginhal</item>
+    <item>Bailhongal</item>
+    <item>Hoolikatti</item>
+    <item>Turakarshigehalli</item>
+    <item>Khodanapur</item>
+    <item>Kittur</item>
+    <item>Sangolli</item>
+    <item>Marikatti</item>
+    </string-array>
+<string-array name="soundatti_vill">
+
+    <item>Benakatti</item>
+    <item>Karikatti</item>
+    <item>Munavalli</item>
+    <item>Sangreshakoppa</item>
+    <item>Shivapur</item>
+    <item>Yakkundi</item>
+    <item>Kadabi</item>
+    <item>Asundi</item>
+    <item>Hooli</item>
+    <item>Hanchanal</item>
+    <item>Inamhongal</item>
+    <item>Inchal</item>
+    <item>Murgod</item>
+    <item>Shirasangi</item>
+    <item>Tallur</item>
+    <item>Ugargol</item>
+    <item>Yargatti</item>
+    <item>Chachadi</item>
+    <item>Soppadla</item>
+    <item>Hosur</item>
+    <item>Sutagatti</item>
+    <item>Ghps Benakatti</item>
+    <item>Yragatti</item>
+    </string-array>
+
+<string-array name="basavana_bagewadi_vill">
+
+    <item>Benal</item>
+    <item>Chimmalgi</item>
+    <item>K.Salawadagi</item>
+    <item>Almatti</item>
+    <item>Huvina Hipparagi</item>
+    <item>Ingaleshwar</item>
+    <item>Nidagundiancled</item>
+    <item>Narasalagi</item>
+    <item>Nidagundi</item>
+    <item>Sasanur</item>
+    <item>Ukkali</item>
+    <item>Wadawadagi</item>
+    <item>Bisanal</item>
+    <item>Donur</item>
+    <item>Mulawad</item>
+    <item>Muttagi</item>
+    <item>Kolhar</item>
+    <item>Telagi</item>
+    <item>Wandal</item>
+    <item>Yalawar</item>
+    </string-array>
+<string-array name="sindagi_vill">
+
+    <item>Malaghan</item>
+    <item>Chikkarugi</item>
+    <item>Binjalbhavi</item>
+    <item>Jalawad</item>
+    <item>Gabasavalgi</item>
+    <item>Mulasavalgi</item>
+    <item>Gubbewad</item>
+    <item>Devarhippargi.</item>
+    <item>Rampur (Pa)</item>
+
+</string-array>
+
+<string-array name="byadagi_vill">
+
+    <item>Bisalalli</item>
+    <item>Kalledevar</item>
+    <item>Gundenahalli</item>
+    <item>Hireanaji</item>
+    <item>Hirehalli</item>
+    <item>Shidenur</item>
+    <item>Keravadi</item>
+    <item>Masanagi</item>
+    <item>Budapanahalli</item>
+    <item>Muttur</item>
+    <item>Chikkabasur</item>
+    <item>Kadaramandalagi</item>
+    <item>Mallur</item>
+    <item>Motebennur</item>
+    <item>Kaginele</item>
+    <item>Haleshidenoor</item>
+    </string-array>
+
+
+    <string-array name="haveri_vill">
+        <item>Kanvalli</item>
+        <item>Karajagi</item>
+        <item>Mevundi</item>
+        <item>Marol</item>
+        <item>Yalagacchi</item>
+        <item>Havanur</item>
+        <item>Nelogalla</item>
+        <item>Kabbur</item>
+        <item>Agadi</item>
+        <item>Devagiri</item>
+        <item>Devihosur</item>
+        <item>Neglur</item>
+        <item>Sangur</item>
+        <item>Kurubagunda</item>
+        <item>Belavagi</item>
+        <item>Guttal</item>
+        <item>Hosaritti</item>
+        <item>Aladakatti</item>
+    </string-array>
+
+    <string-array name="haliyal_vill">
+
+        <item>Arlawada</item>
+        <item>Yadoga</item>
+        <item>Janaga</item>
+        <item>Bhagavati</item>
+        <item>Gundolli</item>
+        <item>Teragao</item>
+        <item>Mangalawad</item>
+        <item>Satnalli</item>
+        <item>Murkawada</item>
+        <item>Belavatagi</item>
+        <item>Kavalawada</item>
+        <item>Sanbrani</item>
+        <item>Chibbalgeri</item>
+        <item>K K Halli</item>
+
+    </string-array>
+    <string-array name="honnavar_vill">
+
+        <item>Melin-Idgunji</item>
+        <item>Manki</item>
+        <item>Gundabala</item>
+        <item>Jalwal Karki</item>
+        <item>Hodke Shiroor</item>
+        <item>Hadinbal</item>
+        <item>Hulegar</item>
+        <item>Mallapur</item>
+        <item>Karki</item>
+        <item>Salkod</item>
+        <item>Mugwa</item>
+        <item>Kasarkod</item>
+        <item>Anilgod</item>
+        <item>Magod</item>
+        <item>Kadtoka</item>
+        <item>Haldipur</item>
+
+    </string-array>
+
+
+    <string-array name="kudligi_vill">
+
+        <item>Maka Nadaku</item>
+        <item>Hire Kumbala Kunte</item>
+        <item>Hyalya</item>
+        <item>Nimbalageri</item>
+        <item>Thimmala Pura</item>
+        <item>Gudekote</item>
+        <item>Kencha Mallana Halli</item>
+        <item>Huralihal</item>
+        <item>Thoola Halli</item>
+        <item>Ujjini</item>
+        <item>Hosalli</item>
+        <item>Kandagallu</item>
+    </string-array>
+
+    <string-array name="sandur_vill">
+
+        <item>Thoranagallu</item>
+        <item>Donimalai</item>
+        <item>Bommagatta</item>
+        <item>Sandur</item>
+        <item>Choranoor</item>
+        <item>Sovena Halli</item>
+        <item>Banni Hatti</item>
+        <item>Bandri</item>
+        <item>Chornur</item>
+    </string-array>
+    <string-array name="aurad_vill">
+
+        <item>Sonala</item>
+        <item>Belkuni(Ch)</item>
+        <item>Kushnoor(T)</item>
+        <item>Santhpur</item>
+        <item>Wadgaon(D)</item>
+        <item>Aurad</item>
+        <item>Chintaki</item>
+        <item>Kamalnagar</item>
+        <item>Sangam</item>
+        <item>Kushnoor-T</item>
+        <item>Wadgaon</item>
+    </string-array>
+
+    <string-array name="basavakalyan_vill">
+
+        <item>Algood</item>
+        <item>Belur</item>
+        <item>Batgera</item>
+        <item>Bhosga</item>
+        <item>Gaur</item>
+        <item>Dhannura (K)</item>
+        <item>Gadalegoan (B)</item>
+        <item>Harkood</item>
+        <item>Kohinoor</item>
+        <item>Koudiyal (R)</item>
+        <item>Manthal</item>
+        <item>Mudbi</item>
+        <item>Narayanpur</item>
+        <item>Rajeshwar</item>
+        <item>Rajola</item>
+        <item>Yarandi</item>
+        <item>Kitta</item>
+        <item>Ujalam</item>
+        <item>Gorta (B)</item>
+        <item>Hulsoor</item>
+        <item>Sastapur</item>
+        <item>Kherda (B)</item>
+        <item>Bet Balkunda</item>
+        <item>Muchalamb</item>
+        <item>Narayanpur </item>
+    </string-array>
+    <string-array name="chittapur_vill">
+
+        <item>Allur [B]</item>
+        <item>Bhagodi</item>
+        <item>Bhimanalli</item>
+        <item>Chincholi [H]</item>
+        <item>Dandoti</item>
+        <item>Diggaon</item>
+        <item>Gotur</item>
+        <item>Gunddagurthi</item>
+        <item>Honagunta</item>
+        <item>Kalgurti</item>
+        <item>Kandagol</item>
+        <item>Kodadur</item>
+        <item>Kollur</item>
+        <item>Korwar</item>
+        <item>Mangalagi</item>
+        <item>Martur</item>
+        <item>Peth Shiroor</item>
+        <item>Ravoor</item>
+        <item>Tengali</item>
+        <item>Chittapur</item>
+        <item>Wadi</item>
+        <item>Alahalli</item>
+        <item>Hebbal</item>
+        <item>Kalagi</item>
+        <item>Kamaradi</item>
+        <item>Madabool</item>
+        <item>Malagatti</item>
+        <item>Bankur</item>
+        <item>Revagi</item>
+        <item>Satanoor</item>
+        <item>Yagapur</item>
+        <item>Nalwar</item>
+        <item>Nippani</item>
+        <item>Donagoan</item>
+        <item>Rajapur</item>
+        <item>Shahabad</item>
+        <item>Shellagi</item>
+        <item>Mudbool</item>
+        <item>Bhimanahalli</item>
+    </string-array>
+    <string-array name="shorapur_vill">
+
+        <item>Devapur</item>
+        <item>Hunasagi</item>
+        <item>Kembhavi</item>
+        <item>Vajjal</item>
+        <item>Mudanoor K.</item>
+        <item>Rajankollur</item>
+        <item>Kakkera</item>
+        <item>Devargonal</item>
+        <item>Kodekal</item>
+        <item>Naganoor</item>
+        <item>Narayanpur</item>
+        <item>Yalagi</item>
+        <item>Devatkal</item>
+        <item>Benaknahalli</item>
+        <item>Bychavalli</item>
+        <item>Agni</item>
+        <item>Benakal</item>
+    </string-array>
+
+    <string-array name="koppal_vill">
+
+        <item>Agalakera</item>
+        <item>Alawandi</item>
+        <item>Bandiharlapur</item>
+        <item>Betageri</item>
+        <item>Bhaghyanagar</item>
+        <item>Ginigeri</item>
+        <item>Hirebhoganhal</item>
+        <item>Indaragi</item>
+        <item>Kawaloor</item>
+        <item>Kinhal</item>
+        <item>Lebagera</item>
+        <item>Budagumpa</item>
+        <item>Hiresindhogi</item>
+        <item>Hosalli</item>
+        <item>Irkalgada</item>
+        <item>Kataraki</item>
+        <item>Hitnal</item>
+        <item>Hulagi</item>
+        <item>Munirabad</item>
+    </string-array>
+    <string-array name="yelburga_vill">
+
+        <item>Balagera</item>
+        <item>Bannikoppa</item>
+        <item>Bevoor</item>
+        <item>Bhanapur</item>
+        <item>Karamudi</item>
+        <item>Ganadal</item>
+        <item>Kukanoor</item>
+        <item>Mangaloor</item>
+        <item>Talakal</item>
+        <item>Hirewankalakunta</item>
+        <item>Mudhol</item>
+    </string-array>
+    <string-array name="devadurga_vill">
+        <item>Alkod</item>
+        <item>Arkera</item>
+        <item>Gabbur</item>
+        <item>Jalahalli</item>
+        <item>Jagir Jadaladinni</item>
+        <item>Mustur</item>
+        <item>Masarakal</item>
+        <item>Mallapur</item>
+    </string-array>
+
+    <string-array name="lingasagur_vill">
+        <item>Anwar</item>
+        <item>Baiyapur</item>
+        <item>Sarjapur</item>
+        <item>Kannal</item>
+        <item>Nagalapur</item>
+        <item>Nagarhal</item>
+        <item>Guragunta</item>
+        <item>Anahosur</item>
+        <item>Hatti</item>
+        <item>Yalagatta</item>
+        <item>Maski</item>
+        <item>Devarabhupur</item>
+    </string-array>
+    <string-array name="chamaraja_nagar_vill">
+        <item>Doddaraya Pet</item>
+        <item>Thamada Halli</item>
+        <item>Haradana Halli</item>
+        <item>Yaragana Halli</item>
+        <item>Gulipura</item>
+        <item>Erasa Vadi</item>
+        <item>Mangala</item>
+        <item>Harave</item>
+        <item>Bisalavadi</item>
+        <item>Nanjedevana Pura</item>
+        <item>Yanagalli</item>
+        <item>Chandakavadi</item>
+        <item>Santhe Marahalli</item>
+        <item>Udigala</item>
+        <item>Ummathur</item>
+        <item>Kagala Vadi</item>
+        <item>Arakala Vadi</item>
+        <item>Chamaraj-1</item>
+    </string-array>
+    <string-array name="yelandur_vill">
+        <item>Maddur</item>
+        <item>Gowda Halli</item>
+        <item>B.R.Hills</item>
+    </string-array>
+<string-array name="h_d_kote_vill">
+    <item>Beechanahalli</item>
+    <item>Annuru</item>
+    <item>Madapura</item>
+    <item>K.Belthur</item>
+    <item>Hommaragalli</item>
+    <item>Hebbala Guppe</item>
+    <item>G.B.Saragur</item>
+    <item>Antharasanthe</item>
+    <item>Sagare</item>
+    <item>Yara Halli</item>
+    <item>Thumbasoge</item>
+    <item>Savve</item>
+    <item>Kanchamalli</item>
+    <item>Mullur</item>
+    <item>D B Kuppe</item>
+    <item>Masalli</item>
+    <item>Kenchana Halli</item>
+    <item>Magge</item>
+    <item>Bache Gowdan Halli</item>
+
+</string-array>
+    <string-array name="t_n_pura_vill">
+        <item>Chedara Halli</item>
+        <item>Mavina Halli</item>
+        <item>Heggur</item>
+        <item>Kodagalli</item>
+        <item>Bannahalli Hundi</item>
+        <item>Musuvena Koppalu</item>
+        <item>Madapura</item>
+        <item>Muguru</item>
+        <item>Vatalu</item>
+        <item>Byrapura</item>
+        <item>Benakana Halli</item>
+        <item>Beregere Hundi</item>
+        <item>Talakadu</item>
+        <item>Attahalli</item>
+        <item>Kethupura</item>
+        <item>Dodde Bagelu</item>
+    </string-array>
+
+
+
+
 
 </resources>

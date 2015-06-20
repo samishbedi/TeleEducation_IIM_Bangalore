@@ -12,9 +12,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
+
 public class School extends ActionBarActivity {
 
     ArrayAdapter<String> adapter;
+    String vname;
+    String tname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +25,13 @@ public class School extends ActionBarActivity {
         setContentView(R.layout.activity_school);
         android.support.v7.app.ActionBar ab = getSupportActionBar();
         Intent intent = getIntent();
-        String name = intent.getStringExtra("Vname");
-        ab.setTitle(name);
+        vname = intent.getStringExtra("Vname");
+        tname = intent.getStringExtra("Tname");
+        ab.setTitle(vname);
         Resources res=getResources();
 
 
-        switch (name) {
+        switch (vname) {
             case "Bijjavara":
                 ListView listview = (ListView) findViewById(R.id.school);
                 String[] school=res.getStringArray(R.array.bij_school);
@@ -41,6 +45,8 @@ public class School extends ActionBarActivity {
                         String b = (String) parent.getItemAtPosition(position);
                         Intent SchoolListActivity = new Intent(getApplicationContext(), Ques.class);
                         SchoolListActivity.putExtra("Sname", b);
+                        SchoolListActivity.putExtra("Vname", vname);
+                        SchoolListActivity.putExtra("Tname", tname);
                         startActivity(SchoolListActivity);
 
 
@@ -62,6 +68,8 @@ public class School extends ActionBarActivity {
 
                         Intent SchoolListActivity = new Intent(getApplicationContext(), Ques.class);
                         SchoolListActivity.putExtra("Sname", b);
+                        SchoolListActivity.putExtra("Vname", vname);
+                        SchoolListActivity.putExtra("Tname", tname);
                         startActivity(SchoolListActivity);
 
 
@@ -89,6 +97,11 @@ public class School extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent1 = new Intent(this, MainActivity.class);
+            intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent1.putExtra("Exit", true);
+            startActivity(intent1);
+            finish();
             return true;
         }
 

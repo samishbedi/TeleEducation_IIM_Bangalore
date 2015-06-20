@@ -32,6 +32,11 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if( getIntent().getBooleanExtra("Exit", false)){
+            finish();
+            return; // add this to prevent from doing unnecessary stuffs
+        }
+
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
         //setContentView(R.layout.activity_main);
         Resources res=getResources();                           //XML resoureces
@@ -93,6 +98,11 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent1 = new Intent(this, MainActivity.class);
+            intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent1.putExtra("Exit", true);
+            startActivity(intent1);
+            finish();
             return true;
         }
 
@@ -124,6 +134,168 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
                             VillageListActivity.putExtra("Name", a);
                             startActivity(VillageListActivity);
                             break;
+                        case "Challakere":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Chitradurga":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Channagiri":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Honnali":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Chikkaballapur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Srinivasapur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Soraba":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Thirthahalli":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Tumkur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Bilagi":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Hunagund":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Bailhongal":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Soundatti":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Basavana Bagewadi":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Sindagi":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Byadagi":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Haveri":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Haliyal":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Honnavar":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Kudligi":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+                        case "Sandur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+                        case "Aurad":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+                        case "Basavakalyan":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+                        case "Chittapur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+                        case "Shorapur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+
+
+                        case "Koppal":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Yelburga":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Devadurga":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Lingasagur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Chamaraja Nagar":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "Yelandur":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "H.D.Kote":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
+                        case "T.N. Pura":
+                            VillageListActivity.putExtra("Name", a);
+                            startActivity(VillageListActivity);
+                            break;
+
                     }
                 }
 

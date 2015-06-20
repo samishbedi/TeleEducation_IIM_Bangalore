@@ -14,15 +14,15 @@
         android:key="pref_key_storage_infra">
         <SwitchPreference
             android:key="pref_key_bc"
-            android:textOff="No"
-            android:textOn="Yes"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
             android:persistent="false"
             android:summary="Is barcode labelled?"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_laptop"
-            android:textOff="No"
-            android:textOn="Yes"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
             android:persistent="false"
             android:summary="Laptop"
             android:defaultValue="false" />
@@ -83,8 +83,8 @@
         android:key="pref_key_storage_school">
         <SwitchPreference
             android:key="pref_key_classcond"
-            android:textOff="No"
-            android:textOn="Yes"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
             android:persistent="false"
             android:summary="Are the class room in good condition?"
             android:defaultValue="false" />
