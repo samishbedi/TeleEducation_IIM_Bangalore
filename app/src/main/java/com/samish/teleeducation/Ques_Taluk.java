@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.EditTextPreference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
@@ -118,17 +119,24 @@ public class Ques_Taluk extends ActionBarActivity {
                 t10 = (t10b) ? "Yes" : "No";
                 t5_comment = sharedPref.getString("pref_tcomment", " ");
 
+                if((foname.equals(" "))||foname.length()==0){
+                    Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
+                }
+                if(tiname.equals(" ")||tiname.length()==0){
+                    Toast.makeText(this, "ENTER A VALID TALUK INCHARGE'S NAME", Toast.LENGTH_SHORT).show();
+                }else {
 
-                db.insert(t,foname,tiname,t1,t2,t3,t4,t5,t5_moderator,t6,t7,t8,t9,t10,t5_comment);
-                sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-                SharedPreferences.Editor editor3 = sharedPref.edit();
-                editor3.clear();
-                editor3.commit();
 
-                Intent main = new Intent(getApplicationContext(), MainActivity.class);
+                    db.insert(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+                    sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+                    SharedPreferences.Editor editor3 = sharedPref.edit();
+                    editor3.clear();
+                    editor3.commit();
 
-                startActivity(main);
+                    Intent main = new Intent(getApplicationContext(), MainActivity.class);
 
+                    startActivity(main);
+                }
 
                 return true;
             case R.id.save_and_exit:
@@ -158,18 +166,27 @@ public class Ques_Taluk extends ActionBarActivity {
                 t10 = (t10b) ? "Yes" : "No";
                 t5_comment = sharedPref.getString("pref_tcomment", " ");
 
+                if((foname.equals(" "))||foname.length()==0){
+                    Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
+                }
+                if(tiname.equals(" ")||tiname.length()==0){
+                    Toast.makeText(this, "ENTER A VALID TALUK INCHARGE'S NAME", Toast.LENGTH_SHORT).show();
+                }else {
 
-                db.insert(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
-                sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-                SharedPreferences.Editor editor2 = sharedPref.edit();
-                editor2.clear();
-                editor2.commit();
-                Intent intent = new Intent(this, MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("Exit", true);
-                startActivity(intent);
-                finish();
+
+                    db.insert(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+                    sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+                    SharedPreferences.Editor editor2 = sharedPref.edit();
+                    editor2.clear();
+                    editor2.commit();
+                    Intent intent = new Intent(this, MainActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtra("Exit", true);
+                    startActivity(intent);
+                    finish();
+                }
                 return true;
+
 
 
 

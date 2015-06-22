@@ -46,12 +46,10 @@
         <item>Boodigere</item>
         <item>Channahalli</item>
         <item>Channarayapatna</item>
-        <item>Channarayapatna</item>
         <item>Jalige</item>
         <item>Karahalli</item>
         <item>Kundana</item>
         <item>Sadahalli</item>
-        <item>Vishwanathapura</item>
         <item>Vishwanathapura</item>
     </string-array>
 
@@ -81,6 +79,131 @@
 
     <string-array name="bij_school">
         <item>G HS NARAYANAPURA</item>
+    </string-array>
+
+    <string-array name="vishwanathapura_school">
+        <item>COMP GHS KOIRA</item>
+        <item>G J C VISHWANATHAPURA</item>
+    </string-array>
+
+    <string-array name="channarayapatna_school">
+        <item>G HS (COMP) YELIYUR</item>
+        <item>MAHATMA GANDHI HS CHANNARAYAPATNA</item>
+    </string-array>
+
+    <string-array name="jalige_school">
+        <item>G HS JALIGE</item>
+    </string-array>
+
+    <string-array name="channahalli_school">
+        <item>GHS CHANNAHALLI</item>
+    </string-array>
+
+    <string-array name="kundana_school">
+        <item>G HS KUNDANA</item>
+    </string-array>
+
+    <string-array name="bidaluru_school">
+        <item>G HPS BIDALURU</item>
+    </string-array>
+
+    <string-array name="avathi_school">
+        <item>G MPS AVATHI </item>
+    </string-array>
+
+    <string-array name="boodigere_school">
+        <item>G HPS BOODIGERE</item>
+    </string-array>
+
+    <string-array name="karahalli_school">
+        <item>G HPS KARAHALLI</item>
+    </string-array>
+
+    <string-array name="sadahalli_school">
+        <item>G HPS SADAHALLI</item>
+    </string-array>
+
+    <string-array name="kaggalahalli_school">
+        <item>GCHS KAGGALAHALLI</item>
+    </string-array>
+
+    <string-array name="harohalli_school">
+        <item>G HS HAROHALLI</item>
+        <item>RURAL HIGH SCHOOL</item>
+        <item>G MPS HAROHALLI</item>
+    </string-array>
+
+    <string-array name="dyavasandra_school">
+        <item>G HS DYVASANDRA</item>
+    </string-array>
+
+    <string-array name="tungani_school">
+        <item>G HS TUGANI</item>
+    </string-array>
+
+    <string-array name="shivanahalli_school">
+        <item>G HS SHIVANAHALLI</item>
+    </string-array>
+
+    <string-array name="atthihalli_school">
+        <item>G HS ATTHIHALLI</item>
+    </string-array>
+
+    <string-array name="honniganahalli_school">
+        <item>GHS HONNIGANAHALLI</item>
+    </string-array>
+
+    <string-array name="hukunda_school">
+        <item>GHS HUKUNDA</item>
+    </string-array>
+
+    <string-array name="uyyamballi_school">
+        <item>G HS UYYAMBALLI</item>
+    </string-array>
+
+    <string-array name="herindyapanahalli_school">
+        <item>G HS HERINDYAPANAHALLI</item>
+    </string-array>
+
+    <string-array name="kottanoor_school">
+        <item>GHS H. KOTHANOOR</item>
+    </string-array>
+
+    <string-array name="dodda_alahalli_school">
+        <item>GJC DODDA ALAHALLI</item>
+        <item>G MPS DODDALAHALLI</item>
+    </string-array>
+
+    <string-array name="doddamaralavadi_school">
+        <item>GJC DODDAMARALAVADI</item>
+    </string-array>
+
+    <string-array name="kallanakuppe_school">
+        <item>G HS KALLANAKUPPE</item>
+    </string-array>
+
+    <string-array name="achalu_school">
+        <item>G HS ACHALU</item>
+    </string-array>
+
+    <string-array name="kabbalu_school">
+        <item>AMBEDKAR HIGH SCHOOL</item>
+    </string-array>
+
+    <string-array name="kodihalli_school">
+        <item>KITHURRANI CHANAMMA VASATHI SCHOOL</item>
+    </string-array>
+
+    <string-array name="thigalarahosahalli_school">
+        <item>G HS THIGALARAHOSAHALLI</item>
+    </string-array>
+
+    <string-array name="goravinapura_school">
+        <item>G HS GORAVINAPURA</item>
+    </string-array>
+
+    <string-array name="harobele_school">
+        <item>RC HS HAROBELE</item>
     </string-array>
 
 
