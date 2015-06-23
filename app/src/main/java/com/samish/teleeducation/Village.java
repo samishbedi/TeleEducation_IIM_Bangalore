@@ -67,24 +67,24 @@ public class Village extends ActionBarActivity {
                 school=res.getStringArray(R.array.channagiri_vill);
                 break;
 
-            case "Honalli":
-                school=res.getStringArray(R.array.devan_vill);
+            case "Honnali":
+                school=res.getStringArray(R.array.honalli_vill);
                 break;
 
             case "Chikkaballapur":
-                school=res.getStringArray(R.array.devan_vill);
+                school=res.getStringArray(R.array.chikkaballapur_vill);
                 break;
 
             case "Srinivasapur":
-                school=res.getStringArray(R.array.devan_vill);
+                school=res.getStringArray(R.array.srinivaspur_vill);
                 break;
 
             case "Soraba":
-                school=res.getStringArray(R.array.devan_vill);
+                school=res.getStringArray(R.array.soraba_vill);
                 break;
 
             case "Thirthahalli":
-                school=res.getStringArray(R.array.devan_vill);
+                school=res.getStringArray(R.array.thirthahalli_vill);
                 break;
 
             case "Pavgada":
@@ -124,6 +124,73 @@ public class Village extends ActionBarActivity {
                 school=res.getStringArray(R.array.byadagi_vill);
                 break;
 
+            case "Haveri":
+                school=res.getStringArray(R.array.haveri_vill);
+                break;
+
+            case "Haliyal":
+                school=res.getStringArray(R.array.haliyal_vill);
+                break;
+
+            case "Honnavar":
+            school=res.getStringArray(R.array.honnavar_vill);
+            break;
+
+            case "Kudligi":
+            school=res.getStringArray(R.array.kudligi_vill);
+            break;
+
+            case "Sandur":
+            school=res.getStringArray(R.array.sandur_vill);
+            break;
+
+            case "Aurad":
+            school=res.getStringArray(R.array.aurad_vill);
+            break;
+
+            case "Basavakalyan":
+            school=res.getStringArray(R.array.basavakalyan_vill);
+            break;
+
+            case "Chittapur":
+            school=res.getStringArray(R.array.chittapur_vill);
+            break;
+
+            case "Shorapur":
+                school=res.getStringArray(R.array.shorapur_vill);
+                break;
+
+            case "Koppal":
+                school=res.getStringArray(R.array.koppal_vill);
+                break;
+
+            case "Yelburga":
+                school=res.getStringArray(R.array.yelburga_vill);
+                break;
+
+            case "Devadurga":
+                school=res.getStringArray(R.array.devadurga_vill);
+                break;
+
+            case "Lingasagur":
+                school=res.getStringArray(R.array.lingasagur_vill);
+                break;
+
+            case "Chamaraja Nagar":
+                school=res.getStringArray(R.array.chamaraja_nagar_vill);
+                break;
+
+            case "Yelandur":
+                school=res.getStringArray(R.array.yelandur_vill);
+                break;
+
+            case "H.D.Kote":
+                school=res.getStringArray(R.array.h_d_kote_vill);
+                break;
+
+            case "T.N. Pura":
+                school=res.getStringArray(R.array.t_n_pura_vill);
+                break;
 
         }
 

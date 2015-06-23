@@ -145,9 +145,9 @@ public class Ques extends ActionBarActivity {
 
                 if((fo_name_school.equals(" "))||fo_name_school.length()==0){
                     Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
-                if(Integer.parseInt(prnt)>Integer.parseInt(strt)){
-                    Toast.makeText(this, "ENTER VALID VALUES FOR STRENTH AND PRESENCE OF STUDENTS", Toast.LENGTH_SHORT).show();
                 }
+                else if(Integer.parseInt(prnt)>Integer.parseInt(strt)){
+                    Toast.makeText(this, "ENTER VALID VALUES FOR STRENTH AND PRESENCE OF STUDENTS", Toast.LENGTH_SHORT).show();
                 }else {
 
                     db.insert_school(tname, vname, name, fo_name_school, bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment);
@@ -215,7 +215,7 @@ public class Ques extends ActionBarActivity {
                 if((fo_name_school.equals(" "))||fo_name_school.length()==0){
                     Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
                 }
-                if(Integer.parseInt(prnt)>Integer.parseInt(strt)){
+                else if(Integer.parseInt(prnt)>Integer.parseInt(strt)){
                     Toast.makeText(this, "ENTER VALID VALUES FOR STRENGTH AND PRESENCE OF STUDENTS IN CLASS", Toast.LENGTH_SHORT).show();
                 }else {
                     db.insert_school(tname, vname, name, fo_name_school, bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment);
