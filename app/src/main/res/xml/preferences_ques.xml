@@ -2,11 +2,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <EditTextPreference
-        android:key="pref_key_fo_name"
-        android:summary="Field Officer's Name "
+        android:key="pref_key_fo_name1"
+        android:summary="Field Officer's Name"
         android:dialogTitle="Field Officer's Name"
         android:inputType="textPersonName|textCapWords"
-        android:persistent="false"
         android:defaultValue=" "/>
     <PreferenceCategory
         android:title="Check the Infrastructure"
@@ -16,63 +15,59 @@
             android:key="pref_key_bc"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
             android:summary="Is barcode labelled?"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_laptop"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
             android:summary="Laptop"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_proj"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
             android:summary="Projector"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_mod"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
             android:summary="Modem"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_hugh"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Hughes Modem"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_mob"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Mobile"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_ant"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Antennae"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_sol"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Solar"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_ups"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="UPS Battery"
             android:defaultValue="false" />
 
@@ -85,14 +80,14 @@
             android:key="pref_key_classcond"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Are the class room in good condition?"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_crowd"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Was class over crowded?"
             android:defaultValue="false" />
         <EditTextPreference
@@ -100,14 +95,14 @@
             android:summary="Enter strength of the Class"
             android:dialogTitle="Strength of the Class"
             android:inputType="number"
-            android:persistent="false"
+
             android:defaultValue="0"/>
         <EditTextPreference
             android:key="pref_key_prnt"
             android:summary="Enter number of students present in the Class"
             android:dialogTitle="Number of students present in the Class"
             android:inputType="number"
-            android:persistent="false"
+
             android:defaultValue="0"/>
 
 
@@ -117,21 +112,21 @@
             android:key="pref_key_notes"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Are students taking notes while class was running?"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_prop"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Was class running properly?"
             android:defaultValue="false" />
         <SwitchPreference
             android:key="pref_key_atten"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Were/are students attentive in the class?"
             android:defaultValue="false" />
 
@@ -139,7 +134,7 @@
             android:key="pref_key_clr"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Was audio clarity good while class was on?"
             android:defaultValue="false" />
 
@@ -148,7 +143,7 @@
             android:key="pref_key_dbt"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Are students able to clarify the doubt through mobile phone?"
             android:defaultValue="false" />
 
@@ -156,37 +151,37 @@
             android:key="pref_key_teacher"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Was teacher present and providing assistance if any problem occurred?"
             android:defaultValue="false" />
 
         <SwitchPreference
-            android:key="pref_key_vst"
+            android:key="pref_key_vsc"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
-            android:persistent="false"
+
             android:summary="Was VSC present?"
             android:defaultValue="false" />
 
-    <SwitchPreference
-        android:key="pref_key_vst"
-        android:switchTextOff="No"
-        android:switchTextOn="Yes"
-        android:persistent="false"
-        android:summary="Was VSC updated through mobile phone for Session code ?"
-        android:defaultValue="false" />
+        <SwitchPreference
+            android:key="pref_key_vsc_1"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+
+            android:summary="Was VSC updated through mobile phone for Session code ?"
+            android:defaultValue="false" />
 
         <EditTextPreference
             android:key="pref_rsn"
             android:summary=" Reason(s) for class not running "
             android:dialogTitle="Reason(s)for class not running "
-            android:persistent="false"
+
             android:defaultValue=" " />
         <EditTextPreference
             android:key="pref_comment"
             android:summary=" Other Remarks "
             android:dialogTitle="Enter your comments here"
-            android:persistent="false"
+
             android:defaultValue=" "/>
 </PreferenceCategory>
 

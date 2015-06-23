@@ -161,6 +161,143 @@ public class School extends ActionBarActivity {
                 school=res.getStringArray(R.array.harobele_school);
                 break;
 
+        /*    case "Nidigere":
+                school=res.getStringArray(R.array.Nidigere_school);
+                break;
+
+
+
+            case "Belalagere":
+                school=res.getStringArray(R.array.Belalagere_school);
+                break;
+
+            case "Chiradoni":
+                school=res.getStringArray(R.array.Chiradoni_school);
+                break;
+            case "G K Halli":
+                school=res.getStringArray(R.array.GKHalli_school);
+                break;
+            case "Joladahal":
+                school=res.getStringArray(R.array.Joladahal_school);
+                break;
+            case "Kagaturu":
+                school=res.getStringArray(R.array.Kagaturu_school);
+                break;
+            case "Kanchagaranahalli":
+                school=res.getStringArray(R.array.Kanchagaranahalli_school);
+                break;
+            case "Kanchiganahal":
+                school=res.getStringArray(R.array.Kanchiganahal_school);
+                break;
+            case "Kanivebilachi":
+                school=res.getStringArray(R.array.Kanivebilachi_school);
+                break;
+            case "Chikkanguru":
+                school=res.getStringArray(R.array.Chikkanguru_school);
+                break;
+            case "Karekatte":
+                school=res.getStringArray(R.array.Karekatte_school);
+                break;
+            case "Kariganuru":
+                school=res.getStringArray(R.array.Kariganuru_school);
+                break;
+
+            case "Thavarekere":
+                school=res.getStringArray(R.array.Thavarekere_school);
+                break;
+            case "Thyavanige":
+                school=res.getStringArray(R.array.Thyavanige_school);
+                break;
+            case "Yalodahalli":
+                school=res.getStringArray(R.array.Yalodahalli_school);
+                break;
+
+            case "Ajji Halli":
+                school=res.getStringArray(R.array.AjjiHalli_school);
+                break;
+
+            case "Hirekogaluru":
+                school=res.getStringArray(R.array.Hirekogaluru_school);
+                break;
+            case "Durvigere":
+                school=res.getStringArray(R.array.Durvigere_school);
+                break;
+
+            case "Daginakatte":
+                school=res.getStringArray(R.array.Daginakatte_school);
+                break;
+            case "Doddabbagere":
+                school=res.getStringArray(R.array.Doddabbagere_school);
+                break;
+            case "Goppenahalli":
+                school=res.getStringArray(R.array.Goppenahalli_school);
+                break;
+            case "Gullehalli":
+                school=res.getStringArray(R.array.Gullehalli_school);
+                break;
+            case "Hodigere":
+                school=res.getStringArray(R.array.Hodigere_school);
+                break;
+
+            case "Kakanur":
+                school=res.getStringArray(R.array.Kakanur_school);
+                break;
+
+            case "Kerebilachi":
+                school=res.getStringArray(R.array.Kerebilachi_school);
+                break;
+
+            case "Kondadahalli":
+                school=res.getStringArray(R.array.Kondadahalli_school);
+                break;
+
+            case "Mavina Hole":
+                school=res.getStringArray(R.array.Mavina Hole_school);
+                break;
+            case "Nalkudure":
+                school=res.getStringArray(R.array.Nalkudure_school);
+                break;
+            case "Nalluru":
+                school=res.getStringArray(R.array.Nalluru_school);
+                break;
+
+            case "Navile Hal":
+                school=res.getStringArray(R.array.NavileHal_school);
+                break;
+
+            case "Santhebennuru":
+                school=res.getStringArray(R.array.Santhebennuru_school);
+                break;
+
+            case "Thanigere":
+                school=res.getStringArray(R.array.Thanigere_school);
+                break;
+
+            case "Basavapattana":
+                school=res.getStringArray(R.array.Basavapattana_school);
+                break;
+
+            case "Channeshpura":
+                school=res.getStringArray(R.array.Channeshpura_school);
+                break;
+
+
+            case "Devarahalli":
+                school=res.getStringArray(R.array.Devarahalli_school);
+                break;
+
+            case "Doddaghatta":
+                school=res.getStringArray(R.array.Doddaghatta_school);
+                break;
+
+            case "Hebbalagere":
+                school=res.getStringArray(R.array.Hebbalagere_school);
+                break;
+
+            case "Medugondanahalli":
+                school=res.getStringArray(R.array.Medugondanahalli_school);
+                break; */
+
 
         }
 

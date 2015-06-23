@@ -127,7 +127,7 @@ public class Ques_Taluk extends ActionBarActivity {
                 }else {
 
 
-                    db.insert(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+                    db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
                     sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                     SharedPreferences.Editor editor3 = sharedPref.edit();
                     editor3.clear();
@@ -174,7 +174,7 @@ public class Ques_Taluk extends ActionBarActivity {
                 }else {
 
 
-                    db.insert(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+                    db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
                     sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                     SharedPreferences.Editor editor2 = sharedPref.edit();
                     editor2.clear();
