@@ -20,6 +20,7 @@ import android.widget.Toast;
 import android.database.sqlite.*;
 
 
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -278,27 +279,34 @@ public class Ques_Taluk extends ActionBarActivity {
         try
         {
             List<String> name=db.values();
-            CALLWSDOTNET objWS = new CALLWSDOTNET("http://203.129.241.19/is/Service.asmx");
-            objWS.AddPropertyInfo("PASSWORD","ii@m_s_urv@y@eg@",CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("IMEI",imei,CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("ID", Integer.parseInt(name.get(0)), CALLWSDOTNET.datatype.INTEGER);
-            objWS.AddPropertyInfo("Taluk_Name",name.get(1), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Field_Officer_Name", name.get(2), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Taluk_Incharge_Name", name.get(3), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Is_TI_given_proper_training_to_update_OMS",name.get(4),CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Does_TI_understand_the_OMS_tool", name.get(5), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Is_The_TI_able_to_make_daily_updates_in_OMS", name.get(6), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Is_TI_able_to_solve_the_problem_in_school_if_any_complaint_is_received",  name.get(7), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Does_ti_have_a_panel_of_moderators", name.get(8), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Moderator_details_Name_School_Class_Sbject_Date", name.get(9), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Whether_Moderator_has_been_trained",name.get(10), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Whether_ti_have_adetailed_plan_for_3_days",name.get(11), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Is_the_detailed_plan_put_oms_tool", name.get(12), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("is_ti_cooperative", name.get(13), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Are_spare_parts_available_in_location", name.get(14), CALLWSDOTNET.datatype.STRING);
-            objWS.AddPropertyInfo("Comments",name.get(15), CALLWSDOTNET.datatype.STRING);
+            Iterator<String> itr=name.iterator();
+            while(itr.hasNext()) {
+                int id=Integer.parseInt(itr.next());
+                CALLWSDOTNET objWS = new CALLWSDOTNET("http://203.129.241.19/is/Service.asmx");
+                objWS.AddPropertyInfo("PASSWORD", "ii@m_s_urv@y@eg@", CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("IMEI", imei, CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("ID", id, CALLWSDOTNET.datatype.INTEGER);
+                objWS.AddPropertyInfo("Taluk_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Field_Officer_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Taluk_Incharge_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_TI_given_proper_training_to_update_OMS", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Does_TI_understand_the_OMS_tool", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_The_TI_able_to_make_daily_updates_in_OMS", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_TI_able_to_solve_the_problem_in_school_if_any_complaint_is_received",itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Does_ti_have_a_panel_of_moderators", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Moderator_details_Name_School_Class_Sbject_Date", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Whether_Moderator_has_been_trained", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Whether_ti_have_adetailed_plan_for_3_days", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_the_detailed_plan_put_oms_tool", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("is_ti_cooperative", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Are_spare_parts_available_in_location", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Comments", itr.next(), CALLWSDOTNET.datatype.STRING);
 
-            objWS.invokeWebService("UpdateTalukSurvey");
+                if(itr.next().equals("0")) {
+                    objWS.invokeWebService("UpdateTalukSurvey");
+                    db.markUpload(id);
+                }
+            }
 
 
         }

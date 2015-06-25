@@ -83,6 +83,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final String rsn="Reason_for_class_running_late";
     public static final String scomment = "Comments";
 
+    public static final String uploaded="Uploaded";
+
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME , null, 1);
@@ -94,7 +96,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String CREATE_TALUK_TABLE = "CREATE TABLE " + TABLE_TALUK + "("
                 + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +  taluk + " TEXT," + fo_name + " TEXT,"
                 + ti_name + " TEXT," + t1 + " TEXT,"+ t2 + " TEXT,"+ t3 + " TEXT,"+ t4 + " TEXT,"+t5 + " TEXT,"+ t5_moderator + " TEXT,"+t6 + " TEXT,"
-                + t7 + " TEXT,"+ t8 + " TEXT,"+ t9 + " TEXT,"+ t10 + " TEXT,"+ tcomment + " TEXT"+");";
+                + t7 + " TEXT,"+ t8 + " TEXT,"+ t9 + " TEXT,"+ t10 + " TEXT,"+ tcomment + " TEXT,"+ uploaded + " TEXT"+");";
         db.execSQL(CREATE_TALUK_TABLE);
 
         String CREATE_SCHOOL_TABLE = "CREATE TABLE " + TABLE_SCHOOL + "("
@@ -155,7 +157,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(t9,t9s );
         values.put(t10, t10s);
         values.put(tcomment, t5_comment_s);
-
+        values.put(uploaded, "0");
 
         // Inserting Row
         db.insert(TABLE_TALUK, null, values);
@@ -233,8 +235,20 @@ public class DatabaseHandler extends SQLiteOpenHelper {
              dbl.add(c.getString(13));
              dbl.add(c.getString(14));
              dbl.add(c.getString(15));
+             dbl.add(c.getString(16));
          }while(c.moveToNext());
         return dbl;
+    }
+
+    int markUpload(int ID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+
+        values.put(uploaded,"1");
+
+        // updating row
+        return db.update(TABLE_TALUK, values, KEY_ID + "=" + ID, null);
     }
 
 
