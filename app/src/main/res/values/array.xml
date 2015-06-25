@@ -211,7 +211,1850 @@
     <item>G MPS SATHANURU</item>
     </string-array>
 
-    <string-array name="survey_choice">
+    <string-array name="N_Devarahally_school">
+        <item>GHS N DEVARAHALLY</item>
+    </string-array>
+
+    <string-array name="Gowrasamudra_school">
+        <item>GHS GOWRASAMUDRA</item>
+    </string-array>
+
+    <string-array name="Thalak_school">
+        <item>GPU COLLEGE THALAKU</item>
+        <item>GHPS VENKANNAYABADAVANE</item>
+    </string-array>
+
+    <string-array name="Obalapura_school">
+        <item>GHS OBALAPURA</item>
+        <item>GHPS OBALAPURA</item>
+    </string-array>
+
+    <string-array name="Ramjogihally_school">
+        <item>GPU RAMJOGIHALLY</item>
+        <item>GHPS RAMJOGIHALLY</item>
+    </string-array>
+
+    <string-array name="B_N_Pura_school">
+        <item>B.S.S.HIGH SCHOOL B.N.PURA</item>
+    </string-array>
+
+    <string-array name="T_N_Kote_school">
+        <item>GPU COLLEGE HS KOTE</item>
+        <item>GHPS T.N.KOTE</item>
+    </string-array>
+
+    <string-array name="Mahaddevapura_school">
+        <item>GHS.P MAHADDEVAURA</item>
+    </string-array>
+
+    <string-array name="Torekolammanahalli_school">
+        <item>SRI MARUTHI RURAL HS</item>
+        <item>GHPS TOREKOLAMMANAHALLI</item>
+    </string-array>
+
+    <string-array name="Mallurahatty_school">
+        <item>SRI GURUTHIPPERUDRASWAMY HS</item>
+    </string-array>
+
+    <string-array name="Nayakanahatty_school">
+        <item>GURUTHIPPERUDRASWAMY SH KEB EXT</item>
+        <item>RAJAHATTY MALLAPPANAYAKA</item>
+        <item>STSR HIGH SCHOOL</item>
+        <item>GMHPS NAYAKANAHATTY</item>
+        <item>GHPS CHANNABASAIAHNAHATTY</item>
+        <item>GHPS N.K.HATTY A.K.COLONY</item>
+        <item>GHPS BOSEDEVARAHATTY</item>
+    </string-array>
+
+
+    <string-array name="Renukapura_school">
+        <item>RENUKADEVI HS RENUKAPURA</item>
+        <item>GHPS RENUKAPURA</item>
+    </string-array>
+
+
+    <string-array name="Meerasabhihally_school">
+        <item>RANIKERE RURAL PU COLLEGE</item>
+        <item>GHPS MEERASABHIHALLY</item>
+    </string-array>
+
+
+    <string-array name="Balaenahally_school">
+        <item>LALITHAMMA K.H RANGANATHA HS</item>
+    </string-array>
+
+    <string-array name="Gataparthy_school">
+        <item>VASATHI HS GHATAPARTHI</item>
+        <item>GHPS GATAPARTHY</item>
+        <item>GHPS HONNURU</item>
+    </string-array>
+
+
+    <string-array name="Parasharampura_school">
+        <item>GIRLS HS P.R.PURA</item>
+        <item>GHPS P.R.PURA</item>
+        <item>GHPS HULIKATTE DODDAGOLLARAHAT</item>
+    </string-array>
+
+    <string-array name="Gopanahalli_school">
+        <item>BAPUJI HS GOPANAHALLI</item>
+        <item>GHPS GOPANAHALLI</item>
+    </string-array>
+
+
+    <string-array name="Narayanapura_school">
+        <item>LALITHAMMA K.H RANGANATHA HS</item>
+    </string-array>
+
+
+    <string-array name="Alagavadi_school">
+        <item>SRI S.M.GANGADHARAYYA HSS ALAGAVADI</item>
+        <item>GHPS ALAGAVADI</item>
+    </string-array>
+
+
+    <string-array name="Annehal_school">
+        <item>GOVT.PU.COLLEGE ANNEHAL JA.HATTI</item>
+    </string-array>
+
+
+    <string-array name="Bahuduragatta_school">
+        <item>KALLAMMA HS BHAHDDURGHATTA</item>
+    </string-array>
+
+
+    <string-array name="Baramasagara_school">
+        <item>SRI BAPUJI HS BHARAMASAGAR</item>
+        <item>MORARJEE DESAI RESIDENTIAL SCHOOL</item>
+        <item>GMHPS Baramasagara</item>
+    </string-array>
+
+    <string-array name="Belagatta_school">
+        <item>SRI MARUTHI RURAL HS BELAGATTA</item>
+    </string-array>
+
+
+    <string-array name="Bhimasamudra_school">
+        <item>SRI BEEMESWARA RURAL HS B.SAMUDRA</item>
+    </string-array>
+
+
+    <string-array name="Chavalihalli_Gollarahatti_school">
+        <item>GHS CHAVALIHALLI.G.HATTI</item>
+    </string-array>
+
+
+    <string-array name="Chitradurga_school">
+        <item>GOVT.PU COLLEGE BOYS</item>
+    </string-array>
+
+
+    <string-array name="D_S_Hally_school">
+        <item>GOVT.HS D.S.HALLI</item>
+    </string-array>
+
+
+    <string-array name="Dyamavvanahalli_school">
+        <item>NARASIHMSWAMY RURAL HS D.V.HALLI</item>
+    </string-array>
+
+
+    <string-array name="Godabanal_school">
+        <item>GURUSHNTHESWARA HS GODABANAHAL</item>
+    </string-array>
+
+    <string-array name="Guddadarangavanahally_school">
+        <item>GOVT HS G.R.HALLI</item>
+        <item>SRI MURARJI DESAI GOVERNMENT RESEDE</item>
+    </string-array>
+
+    <string-array name="Hireguntanur_school">
+        <item>SRI DYAMALAMBA HS HIREGUNTANUR</item>
+    </string-array>
+
+    <string-array name="J_N_Kote_school">
+        <item>GOVT.HS JN KOTE</item>
+        <item>GHPS J.N.KOTE</item>
+    </string-array>
+
+    <string-array name="Janukonda_school">
+        <item>SRI OBALANARASIHMASWAMY HS.J.KONDA</item>
+        <item>GHPS JANUKONDA</item>
+    </string-array>
+
+    <string-array name="Kalagere_school">
+        <item>GHPS KALAGERE</item>
+    </string-array>
+
+    <string-array name="Kogunde_school">
+        <item>GHPS KOGUNDE</item>
+    </string-array>
+
+    <string-array name="Kolahala_school">
+        <item>GHS KOLAHAL</item>
+    </string-array>
+
+    <string-array name="Konabevu_school">
+        <item>GOVT.H.S.KUNABEVU</item>
+    </string-array>
+
+    <string-array name="Kurabarahally_school">
+        <item>GHS KURUBANAHALLI</item>
+        <item>GHPS KURABARAHALLI</item>
+    </string-array>
+
+    <string-array name="Lakshmisagar_school">
+        <item>GOVT HS LAKSHMISAGARA</item>
+    </string-array>
+
+    <string-array name="Madakaripura_school">
+        <item>BHRATHEEYA HS MADAKARIPURA</item>
+        <item>GHPS MADAKARIPURA</item>
+    </string-array>
+
+    <string-array name="Madanayakanahally_school">
+        <item>G.H.ASHWATHREDDY HS</item>
+    </string-array>
+
+    <string-array name="Managangi_school">
+        <item>SRI ANJANEYSWAMY H.S.</item>
+    </string-array>
+
+    <string-array name="Maragatta_school">
+        <item>MINARITIES SRI MORARJI DESAI SCHOOL</item>
+    </string-array>
+
+    <string-array name="Muddapur_school">
+        <item>GOVT.COMP.HS MUDDAPURA</item>
+    </string-array>
+
+    <string-array name="Siddapura_school">
+        <item>B.R. AMBEDKAR H.S.SIDDAPURA</item>
+    </string-array>
+
+    <string-array name="Sirigere_school">
+        <item>S.N.G.H.S. HIGH SCHOOL SIRIGERE</item>
+        <item>B.L.R.J.C. SIRIGERE</item>
+        <item>GHPS BOYS SIRIGERE</item>
+    </string-array>
+
+    <string-array name="Sondekola_school">
+        <item>SRI VEERABHADRESWARA H.S. SONDEKOLA</item>
+    </string-array>
+
+    <string-array name="Sulthanipura_school">
+        <item>OBALADEVARA RURAL HS SULTHANIPURA</item>
+    </string-array>
+
+    <string-array name="Thuruvanuru_school">
+        <item>GOVT.JU COLLEGE THURUVANURU</item>
+        <item>GHPS GIRLS THURUVANURAU</item>
+    </string-array>
+
+    <string-array name="Vijapura_school">
+        <item>S.S.R.C.H.S. VIJAPURA</item>
+    </string-array>
+
+    <string-array name="Yellagodu_school">
+        <item>GOVT PU COLLEGE YELLAGODU</item>
+    </string-array>
+
+    <string-array name="Ajji_Halli_school">
+        <item>GHS-AJJIHALLI</item>
+        <item>GHPS - AJJIHALLI</item>
+    </string-array>
+
+    <string-array name="Balliganudu_school">
+        <item>GHS BALLIGANUDU</item>
+    </string-array>
+
+    <string-array name="Basavapattana_school">
+        <item>S.R.G.V.P - H.S BASAVATTANA</item>
+        <item>JANATHA H.S BASAVATTANA</item>
+        <item>GUHS - BASAVAPATTANA</item>
+    </string-array>
+
+    <string-array name="Belalagere_school">
+        <item>GHS-BELALAGERE</item>
+    </string-array>
+
+    <string-array name="Channeshpura_school">
+        <item>SRI.G.S.R.H.S BRT COLONY</item>
+        <item>GHS - MAVINAKATTE</item>
+    </string-array>
+
+    <string-array name="Chikkanguru_school">
+        <item>GHS CHIKKANGURU</item>
+    </string-array>
+
+    <string-array name="Chiradoni_school">
+        <item>GHS-CHIRADONI</item>
+    </string-array>
+
+    <string-array name="Daginakatte_school">
+        <item>VALMIKI H.S DAGINAKATTE</item>
+        <item>GHPS  - DAGINAKATTE</item>
+    </string-array>
+
+    <string-array name="Devarahalli_school">
+        <item>S.L.R.H.S DEVARAHALLI</item>
+    </string-array>
+
+    <string-array name="Doddabbagere_school">
+        <item>SRI.J.R H. S DODDABBAGERE</item>
+    </string-array>
+
+    <string-array name="Doddaghatta_school">
+        <item>SRI L.V. RES. H.S DODAGHATTA</item>
+    </string-array>
+
+    <string-array name="Durvigere_school">
+        <item>GHS-DURVIGERE</item>
+    </string-array>
+
+    <string-array name="G_K_Halli_school">
+    </string-array>
+
+    <string-array name="Goppenahalli_school">
+        <item>SRI RUDRESWARA H.S GOPPENAHALLI</item>
+    </string-array>
+
+    <string-array name="Gullehalli_school">
+        <item>S.R.H.S GULLAHALLI</item>
+    </string-array>
+
+    <string-array name="Hebbalagere_school">
+        <item>MANAAMMA H.S HEBBALAGERE</item>
+    </string-array>
+
+    <string-array name="Hirekogaluru_school">
+        <item>STJ GJC-HIREKOGALURU</item>
+        <item>GMHPBS - HIREKOGALURU</item>
+    </string-array>
+
+    <string-array name="Hodigere_school">
+        <item>MADUKESHWARA H.S HODIGERE</item>
+    </string-array>
+
+    <string-array name="Joladahal_school">
+        <item>GHS-JOLADAL</item>
+    </string-array>
+
+    <string-array name="Kagaturu_school">
+        <item>GHS-KAGATURU</item>
+    </string-array>
+
+    <string-array name="Kakanur_school">
+        <item>SRI.VINAYAKA H. S KAKANUR</item>
+        <item>GHPS - KAKANUR</item>
+    </string-array>
+
+    <string-array name="Kanchagaranahalli_school">
+        <item>GHS-KANCHUGARANAHALLI</item>
+    </string-array>
+
+    <string-array name="Kanchiganahal_school">
+        <item>GHS-KANCHIGANAHAL</item>
+        <item>GHPS - KANCHIGANAHAL</item>
+    </string-array>
+
+    <string-array name="Kanivebilachi_school">
+        <item>GHS-KANIVEBILACHI</item>
+    </string-array>
+
+    <string-array name="Karekatte_school">
+        <item>GHS KAREKATTE</item>
+    </string-array>
+
+    <string-array name="Kariganuru_school">
+        <item>M.DESAI RESI.SCH KARIGANUR</item>
+        <item>GHPS - KARIGANURU</item>
+        <item>GJC-KRIGANURU-KATTALAGERE</item>
+    </string-array>
+
+    <string-array name="Katthaleger_school">
+    </string-array>
+
+    <string-array name="Kerebilachi_school">
+        <item>RHS-KEREBILACHI</item>
+    </string-array>
+
+    <string-array name="Kondadahalli_school">
+        <item>SRI.ANJANAYA H.S KONDADAHALLI</item>
+    </string-array>
+
+    <string-array name="Kotihal_school">
+        <item>KALIKAMBA H.S KOTEHAL</item>
+    </string-array>
+
+    <string-array name="Mavina_Hole_school">
+        <item>S.M.R.H.S MAVINA HOLE</item>
+    </string-array>
+
+    <string-array name="Medikere_school">
+        <item>SRI GOWDARA HALAPPA H.S MEDIKERE</item>
+        <item>GHPS - MEDIKERE</item>
+    </string-array>
+
+    <string-array name="Medugondanahalli_school">
+        <item>GHS  MEDUGONDANAHALLI</item>
+    </string-array>
+
+    <string-array name="Mudigere_school">
+        <item>SRI MANNAMA HS MUDIGERE</item>
+    </string-array>
+
+    <string-array name="Nalkudure_school">
+        <item>SRI.MAHARUDRASWAMY HS, NALKUDURE CA</item>
+        <item>GHS-NALKUDRE</item>
+    </string-array>
+
+    <string-array name="Nalluru_school">
+        <item>PADMASHRI H.S NALLUR</item>
+        <item>GJC-NALLUR</item>
+        <item>GGHS - NALLURU</item>
+    </string-array>
+
+    <string-array name="Navile_Hal_school">
+        <item>PADMASHRI H.S NAVILEHL</item>
+    </string-array>
+
+    <string-array name="Nidigere_school">
+        <item>GHS-Nidigere</item>
+    </string-array>
+
+    <string-array name="Santhebennuru_school">
+        <item>VIJAYA.H.S SANTHEBENNURU</item>
+        <item>GSSJVP SANTHEBENNURU</item>
+        <item>GHPGS - SANTHEBENNURU</item>
+    </string-array>
+
+    <string-array name="Somalapura_school">
+        <item>S H S H S- JAKKALI-SOMLPURA</item>
+        <item>GMHPS - SOMALAPURA</item>
+    </string-array>
+
+    <string-array name="Thavarekere_school">
+        <item>GJC-THAVAREKERE</item>
+    </string-array>
+
+    <string-array name="Thyavanige_school">
+        <item>SRI JAYADEVA.M.J H.S THYVANIGE</item>
+        <item>GMHPBS - THYAVANIGE</item>
+        <item>GJC-THYVANIGE</item>
+    </string-array>
+
+    <string-array name="Vadnal_school">
+        <item>S.PARVATHA MALLESHWRA H.S VADDNAL</item>
+        <item>GHPS - VADNAL</item>
+    </string-array>
+
+    <string-array name="Yalodahalli_school">
+        <item>GHS-YALODAHALLI</item>
+    </string-array>
+
+    <string-array name="Thanigere_school">
+        <item>ANJANAYA RURAL H.S THANIGERE</item>
+    </string-array>
+
+    <string-array name="Belaguthi_school">
+        <item>G COMP H.S BELAGUTHI-MALIGENAHALLI</item>
+        <item>SRI T.LINGESHWARA N.H.S BELAGUTHI</item>
+    </string-array>
+
+    <string-array name="Benakanahalli_school">
+        <item>SRI VINAYAKA H.S BENAKANAHALLI</item>
+        <item>GHPS - BENAKANAHALLI</item>
+    </string-array>
+
+    <string-array name="Chilur_school">
+        <item>NATIONAL H.S CHILUR</item>
+        <item>GHPS - CHILUR</item>
+    </string-array>
+
+    <string-array name="Govinkovi_school">
+        <item>GHS - GOVINAKOVI</item>
+        <item>GHPS - GOVINAKOVI</item>
+    </string-array>
+
+    <string-array name="Hiregonigere_school">
+        <item>GHS-HIREGONIGERE</item>
+    </string-array>
+
+    <string-array name="Hirematta_school">
+        <item>SRI J.J.S SWAMY H.S HIREMATHA</item>
+    </string-array>
+
+    <string-array name="Kathige_school">
+        <item>GHS-KATHIGE</item>
+    </string-array>
+
+    <string-array name="Kulagatte_school">
+        <item>SRI MARUTHI H.S KULAGATTE</item>
+        <item>GHPS - KULAGATTE</item>
+    </string-array>
+
+    <string-array name="Kumblur_school">
+        <item>SRI ANJANEYASWAMY H.S KUMBLUR</item>
+    </string-array>
+
+    <string-array name="Kundur_school">
+        <item>GJC - KULAMBI KUNDUR</item>
+        <item>GHPS - KUNDUR</item>
+    </string-array>
+
+    <string-array name="Kyasainakere_school">
+        <item>VEERABADRESHAWARA H.S KYASINKERE</item>
+        <item>GHPS - KYASINAKERE</item>
+    </string-array>
+
+    <string-array name="Marigondanahalli_school">
+        <item>GHS - MARIGONDANAHALLI-KOTEHAL</item>
+    </string-array>
+
+    <string-array name="Nyamathi_school">
+        <item>GOVT GIRLS PU COLLEGE NYAMATHI</item>
+        <item>GOVT BOYS PU COLLEGE NYAMATHI</item>
+        <item>VIVEKANADA H.S NYAMATHI</item>
+    </string-array>
+
+    <string-array name="Rampura_school">
+        <item>GOVT COMP. H.S RAMPURA</item>
+    </string-array>
+
+    <string-array name="Sasavehalli_school">
+        <item>GOVT PU COLLEGE SASVEHALLI</item>
+        <item>GHPS - SASVEHALLI</item>
+    </string-array>
+
+    <string-array name="Sowlanga_school">
+        <item>GOVT COMP. PU COLLEGE SAVALANGA</item>
+        <item>GHPS - SOWLANGA</item>
+    </string-array>
+
+    <string-array name="Tavaragopagondanahalli_school">
+        <item>GOVT COMP H.S T.G HALLI</item>
+    </string-array>
+
+    <string-array name="Tharaganahalli_school">
+        <item>GOVT COMP H.S TARAGANAHALLI</item>
+    </string-array>
+
+    <string-array name="Angarkanahalli_school">
+        <item>GHS ANGAREKANHALLI</item>
+    </string-array>
+
+    <string-array name="Avalagurki_school">
+        <item>GHS AVALAGURKI</item>
+    </string-array>
+
+    <string-array name="Dibbur_school">
+        <item>GHS DIBBUR</item>
+        <item>GHPS DIBBUR</item>
+    </string-array>
+
+    <string-array name="Hale_Peresandra_school">
+        <item>GHS HALEPERESANDRA</item>
+    </string-array>
+
+    <string-array name="Hosahudya_school">
+        <item>GHS GIDNAHALLI</item>
+    </string-array>
+
+    <string-array name="Kuppahalli_school">
+        <item>MORARJI DESAI MODEL RES SCHOOL</item>
+    </string-array>
+
+    <string-array name="Manchanabele_school">
+        <item>BGNS HS MANCHANABALE</item>
+    </string-array>
+
+    <string-array name="Mandikal_school">
+        <item>GJC MANDIKAL</item>
+    </string-array>
+
+    <string-array name="Muddenahalli_school">
+        <item>GHS MUDDENAHALLI</item>
+        <item>SATHY SAI HS</item>
+    </string-array>
+
+    <string-array name="Nandi_school">
+        <item>GHS NANDI</item>
+        <item>GMHPS NANDI</item>
+    </string-array>
+
+    <string-array name="Peresandra_school">
+        <item>GJC PERESANDRA</item>
+        <item>MORARGI VASTHI SCHOOL PERSANDRA</item>
+    </string-array>
+
+    <string-array name="Porshathalli_school">
+        <item>GHS Porshathalli</item>
+    </string-array>
+
+    <string-array name="Reddy_Gollavarahalli_school">
+        <item>GHS REDDYGOLLAVARAHALLI</item>
+    </string-array>
+
+    <string-array name="Addagal_school">
+        <item>GHS ADGAL</item>
+    </string-array>
+
+    <string-array name="Alavatta_school">
+        <item>GHS ALAVATTA</item>
+    </string-array>
+
+    <string-array name="Arikunte_school">
+        <item>GHS ARIKUNTE</item>
+    </string-array>
+
+    <string-array name="Byraganapalli_school">
+        <item>GHS BYRAGANAPALLI</item>
+    </string-array>
+
+    <string-array name="Dalasanur_school">
+        <item>GJC DALASANUR</item>
+    </string-array>
+
+    <string-array name="Gownipalli_school">
+        <item>GJC GOWNAPALLI</item>
+        <item>GMHPS GOWNIPALLI</item>
+    </string-array>
+
+    <string-array name="Kurigepalli_school">
+        <item>GHS KURIGEPALLI</item>
+    </string-array>
+
+    <string-array name="Lakshmipura_school">
+        <item>GHS LAKSHMIPURA</item>
+    </string-array>
+
+    <string-array name="Mastenahalli_school">
+        <item>GHS MASTHENAHALLI</item>
+    </string-array>
+
+    <string-array name="Mudimadudu_school">
+        <item>GHS MUDIMADAGU</item>
+        <item>GHPS MUDIMADAGU</item>
+    </string-array>
+
+    <string-array name="Muthakapalli_school">
+        <item>GHS MUTHAKAPALLI</item>
+    </string-array>
+
+    <string-array name="Nambihalli_school">
+        <item>GHS NAMBIHALLI</item>
+    </string-array>
+
+    <string-array name="Puligurkote_school">
+        <item>GHS PULIGURKOTE</item>
+        <item>GHPS PULIGURKOTE</item>
+    </string-array>
+
+    <string-array name="Rayalpadu_school">
+        <item>GJC RAYALPADU</item>
+        <item>GMHPS RAYALPADU</item>
+    </string-array>
+
+    <string-array name="Ronur_school">
+        <item>GHS RONUR</item>
+    </string-array>
+
+    <string-array name="Somayajilapalli_school">
+        <item>GHS SOMAYAJIPALLI</item>
+        <item>MURARJI DESAI RESIDENTIAL SCHO</item>
+    </string-array>
+
+
+    <string-array name="Thadigol_school">
+        <item>GHS THADIGOL</item>
+    </string-array>
+
+    <string-array name="Yeldur_school">
+        <item>NHS YELDUR</item>
+    </string-array>
+
+    <string-array name="Anavatti_school">
+        <item>GPUC ANAVATTI</item>
+        <item>GHS GIRLS ANAVATTI</item>
+        <item>GH.P B.S. ANAVATTI</item>
+        <item>G.H.P.G.S. ANAVATTI</item>
+    </string-array>
+
+    <string-array name="Bharangi_school">
+        <item>SRI HUCHESHWARA HS BHARANGI</item>
+        <item>G.H.P.S. BHARANGI</item>
+    </string-array>
+
+    <string-array name="Chandraguthi_school">
+        <item>SRI RENUKAMBA HS CHANDRAGUTHI</item>
+    </string-array>
+
+    <string-array name="Chikkashakuna_school">
+        <item>ABEDKAR HS CHIKKA SHAKUNA</item>
+    </string-array>
+
+    <string-array name="Harishi_school">
+        <item>GHS HARISHI</item>
+    </string-array>
+
+    <string-array name="Hosabale_school">
+        <item>SHAKUNTHALA HS HOSABALE</item>
+        <item>G.H.P.S Hosabale</item>
+    </string-array>
+
+    <string-array name="Jade_school">
+        <item>SRI SIDDA VRUSHABHENDRA HS JADE</item>
+        <item>GMHPS JADE</item>
+    </string-array>
+
+    <string-array name="Kadasuru_school">
+        <item>GHS KADASURU</item>
+    </string-array>
+
+    <string-array name="Kamaruru_school">
+        <item>GHS K-CHANDRAGUTHI(RMSA)</item>
+    </string-array>
+
+    <string-array name="Kotipura_school">
+        <item>GHS KOTIPURA</item>
+    </string-array>
+
+    <string-array name="Kuppagadde_school">
+        <item>NATIONAL HS KUPPAGADDE</item>
+        <item>GH P S KUPPAGADDE</item>
+    </string-array>
+
+    <string-array name="Mavali_school">
+        <item>SRI UMAMAHESHWARA RURAL HS MAVALI</item>
+    </string-array>
+
+    <string-array name="Nisarani_school">
+        <item>V. S HIGH SCHOOL NISARANI</item>
+    </string-array>
+
+    <string-array name="Shakunavalli_school">
+        <item>SRI SIDDARAMESHWARA HS SHAKUNAVALLI</item>
+        <item>G.H.P.S. SHAKUNAVALLI</item>
+    </string-array>
+
+    <string-array name="Tattur_school">
+        <item>MALENADU HS TATTUR</item>
+    </string-array>
+
+    <string-array name="Thavanandi_school">
+        <item>MALNAD HS TAVANANDI</item>
+    </string-array>
+
+    <string-array name="Udri_Vaddigere_school">
+        <item>GHS UDRI</item>
+    </string-array>
+
+
+    <string-array name="Ulavi_school">
+        <item>GPUC ULAVI</item>
+    </string-array>
+
+    <string-array name="Agumbe_school">
+        <item>SVS HIGH SCHOOL AGUMBE</item>
+    </string-array>
+
+    <string-array name="Araga_school">
+        <item>GPUC ARAGA</item>
+    </string-array>
+
+    <string-array name="Basavani_school">
+        <item>GPUC BASAVANI</item>
+    </string-array>
+
+    <string-array name="Bavikaisaru_school">
+        <item>GCHS BAVIKAISARU</item>
+    </string-array>
+
+    <string-array name="Guddekeri_school">
+        <item>GCHS GUDDEKERI</item>
+    </string-array>
+
+    <string-array name="Guddekoppa_school">
+        <item>GCHS GUDDEKOPPA</item>
+    </string-array>
+
+    <string-array name="Humchadakatte_school">
+        <item>GCHS HUNCHADAKATTE</item>
+    </string-array>
+
+    <string-array name="Kammaradi_school">
+        <item>VISHWATHIRTHA HS KAMMARADI</item>
+    </string-array>
+
+    <string-array name="Kannangi_school">
+        <item>GCHS KANNANGI</item>
+    </string-array>
+
+    <string-array name="Kattehakklu_school">
+        <item>GCHS KATTEHAKKLU</item>
+    </string-array>
+
+    <string-array name="Kodlu_school">
+        <item>GHS KODLU</item>
+    </string-array>
+
+    <string-array name="Konandur_school">
+        <item>GCHS KONANDURU</item>
+        <item>NATIONAL PUC KONANDUR</item>
+        <item>GHPS KONANDUR (M)</item>
+    </string-array>
+
+    <string-array name="Kondlur_school">
+        <item>GCHS KONDLUR</item>
+    </string-array>
+
+    <string-array name="Kudumallige_school">
+        <item>GCHS KUDUMALLIGE</item>
+        <item>GHPS KUDUMALIGE</item>
+    </string-array>
+
+    <string-array name="Mandagadde_school">
+        <item>GCHS MANDAGADDE</item>
+    </string-array>
+
+    <string-array name="Mattigaru_school">
+        <item>GCHS MATHIGARU</item>
+    </string-array>
+
+    <string-array name="Megaravalli_school">
+        <item>GJC MEGARAVALLI</item>
+        <item>GHPS MEGARAVALLI</item>
+    </string-array>
+
+    <string-array name="Melige_school">
+        <item>GCHS MELIGE</item>
+    </string-array>
+
+    <string-array name="Melinakuruvalli_school">
+        <item>MURARJI DESAI RES. SCHOOL</item>
+    </string-array>
+
+    <string-array name="Nonaburu_school">
+        <item>GCHS NONABURU</item>
+    </string-array>
+
+    <string-array name="Ramakrishnapura_school">
+        <item>GCHS RAMAKRISHNAPURA</item>
+    </string-array>
+
+    <string-array name="Thuduru_school">
+        <item>GHS TUDURU</item>
+    </string-array>
+
+    <string-array name="Arasikere_school">
+        <item>GHS ARASIKERE</item>
+        <item>MGM HS ARASIKERE</item>
+        <item>M.H.P.S. ARASIKERE</item>
+    </string-array>
+
+    <string-array name="Bellibattlu_school">
+        <item>M.G.M HS BELLIBATLU</item>
+    </string-array>
+
+    <string-array name="Dommathamari_school">
+        <item>ANJANEYA HS DOMMATHAMARI</item>
+    </string-array>
+
+    <string-array name="Gangasagara_school">
+        <item>GHS GANGASAGARA</item>
+    </string-array>
+
+    <string-array name="J_Hosahalli_school">
+        <item>MARUTHI HIGH SCHOOL HOSAHALLY</item>
+    </string-array>
+
+    <string-array name="Kilarlahalli_school">
+        <item>RASHTRA PRGATHI HS KILARLAHALLY</item>
+    </string-array>
+
+    <string-array name="Kotagudda_school">
+        <item>GJC KOTAGUDDA</item>
+        <item>H.P.S. KOTAGUDDA</item>
+    </string-array>
+
+    <string-array name="Mangalawada_school">
+        <item>TIRUMALA RAGAVENDRA HS MANGALAWADA</item>
+        <item>G.H.P.S. MANGALAWADA</item>
+    </string-array>
+
+    <string-array name="Nagalamadike_school">
+        <item>GHS NAGALAMADIKE</item>
+    </string-array>
+
+    <string-array name="Ponnasamudra_school">
+        <item>VINAYAKA VIDYAPEETA PONNASAMUDRA</item>
+        <item>G.H.P.S. PONNASAMUDRA</item>
+    </string-array>
+
+    <string-array name="Sasalakunte_school">
+        <item>GHS SASALAKUNTE</item>
+    </string-array>
+
+    <string-array name="Thirumani_school">
+        <item>GJC THIRUMANI</item>
+    </string-array>
+
+    <string-array name="Vallur_school">
+    </string-array>
+
+    <string-array name="Veerlagondi_school">
+        <item>GHS VEERLAGONDHI</item>
+    </string-array>
+
+    <string-array name="Venkatapura_school">
+        <item>GJC VENKATAPURA</item>
+        <item>G.H.P.S VENKATAPURA</item>
+    </string-array>
+
+    <string-array name="Y_N_Hoskote_school">
+        <item>GHS Y.N HOSAKOTE</item>
+        <item>PRIYADARSHINI Y.N. HOSAKOTE</item>
+        <item>R.V.P HS Y.N HOSAKOTE</item>
+        <item>G.M.H.P.B.S. Y.N.HOSKOTE</item>
+        <item>G.H.P.G.S  Y.N.HOSKOTE </item>
+        <item>LPS  Y.N.HOSKOTE</item>
+    </string-array>
+
+    <string-array name="Arakere_school">
+        <item>GHPS ARAKERE</item>
+    </string-array>
+
+    <string-array name="Areyur_school">
+        <item>SIDDAGANGA RHS AREYUR</item>
+    </string-array>
+
+    <string-array name="Beladhara_school">
+        <item>BRHS BELADHARA</item>
+    </string-array>
+
+    <string-array name="Bellavi_school">
+        <item>GJC BELLAVI</item>
+        <item>GMHPS (KUVEMPU)  BELLAVI</item>
+    </string-array>
+
+    <string-array name="Bugudanahalli_school">
+        <item>SRI BYRAVESHWARA CPUC BUGUDANAHALLI</item>
+        <item>GHPS BUGUDANAHALLI</item>
+    </string-array>
+
+    <string-array name="Byatha_school">
+        <item>GHS BYTA</item>
+    </string-array>
+
+    <string-array name="C_T_Kere_school">
+        <item>GMHPS C T KERE</item>
+    </string-array>
+
+    <string-array name="Chikkaseebi_school">
+        <item>SRI LOKAMBA HS CHIKKASEEBI</item>
+    </string-array>
+
+    <string-array name="Guleharavi_school">
+        <item>GHS GULEHARAVI</item>
+    </string-array>
+
+    <string-array name="Gulur_school">
+        <item>SRI GANESHA PUC GULUR</item>
+        <item>GMHPS GULUR</item>
+    </string-array>
+
+    <string-array name="Haralooru_school">
+        <item>SRI VEERABHADRA SWAMY RHS HARALURU</item>
+    </string-array>
+
+    <string-array name="Hebburu_school">
+        <item>GCHS HEBBURU</item>
+        <item>GMHPS HEBBUR</item>
+    </string-array>
+
+    <string-array name="Heggere_school">
+        <item>GHS HEGGERE</item>
+        <item>GHPS HEGGERE</item>
+    </string-array>
+
+    <string-array name="Hirehalli_tumkur_school">
+        <item>SRI SIDDAGANGA RHS HIREHALLI</item>
+    </string-array>
+
+    <string-array name="Kesaramadu_school">
+        <item>SRI ARYA PUTRA HS KESARAMADU</item>
+    </string-array>
+
+    <string-array name="Kestooru_school">
+        <item>SRI SIDDESHWARA RHS KESTUR</item>
+    </string-array>
+
+    <string-array name="Kora_school">
+        <item>SRI MAHALINGESHWARA HS KORA</item>
+    </string-array>
+
+    <string-array name="Mallasandra_school">
+        <item>SRI VISHWABHARATHI HS MALLSANDRA</item>
+        <item>SRI SIDDARTHA RHS SIDDARHA NAGARA</item>
+    </string-array>
+
+    <string-array name="Nagavalli_school">
+        <item>GJC NAGAVALLI</item>
+    </string-array>
+
+    <string-array name="Obalapura_tumkur_school">
+        <item>SRI MURULI HS OBALAPURA</item>
+    </string-array>
+
+    <string-array name="Oorukere_school">
+        <item>GJC OORUKERE</item>
+    </string-array>
+
+    <string-array name="Siddaganga_Mata_school">
+        <item>SRI SIDDAGANGA RHS SS MUTT</item>
+    </string-array>
+
+    <string-array name="Thippadasarahalli_school">
+        <item>SSR HS THIPPEDASARAHALLI</item>
+    </string-array>
+
+    <string-array name="Yellapura_Belagumba_school">
+        <item>JNANABHARATHI SN HS YELLAPURA</item>
+        <item>GHPS YELLAPUR ( BELAGUMBA)</item>
+    </string-array>
+
+    <string-array name="Bilagi_Cross_school">
+        <item>GHS BILAGI CROSS</item>
+    </string-array>
+
+    <string-array name="Budihal_Sa_school">
+        <item>GHS BUDIHAL SA</item>
+    </string-array>
+
+    <string-array name="Chikalgundi_school">
+        <item>GHS JR.COLLEGE CHIKKALGUNDI</item>
+        <item>GOVT HPS CHIKKALAGUNDI</item>
+    </string-array>
+
+    <string-array name="Galagali_school">
+        <item>NEW ENG.H.S .GALAGALI (AIDED)</item>
+    </string-array>
+
+    <string-array name="Girisagar_school">
+        <item>VHS GIRISAGAR</item>
+        <item>KGHPS GIRISAGAR</item>
+    </string-array>
+
+    <string-array name="Hanchinal_Inam_school">
+        <item>GHS (INAM) HANCHINAL</item>
+    </string-array>
+
+    <string-array name="Heggur_bilagi_school">
+        <item>HASAN DONGRI P HS BILAGICROSS</item>
+    </string-array>
+
+    <string-array name="Herakal_school">
+        <item>GHS HERAKAL</item>
+    </string-array>
+
+    <string-array name="Katarki_school">
+        <item>GHS KATARAKI(RMSA)</item>
+    </string-array>
+
+    <string-array name="Kolur_school">
+        <item>GHS KOLUR P.K</item>
+    </string-array>
+
+    <string-array name="Kundargi_school">
+        <item>SRI.RAMALINGESWAR HS. KUNDARAGI AID</item>
+        <item>GOVT HPS KUNDARAGI HK</item>
+        <item>MLA GOVT MPS KUNDARAGI</item>
+    </string-array>
+
+    <string-array name="Rolli_school">
+        <item>GHS ROLLI</item>
+    </string-array>
+
+    <string-array name="Siddapur_school">
+        <item>GHS SIDDAPUR</item>
+        <item>GMPS SIDDAPUR</item>
+        <item>KGHPS SIDDAPUR</item>
+    </string-array>
+
+    <string-array name="Teggi_school">
+        <item>GHS TEGGI</item>
+    </string-array>
+
+    <string-array name="Aiholli_school">
+        <item>AIHOLE HS AIHOLE AIDED</item>
+    </string-array>
+
+    <string-array name="Aminagad_school">
+        <item>NAVACHETAN HS AMEENGAD AIDED</item>
+        <item>SANAGMESWAR JR.C(HS) AMEENGAD AID</item>
+        <item>GOVT KBMPS AMINAGAD</item>
+        <item>GOVT KBHPS 2 AMINAGAD</item>
+    </string-array>
+
+    <string-array name="Bevinamatti_school">
+        <item>GHS BEVINAMATTI</item>
+    </string-array>
+
+    <string-array name="Chittargi_school">
+        <item>GHS CHITTARAGI</item>
+    </string-array>
+
+    <string-array name="Dhannur_school">
+        <item>GOVT JR.COLLEGE DHANNUR</item>
+    </string-array>
+
+    <string-array name="Ganjihal_school">
+        <item>GHS GANJIHAL</item>
+    </string-array>
+
+    <string-array name="Hire_Kodagali_school">
+        <item>GHS HIREKODAGALI</item>
+    </string-array>
+
+    <string-array name="Hire_Magi_school">
+        <item>GHS HIREMAGI</item>
+    </string-array>
+
+    <string-array name="Hire_Singanagutti_school">
+        <item>GHS SRI.M.B.V.S HIRESHINGANGUTTI</item>
+    </string-array>
+
+    <string-array name="Ingalgi_school">
+        <item>GHS INGALAGI</item>
+    </string-array>
+
+    <string-array name="Kamatgi_school">
+        <item>SRI.HUCHESHWAR HS KAMATAGI AIDED</item>
+    </string-array>
+
+    <string-array name="Kandagal_school">
+        <item>GHS KANDAGAL</item>
+        <item>GOVT KBHPS 1 KANDGALL</item>
+        <item>GOVT KBHPS 2 KANDGALL</item>
+        <item>GOVT KGHPS KANDGALL</item>
+    </string-array>
+
+    <string-array name="Karadi_school">
+        <item>GHS KARADI</item>
+        <item>GOVT KGHPS KARADI</item>
+    </string-array>
+
+    <string-array name="Marol_hunagund_school">
+        <item>GHS MAROL</item>
+    </string-array>
+
+    <string-array name="Nagur_school">
+        <item>GHS NAGUR</item>
+    </string-array>
+
+    <string-array name="Nandawadgi_school">
+        <item>GHS NANDAWADAGI</item>
+        <item>GOVT KBHPS NANDAWADGI</item>
+    </string-array>
+
+    <string-array name="Sangam_hunagund_school">
+        <item>GHS KUDAL SANGAM</item>
+        <item>SRI.SANGAMESHWAR HS K.SANGAM AID</item>
+        <item>GOVT KBMPS K SANGAM </item>
+    </string-array>
+
+    <string-array name="Sulebhavi_school">
+        <item>GOVT JR.COLL.SULEBHAVI</item>
+        <item>GOVT KBMPS SULEBHAVI</item>
+        <item>GOVT KGHPS SULEBHAVI</item>
+    </string-array>
+
+    <string-array name="Amatur_school">
+        <item>GOVT HIGHSCHOOL</item>
+    </string-array>
+
+    <string-array name="Anigol_school">
+        <item>GOVT HIGHSCHOOL</item>
+    </string-array>
+
+    <string-array name="Agadi_school">
+        <item>SHASHIKALA SADGURU HIGH SCH AGADI</item>
+    </string-array>
+
+    <string-array name="Agalakera_school"><item>GHS AGALAKERA</item>
+        <item>GMHPS AGALAKERA</item>
+    </string-array>
+
+    <string-array name="Agni_school"><item>GOVT HPS AGNI</item>
+    </string-array>
+    <string-array name="Aladakatti_school"><item>BASWESHWARA HIGH SCHOOL ALADKATTI</item>
+    </string-array>
+    <string-array name="Alahalli_school"><item>GHS ALAHALLI</item>
+        <item>GOVT HPS ALAHALLI </item>
+        <item>GOVT HPS DONAGAON</item>
+    </string-array>
+    <string-array name="Alawandi_school"><item>GHS GIRLS ALAWANDI</item>
+        <item>S.S.P.W. COLLEGE ALAWANDI</item>
+        <item>GCPS ALAWANDI</item>
+        <item>GHPS SC/ST ALAWANDI</item>
+        <item>GHPS GIRLS ALAWANDI</item>
+    </string-array>
+    <string-array name="Algood_school"><item>GOVT HIGH SCHOOL ALGOOD</item>
+    </string-array>
+    <string-array name="Alkod_school"><item>GOVT HIGH SCHOOL ALKOD</item>
+        <item>MORARJI DESAI MODEL RESIDENCIAL</item>
+    </string-array>
+    <string-array name="Allur_B_school"><item>GHS ALLUR (B)</item>
+        <item>GOVT HPS ALLUR [B]</item>
+    </string-array>
+    <string-array name="Almatti_school"><item>AIDED M.H.M PUC ALAMATTI DS</item>
+    </string-array>
+    <string-array name="Anahosur_school"><item>LATE DEVARAJ URS H S,ANAHOSUR</item>
+        <item>GMHPS ANAHOSUR</item>
+    </string-array>
+
+    <string-array name="Anilgod_school"><item>JANATA VIDYALAYA ANILGOD</item>
+    </string-array>
+    <string-array name="Annuru_school"><item>GHS ANNURU</item>
+        <item>GHPS, ANNURU</item>
+    </string-array>
+    <string-array name="Antharasanthe_school"><item>GHS ANTHARA SANTE</item>
+        <item>GHPS ANTHARASANTHE</item>
+    </string-array>
+    <string-array name="Anwar_school"><item>GOVT HIGH SCHOOL ANWARI</item>
+    </string-array>
+    <string-array name="Arakala_Vadi_school"><item>JSS DHS ARAKALAVADI</item>
+        <item>GHPS  ARAKALA VADI</item>
+    </string-array>
+    <string-array name="Arkera_school"><item>GOVT HIGH SCHOOL GIRLS ARKERA</item>
+        <item>GOVT PU COLLEGE BOYS ARKERA</item>
+        <item>GMHPS  ARKERA</item>
+    </string-array>
+    <string-array name="Arlawada_school"><item>G.H.S. ARLAWADA</item>
+        <item>G H P S ARLAWADA</item>
+    </string-array>
+    <string-array name="Asundi_school"><item>ASUNDI HIGHSCHOOL (AIDED)</item>
+        <item>K.H.P.S. ASUNDI</item>
+    </string-array>
+    <string-array name="Attahalli_school"><item>GHS ATTAHALLI</item>
+    </string-array>
+    <string-array name="Aurad_school"><item>GOVT P.U COLLEGE AURAD (B)</item>
+    </string-array>
+    <string-array name="B_R_Hills_school"><item>VGKKHS. B.R HILLS</item>
+        <item>VIVEKANANDA HPS B.R.HILLS</item>
+    </string-array>
+    <string-array name="Bache_Gowdan_Halli_school"><item>GHS BACHEGOWDANAHALLI</item>
+    </string-array>
+    <string-array name="Bailhongal_school"><item>GOVT HIGHSCHOOL MURARJI R.S.</item>
+    </string-array>
+    <string-array name="Bailwad_school"><item>GOVT HIGHSCHOOL AND COMP JR. COLL.</item>
+    </string-array>
+    <string-array name="Baiyapur_school"><item>GOVT HIGH SCHOOL BAIYAPUR</item>
+        <item>GHPS BAYYAPUR</item>
+    </string-array>
+    <string-array name="Balagera_school"><item>GHS BALAGERI</item>
+    </string-array>
+    <string-array name="Bandiharlapur_school"><item>P.U.COLLEGE HOSABANDIHARLAPUR</item>
+        <item>GHPS BANDI HARLAPUR (HOSA)</item>
+    </string-array>
+    <string-array name="Bandri_school"><item>HPS MURARJI SCHOOL</item>
+        <item>GHPS BANDRI</item>
+        <item>GHPS DPEP BANDRI</item>
+    </string-array>
+    <string-array name="Bankur_school"><item>GOVT HS BANKUR</item>
+    </string-array>
+    <string-array name="Bannahalli_Hundi_school"><item>GHS BANNAHALLI HUNDI</item>
+    </string-array>
+    <string-array name="Banni_Hatti_school"><item>HPS MURARJI SCHOOL BANNIHATTI</item>
+    </string-array>
+    <string-array name="Bannikoppa_school"><item>GHS BANNIKOPPA</item>
+    </string-array>
+    <string-array name="Batgera_school"><item>GOVT H.S. BATGERA</item>
+    </string-array>
+    <string-array name="Beechanahalli_school"><item>GHS BEECHANAHALLI</item>
+    </string-array>
+    <string-array name="Belavadi_school"><item>GOVT HIGHSCHOOL</item>
+    </string-array>
+    <string-array name="Belavagi_school"><item>MARUTHI HIGH SCHOOL BELAVIGI</item>
+        <item>HPS BELAVAGI</item>
+    </string-array>
+    <string-array name="Belavatagi_school"><item>G.H.S BELVATAGI</item>
+        <item>H P S BELAVATAGI</item>
+    </string-array>
+    <string-array name="Belkuni_Ch_school"><item>GOVT H.S BELKUNI(CH)</item>
+        <item>SHIVAJI H.S</item>
+        <item>GOVT HPS BELKUNI (CH)</item>
+    </string-array>
+    <string-array name="Belur_school"><item>GOVT H.S BELURA</item>
+        <item>GOVT MPS BELUR</item>
+    </string-array>
+    <string-array name="Benakal_school"><item>HPS BENAKAL</item>
+    </string-array>
+    <string-array name="Benakana_Halli_school"><item>SRI GURUMALLESHWARA HS</item>
+    </string-array>
+    <string-array name="Benakatti_school"><item>GOVT HIGHSCHOOL</item>
+    </string-array>
+    <string-array name="Benaknahalli_school"><item>HPS BENAKANHALLI</item>
+    </string-array>
+    <string-array name="Benal_school"><item>GOVT HIGH SCHOOL BENAL NH13</item>
+    </string-array>
+    <string-array name="Beregere_Hundi_school"><item>GHS BEREGERE HUNDI</item>
+    </string-array>
+    <string-array name="Bet_Balkunda_school"><item>MURARJI DESAI RESDINTIAL SCH</item>
+    </string-array>
+    <string-array name="Betageri_school"><item>GHS BETAGERI</item>
+        <item>GMHPS BETAGERI</item>
+    </string-array>
+    <string-array name="Bevoor_school"><item>GHS BEVOOR</item>
+        <item>Morarji Desai Res School Bevoor</item>
+    </string-array>
+    <string-array name="Bhagavati_school"><item>G.H.S BHAGVATI</item>
+        <item>H P S BHAGAVATI</item>
+    </string-array>
+    <string-array name="Bhaghyanagar_school"><item>G J.C. BHAGYANAGAR</item>
+        <item>GMHPS BHAGYANAGAR</item>
+        <item>GLPS, MUCHIGER STREET, BHAGYANAGAR</item>
+        <item>GHPS ANJANEYYA  LAYOUT  BHAGYN</item>
+    </string-array>
+    <string-array name="Bhagodi_school"><item>GHS BHAGODI</item>
+        <item>GOVT HPS BHAGODI </item>
+    </string-array>
+    <string-array name="Bhanapur_school"><item>GHS BHANAPUR</item>
+    </string-array>
+    <string-array name="Bhavihal_school"><item>GOVT HIGH SCHOOL BHAVIHAL</item>
+    </string-array>
+    <string-array name="Bhimanahalli_school"><item>GOVT HPS BHIMANALLI </item>
+    </string-array>
+    <string-array name="Bhimanalli_school"><item>GHS BHIMANAHALLI</item>
+    </string-array>
+    <string-array name="Bhosga_school"><item>GOVT.H.S. BHOSGA</item>
+    </string-array>
+    <string-array name="Binjalbhavi_school"><item>AIDED S.N.P HS BINJALABHAVI</item>
+    </string-array>
+    <string-array name="Bisalalli_school"><item>GOVT P U COLLEGE BISALAHALLI</item>
+        <item>H.P.S. BISALALLI</item>
+    </string-array>
+    <string-array name="Bisalavadi_school"><item>GHS BISALAVADI</item>
+        <item>GHPS  BISALAVADI</item>
+    </string-array>
+    <string-array name="Bisanal_school"><item>AIDED SRI BIRESHWAR HS BISANAL</item>
+        <item>GOVT KBHPS BISANAL</item>
+    </string-array>
+    <string-array name="Bommagatta_school"><item>GHS BOMAGATT</item>
+    </string-array>
+    <string-array name="Budagumpa_school"><item>GHS BUDAGUMPA</item>
+    </string-array>
+    <string-array name="Budapanahalli_school"><item>GOVT HIGH SCHOOL BUDAPANHALLI</item>
+    </string-array>
+    <string-array name="Bychavalli_school"><item>GHS Bychavalli</item>
+    </string-array>
+    <string-array name="Byrapura_school"><item>VIDYODAYA GIRLS HS T.N.PURA</item>
+        <item>GHPS, BYRAPURA, BYRAPURA</item>
+    </string-array>
+    <string-array name="Chachadi_school"><item>SD HIGHSCHOOL (AIDED)</item>
+        <item>K.H.P.B.S. CHACHADI</item>
+    </string-array>
+    <string-array name="Chamaraj_1_school"><item>H.P.S.MURARJI DESAYI VASATI SHALE</item>
+    </string-array>
+    <string-array name="Chandakavadi_school"><item>GPUC CHANDAKAVADI</item>
+    </string-array>
+    <string-array name="Chedara_Halli_school"><item>GHS CHEDARA HALLI</item>
+    </string-array>
+    <string-array name="Chibbalgeri_school"><item>G H P S CHIBBALGERI</item>
+    </string-array>
+    <string-array name="Chikkabasur_school"><item>SKV HIGH SCHOOL CHIKKABASUR</item>
+        <item>H.P.S. CHIKKABASUR</item>
+    </string-array>
+    <string-array name="Chikkarugi_school"><item>GOVT HIGH SCHOOL CHIKKARUGI</item>
+    </string-array>
+    <string-array name="Chimmalgi_school"><item>GOVT HIGH SCHOOL CHIMMALGI</item>
+    </string-array>
+    <string-array name="Chincholi_H_school"><item>GHS CHINCHILLI (H)</item>
+        <item>GOVT MPS CHINCHOLI [H]</item>
+    </string-array>
+    <string-array name="Chintaki_school"><item>GURUPADAPPA NAGMARPALLI HIGH SCHOOL</item>
+    </string-array>
+    <string-array name="Chittapur_school"><item>GHS GIRLS CHITTAPUR</item>
+        <item>GOVT HS  CHITTAPUR</item>
+    </string-array>
+    <string-array name="Choranoor_school"><item>GOVT PU COLLEGE CHOORNOOR</item>
+        <item>HPS MURARJI SCHOOL CHORANUR</item>
+    </string-array>
+    <string-array name="Chornur_school"><item>GMHPS CHORNOOR</item>
+    </string-array>
+    <string-array name="D_B_Kuppe_school"><item>GHS D.B.KUPPE</item>
+    </string-array>
+    <string-array name="Dandoti_school"><item>GHS DANDOTI</item>
+        <item>GOVT HPS DANDOTI </item>
+    </string-array>
+    <string-array name="Devagiri_school"><item>MAHATMA GHANDI HIGH SCHOOL DEVAGIRI</item>
+        <item>HPS NO.1. DEVAGIRI</item>
+        <item>HPS NO.2 DEVAGIRI</item>
+    </string-array>
+    <string-array name="Devalapur_school"><item>GOVT HIGHSCHOOL AND COMP JR COLL.</item>
+        <item>K.H.P.B.S. DEVALAPUR</item>
+    </string-array>
+    <string-array name="Devapur_school"><item>GHS DEVAPUR</item>
+        <item>GOVT HPS DEVAPUR </item>
+    </string-array>
+    <string-array name="Devarabhupur_school"><item>MURARJI SCHOOL DEVARABHUPUR</item>
+        <item>GHPS DEVARABHUPUR</item>
+    </string-array>
+    <string-array name="Devargonal_school"><item>GHS DEVARGONAL</item>
+    </string-array>
+    <string-array name="Devarhippargi_school"><item>GOVT MORARJI DESAI RES. D.HIPPARAGI</item>
+    </string-array>
+    <string-array name="Devatkal_school"><item>GHS DEVATKAL</item>
+    </string-array>
+    <string-array name="Devihosur_school"><item>SNBK HIGH SCHOOL DEVIHOSUR</item>
+        <item>MPS DEVIHOSUR</item>
+        <item>LPKGS DEVIHOSUR</item>
+    </string-array>
+    <string-array name="Dhannura_K_school"><item>GOVT.H.S. DHANNURA (K)</item>
+    </string-array>
+    <string-array name="Diggaon_school"><item>GHS DIGGAON</item>
+        <item>GOVT HPS DIGGAON </item>
+    </string-array>
+    <string-array name="Doddaraya_Pet_school"><item>GHS DODDARAYAPETE</item>
+    </string-array>
+    <string-array name="Dodde_Bagelu_school"><item>AMBEDKAR HS DODDE BAGELU</item>
+    </string-array>
+    <string-array name="Dodwad_school"><item>SVG HIGHSCHOOL (AIDED)</item>
+        <item>K.H.P.B.S. DODWAD</item>
+        <item>KHPS DODAWAD DODWAD</item>
+    </string-array>
+    <string-array name="Donagoan_school"><item>GHS DONAGOAN</item>
+    </string-array>
+    <string-array name="Donimalai_school"><item>GHS DONIMALI</item>
+    </string-array>
+    <string-array name="Donur_school"><item>AIDED NUTAN HIGH SCHOOL DONUR</item>
+        <item>GOVT KBHPS DONUR</item>
+    </string-array>
+    <string-array name="Erasa_Vadi_school"><item>GHS ERASA VADI</item>
+        <item>GHPS  ERASA VADI</item>
+    </string-array>
+    <string-array name="G_B_Saragur_school"><item>GHS G.B SARAGURU</item>
+    </string-array>
+    <string-array name="Gabasavalgi_school"><item>GOVT HIGH SCHOOL GABASAVALAGI</item>
+        <item>K H P S Gabasacalgi</item>
+    </string-array>
+    <string-array name="Gabbur_school"><item>GOVT PU COLLEGE GABBUR</item>
+        <item>MURARJI DESAI SCHOOL GABBUR</item>
+        <item>GMHPS GABBUR</item>
+        <item>GHPS  GABBUR</item>
+    </string-array>
+    <string-array name="Gadalegoan_B_school"><item>GOVT.H.S.GADLEGAON (B)</item>
+    </string-array>
+    <string-array name="Ganadal_school"><item>GHS GANADAL</item>
+    </string-array>
+    <string-array name="Gaur_school"><item>GOVT H.S. GAUR</item>
+    </string-array>
+    <string-array name="Ghps_Benakatti_school"><item>GHPS BENAKATTI</item>
+    </string-array>
+    <string-array name="Ghs_Mallapur_school">
+        <item>GHS MALLAPUR</item>
+    </string-array>
+    <string-array name="Ginigeri_school"><item>GHS GINIGERI</item>
+        <item>GMHPS GINIGERI</item>
+        <item>GHPS SHIVASHANTANAGAR GINIGERA</item>
+    </string-array>
+    <string-array name="Gorta_B_school"><item>SRI GURUPADA S.CHARYA JR.COL GORTA</item>
+    </string-array>
+    <string-array name="Gotur_school"><item>GOVT HS GOTUR</item>
+        <item>GOVT HPS GOTUR </item>
+    </string-array>
+    <string-array name="Gowda_Halli_school"><item>J.S.S.H.S GOWDAHALLI</item>
+        <item>GHPS GOWDA HALLI</item>
+    </string-array>
+    <string-array name="Gubbewad_school"><item>GOVT MORARJI DESAI RES GUBBEWAD</item>
+    </string-array>
+    <string-array name="Gudekote_school"><item>GOVT PU COLLEGE, GUDEKOTE</item>
+        <item>GHPS AMBEDKAR NAGAR</item>
+    </string-array>
+    <string-array name="Gulipura_school"><item>GHS GULIPURA</item>
+    </string-array>
+    <string-array name="Gundabala_school"><item>G H S KOTEBAIL</item>
+        <item>AROGYA MATA GUNDABALA</item>
+    </string-array>
+    <string-array name="Gunddagurthi_school"><item>GOVT HS GUDGURTHI</item>
+    </string-array>
+    <string-array name="Gundenahalli_school"><item>GOVT HIGH SCHOOL GUNDENHALLI</item>
+    </string-array>
+    <string-array name="Gundolli_school"><item>G.H.S. GUNDOLLI</item>
+        <item>H P S GUNDOLLI</item>
+    </string-array>
+    <string-array name="Guragunta_school"><item>GOVT P U COLLEGE GURUGUNTA</item>
+    </string-array>
+    <string-array name="Guttal_school"><item>DD MOTEBENNUR HIGH SCHOOL GUTTAL</item>
+        <item>SRN HIGH SCHOOL GUTTAL</item>
+    </string-array>
+    <string-array name="Hadinbal_school"><item>G H S HADINBAL</item>
+    </string-array>
+    <string-array name="Haldipur_school"><item>R E S HALDIPUR</item>
+        <item>M H P S HALADIPUR</item>
+    </string-array>
+    <string-array name="Haleshidenoor_school"><item>H.P.S.Haleeshdenur</item>
+    </string-array>
+    <string-array name="Hanchanal_school"><item>P HANCINAL HIGHSCHOOL (AIDED)</item>
+        <item>K.H.P.B.S. HANCHANAL</item>
+    </string-array>
+    <string-array name="Haradana_Halli_school"><item>GHS HARADANAHALLI</item>
+        <item>GHPS  HARADANA HALLI</item>
+    </string-array>
+    <string-array name="Harave_school"><item>GPUC HARAVE</item>
+        <item>GHPS  HARAVE</item>
+    </string-array>
+    <string-array name="Harkood_school"><item>GOVT H.S. HARKOOD</item>
+    </string-array>
+    <string-array name="Hatti_school"><item>SHARANA BASAVESWARA HS HATTI(BOYS)</item>
+        <item>GOVT P U COLLEGE HATTI</item>
+    </string-array>
+    <string-array name="Havanur_school"><item>GOVT HIGH SCHOOL HAVANUR</item>
+        <item>HPKGS HAVANUR</item>
+        <item>HPKBS HAVANUR</item>
+    </string-array>
+    <string-array name="Hebbal_school"><item>PUC COLLEGE HEBBAL</item>
+        <item>GOVT HPS HOSA HEBBAL </item>
+    </string-array>
+    <string-array name="Hebbala_Guppe_school"><item>GHS HEBBALA GUPPE</item>
+    </string-array>
+    <string-array name="Heggur_school"><item>GHS HEGGUR</item>
+    </string-array>
+    <string-array name="Hire_Kumbala_Kunte_school"><item>GHS HIRE KUMBALA KUNTE</item>
+    </string-array>
+    <string-array name="Hireanaji_school"><item>GOVT HIGH SCHOOL HIREANAJI</item>
+    </string-array>
+
+    <string-array name="Hirebhoganhal_school"><item>GHS HIREBAGANAL</item>
+        <item>GHPS HIREBAGANAL</item>
+    </string-array>
+    <string-array name="Hirehalli_school"><item>GOVT HIGH SCHOOL HIREHALLI</item>
+    </string-array>
+    <string-array name="Hiresindhogi_school"><item>GHS HIRESINDHOGI</item>
+    </string-array>
+    <string-array name="Hirewankalakunta_school"><item>G.P.U.C. H.V.KUNTA</item>
+        <item>MURARJI DESAI HIREWANKALAKUNTA</item>
+        <item>GMHPS HIREVANKALAKUNTA</item>
+        <item>GHPS GIRLS HIREWANKALAKUNTI</item>
+    </string-array>
+    <string-array name="Hitnal_school"><item>HS SRI RAMAKUMAR SRINI MORARKA</item>
+        <item>GMHPS HITNAL</item>
+    </string-array>
+    <string-array name="Hodke_Shiroor_school"><item>G H S HODIKE SHIROOR</item>
+    </string-array>
+    <string-array name="Holihosur_school">
+        <item>GHS HOLIHOSUR</item>
+    </string-array>
+    <string-array name="Hommaragalli_school"><item>GHS HOMMARAGALLI</item>
+        <item>GHPS, HOMMARAGALLI</item>
+    </string-array>
+    <string-array name="Honagunta_school"><item>GHS HONAGUNTA</item>
+    </string-array>
+    <string-array name="Hooli_school"><item>VTMK HIGHSCHOOL (AIDED)</item>
+        <item>K.H.P.B.S. HOOLI HOOLI</item>
+    </string-array>
+    <string-array name="Hoolikatti_school"><item>G H S HANABARATTI</item>
+    </string-array>
+    <string-array name="Hosalli_school"><item>K.D.D.V HS, HOSALLI</item>
+        <item>GMHPS HOSALLI</item>
+        <item>GHS RMSA HOSALLI(L)</item>
+    </string-array>
+    <string-array name="Hosaritti_school"><item>GANDHI GRAMEENA GURUKULA HOSAR</item>
+        <item>GUDLEAPPA HALLIKERI HS HOSARITTI</item>
+    </string-array>
+    <string-array name="Hosur_school"><item>SNS HOSUR HIGHSCHOOL (AIDED)</item>
+        <item>K.H.P.G.S. HOSUR</item>
+    </string-array>
+    <string-array name="Hulagi_school"><item>HS TUNGABADRA HULIGI-MUNI</item>
+        <item>GMHPS HULAGI MUNIRABAD</item>
+    </string-array>
+    <string-array name="Hulegar_school"><item>G H S GEASOPPA</item>
+    </string-array>
+    <string-array name="Hulsoor_school"><item>SRI GURU BASAVESHWAR H.S. HULSOOR</item>
+        <item>MORARJI DESAI RESIDENTIAL</item>
+    </string-array>
+    <string-array name="Hunasagi_school"><item>GJS HUNASAGI</item>
+        <item>GHS GIRLS HUNASAGI</item>
+        <item>GOVT HPS HUNASAGI</item>
+        <item>GOVT MPS HUNASAGI  UKP</item>
+    </string-array>
+    <string-array name="Hunasikatti_school"><item>GOVT HIGHSCHOOL</item>
+        <item>K.H.P.S. HUNASIKATTI</item>
+    </string-array>
+    <string-array name="Huralihal_school"><item>SRI HONAMBIKA HS HURALIHAL</item>
+    </string-array>
+    <string-array name="Huvina_Hipparagi_school"><item>AIDED VISHWA CHETAN HS H.HIPPARAGI</item>
+        <item>AIDED SRI M.G.KORI PUC H.HIPPARAGI</item>
+        <item>GOVT MPS HUVINAHIPPARAGI</item>
+        <item>GOVT KGHPS HUVINAHIPPARAGI</item>
+    </string-array>
+    <string-array name="Hyalya_school"><item>GHS HYALA</item>
+    </string-array>
+    <string-array name="Inamhongal_school"><item>INAMHONGAL HIGHSCHOOL(AIDED)</item>
+        <item>K.H.P.S. INAMHONGAL</item>
+    </string-array>
+    <string-array name="Inchal_school"><item>SHIVYOGESHWAR HIGHSCHOOL</item>
+        <item>K.H.P.S. INCHAL INCHAL</item>
+    </string-array>
+    <string-array name="Indaragi_school"><item>GHS INDARAGI</item>
+        <item>GHPS INDARAGI</item>
+    </string-array>
+    <string-array name="Ingaleshwar_school"><item>AIDED S R HIGH SCHOOL INGLESHWAR</item>
+        <item>GOVT MPS INGALESHWAR</item>
+        <item>GOVT KGHPS INGALESHWAR</item>
+    </string-array>
+    <string-array name="Irkalgada_school"><item>GOVT.J.C.IRAKALGADA</item>
+    </string-array>
+    <string-array name="Jagir_Jadaladinni_school"><item>ADARSA VIDYALAYA(RMSA) ARAKERA</item>
+    </string-array>
+    <string-array name="Jalahalli_school"><item>GOVT HIGHSCHOOL( BOYS) JALAHALLI</item>
+        </string-array>
+    <string-array name="Jalawad_school"><item>GOVT PU COLLEGE JALAWAD</item>
+        <item>GOVT  HPS JALAWAD</item>
+        <item>GOVT HPKGS JALAWAD(MCS)</item>
+    </string-array>
+    <string-array name="Jalwal_Karki_school"><item>G H S JALVAL KARKI</item>
+    </string-array>
+    <string-array name="Janaga_school"><item>G.H.S.JANAGA</item>
+        <item>H P S JANAGA</item>
+    </string-array>
+    <string-array name="K_K_Halli_school"><item>S.G.N.S H.S K.K.HALLI</item>
+    </string-array>
+    <string-array name="K_Belthur_school"><item>GHS K BELTHURU</item>
+        <item>MORARJI K BELTHUR</item>
+        <item>GHPS, K.BELTHURU</item>
+    </string-array>
+    <string-array name="K_Salawadagi_school"><item>GOVT HIGH SCHOOL K.SALAWADAGI</item>
+        <item>GOVT KBHPS K SALAWADAGI </item>
+        <item>GOVT KGHPS K SALAWADAGI</item>
+    </string-array>
+    <string-array name="Kabbur_school"><item>GOVT HIGH SCHOOL KABBUR</item>
+        <item> GOVT. HP SCHOOL KABBUR</item>
+    </string-array>
+    <string-array name="Kadabi_school"><item>GOVT HIGHSCHOOL</item>
+    </string-array>
+    <string-array name="Kadaramandalagi_school"><item>KANTESH HIGH SCH KADARMANDALAGI</item>
+    </string-array>
+    <string-array name="Kadaravalli_school"><item>GOVT HIGHSCHOOL</item>
+        <item>K.H.P.S. KADARAVALLI</item>
+    </string-array>
+    <string-array name="Kadtoka_school"><item>JANATA VIDYALAYA KADATOKA</item>
+    </string-array>
+    <string-array name="Kagala_Vadi_school"><item>TSS HS KAGALAVADI</item>
+        <item>GHPS  KAGALA VADI</item>
+    </string-array>
+    <string-array name="Kaginele_school"><item>KD HIGH SCHOOL KAGINELE</item>
+        <item>H.P.S. KAGINELE</item>
+    </string-array>
+    <string-array name="Kakkera_school"><item>GHS KAKKERA</item>
+    </string-array>
+    <string-array name="Kalagi_school"><item>PUC COLLEGE KALAGI</item>
+        <item>GOVT MPS KALAGI </item>
+    </string-array>
+    <string-array name="Kalgurti_school"><item>GHS KALGURTHI</item>
+    </string-array>
+    <string-array name="Kalledevar_school"><item>SK HIGH SCH KALLEDEVAR</item>
+        <item>H P S KALLEDEVAR</item>
+    </string-array>
+    <string-array name="Kamalnagar_school"><item>SHANTI VARDHAK JUNIOR COLLEGE</item>
+        <item>LATA MANGESHWAR GIRLS HIGH SCHOOL</item>
+        <item>P.B.HIGH SCHOOL</item>
+    </string-array>
+    <string-array name="Kamaradi_school"><item>GHS KARADAL</item>
+    </string-array>
+    <string-array name="Kanchamalli_school"><item>GHS KANCHAMALLI</item>
+    </string-array>
+    <string-array name="Kandagallu_school"><item>MURARJI RESIDENTAL SCHOOL</item>
+    </string-array>
+    <string-array name="Kandagol_school"><item>GHS KANDGUL CROSS</item>
+        <item>GOVT HPS KANDAGUL</item>
+    </string-array>
+    <string-array name="Kannal_school"><item>GOVT HIGH SCHOOL KANNAL</item>
+    </string-array>
+    <string-array name="Kanvalli_school"><item>GOVT HIGH SCHOOL KANVALLI</item>
+    </string-array>
+    <string-array name="Karajagi_school"><item>GOVT HIGH SCHOOL KARAJGI</item>
+        <item>MPBS KARAJAGI</item>
+        <item>HPKGS KARAJAGI</item>
+    </string-array>
+    <string-array name="Karamudi_school"><item>GHS KARAMUDI</item>
+    </string-array>
+    <string-array name="Karikatti_school"><item>GOVT HIGHSCHOOL</item>
+        <item>K.H.P.S. KARIKATTI</item>
+    </string-array>
+    <string-array name="Karki_school"><item>SRI CHENNAKESHAV HIGHSCHOOL</item>
+    </string-array>
+    <string-array name="Kasarkod_school"><item>JANATA VIDYALAYA KASARKOD</item>
+        <item>H P S MALLUKURVA</item>
+    </string-array>
+    <string-array name="Kataraki_school"><item>GHS KATARKI</item>
+        <item>GHPS  KATARAKI</item>
+    </string-array>
+    <string-array name="Kavalawada_school"><item>G.H.S KAWALWAD</item>
+        <item>H P S KAVALAWADA</item>
+    </string-array>
+    <string-array name="Kawaloor_school"><item>GHS KAWALOOR</item>
+    </string-array>
+    <string-array name="Kembhavi_school"><item>GJC KEMBHAVI</item>
+        <item>GHS GIRLS KEMBHAVI</item>
+    </string-array>
+    <string-array name="Kencha_Mallana_Halli_school"><item>GOVT H S Kenchamalana Halli</item>
+    </string-array>
+    <string-array name="Kenchana_Halli_school"><item>GHS KENCHANAHALLI</item>
+    </string-array>
+    <string-array name="Keravadi_school"><item>GOVT HIGH SCHOOL KERVADI</item>
+        <item>H.P.S. KERAVADI</item>
+    </string-array>
+    <string-array name="Kethupura_school"><item>GHS KETHUPURA</item>
+    </string-array>
+    <string-array name="Kherda_B_school"><item>SRI SHIVA LINGESHWAR H.S KHERDA B</item>
+    </string-array>
+
+    <string-array name="Khodanapur_school"><item>GOVT HIGH SCHOOL</item>
+    </string-array>
+    <string-array name="Kinhal_school"><item>G.J.C KINNAL</item>
+        <item>GHPS KOULPET KINNAL</item>
+        <item>GHPS  MUDLAPURROAD KINNAL</item>
+        <item>GMHPS KSMS KINNAL</item>
+    </string-array>
+    <string-array name="Kitta_school"><item>GOVT H.S. KITTA</item>
+    </string-array>
+    <string-array name="Kittur_school"><item>GOVT GIRLS HIGH SCHOOL</item>
+    </string-array>
+    <string-array name="Kodadur_school"><item>GHS KODADUR</item>
+        <item>KANTI BASAVESHWARA HS KODADUR</item>
+        <item>GOVT HPS KODADUR </item>
+    </string-array>
+    <string-array name="Kodagalli_school"><item>GHS KODAGALLI</item>
+    </string-array>
+    <string-array name="Kodekal_school"><item>GJC KODEKAL</item>
+        <item>MORARJI DESAI KODAKAL</item>
+        <item>GOVT HPS KODEKAL</item>
+    </string-array>
+    <string-array name="Kohinoor_school"><item>GOVT H.S. KOHINOOR</item>
+    </string-array>
+    <string-array name="Kolhar_school"><item>GOVT HIGH SCHOOL KOLHAR</item>
+    </string-array>
+    <string-array name="Kollur_school"><item>GHS KOLLUR</item>
+        <item>GOVT HPS KOLLUR </item>
+    </string-array>
+    <string-array name="Korwar_school"><item>GHS KORWAR</item>
+        <item>GOVT HPS KORWAR </item>
+    </string-array>
+    <string-array name="Koudiyal_R_school"><item>GOVT H.S. KAUDIYAL (R)</item>
+        <item>GOVT  HPS KOUDIYAL (R)</item>
+    </string-array>
+    <string-array name="Kukanoor_school"><item>GHS KUKANOOR</item>
+        <item>HS GAVISIDDESHWAR</item>
+        <item>HS NRUPATUNGA BENAKAL</item>
+        <item>Murarji Desai Residencal School Kuk</item>
+    </string-array>
+    <string-array name="Kurubagunda_school"><item>G H S Kurubagunda</item>
+    </string-array>
+    <string-array name="Kushnoor_T_school"><item>GOVT MPS KUKSHNOOR (T)</item>
+        <item>GOVT H.S. (GIRLS) KUSHNOOR(T)</item>
+        <item>GOVT P.U.COLLEGE KUSHNOOR(T)</item>
+        <item>JYOTI HIGH SCHOOL</item>
+    </string-array>
+    <string-array name="Lakkundi_school"><item>GOVT HIGHSCHOOL</item>
+        <item>K.H.P.S. LAKKUNDI</item>
+    </string-array>
+    <string-array name="Lebagera_school"><item>GHS LEBAGERI</item>
+    </string-array>
+    <string-array name="Madabool_school"><item>PUC COLLEGE MADBOOL</item>
+    </string-array>
+    <string-array name="Madapura_school"><item>GHS MADAPURA</item>
+    </string-array>
+    <string-array name="Maddur_school"><item>GHS MADDUR</item>
+        <item>GHPS MADDUR</item>
+    </string-array>
+    <string-array name="Magge_school"><item>GHS MAGGE</item>
+    </string-array>
+    <string-array name="Magod_school"><item>SHRI SHARADAMBA HIGHSCHOOL MAGOD</item>
+    </string-array>
+    <string-array name="Maka_Nadaku_school"><item>HPS NAVODAYA C.J. HALLI</item>
+        <item>GHS GIRLS C.J. HALLI</item>
+        <item>GHS BOYS C.J.HALLI</item>
+        <item>GMHPS  C.J.HALLI THANDA</item>
+    </string-array>
+    <string-array name="Malagatti_school"><item>GHS MALAGATTI</item>
+        <item>GOVT HPS MALAGATTI </item>
+    </string-array>
+    <string-array name="Malaghan_school"><item>AIDED S.B PU COLLEGE MALAGHAN</item>
+        <item>K H P S Malaghan</item>
+    </string-array>
+    <string-array name="Mallapur_school"><item>GURUPRASAD HIGHSCHOOL MALLAPUR</item>
+        <item>GLPS MALLAPUR</item>
+    </string-array>
+    <string-array name="Mallur_school"><item>SBHVR HIGH SCHOOL MALLUR</item>
+        <item>K.H.P.S. MALLUR</item>
+    </string-array>
+    <string-array name="Mangala_school"><item>GHS MANGALA</item>
+        <item>GHPS  MANGALA</item>
+    </string-array>
+    <string-array name="Mangalagi_school"><item>GOVT HS MANGALGI</item>
+    </string-array>
+    <string-array name="Mangalawad_school"><item>G.H.S MAGALWAD</item>
+        <item>HPS MANGALAWADA (K)</item>
+    </string-array>
+    <string-array name="Mangaloor_school"><item>GHS MANGALORE</item>
+        <item>GMHPS MANGALOOR</item>
+    </string-array>
+    <string-array name="Manki_school"><item>G P U C MANKI</item>
+        <item>G H S CHITTAR</item>
+        <item>M H P S BANASALE</item>
+    </string-array>
+    <string-array name="Manthal_school"><item>GOVT H.S. MANTHAL</item>
+    </string-array>
+    <string-array name="Marikatti_school"><item>K.H.P.S. MARIKATTI</item>
+    </string-array>
+    <string-array name="Marol_school"><item>GOVT HIGH SCHOOL MAROL</item>
+    </string-array>
+    <string-array name="Martur_school"><item>GHS MARTUR</item>
+    </string-array>
+    <string-array name="Masalli_school"><item>GHS DADDAHALLI</item>
+    </string-array>
+    <string-array name="Masanagi_school"><item>GOVT HIGH SCHOOL MASANAGI</item>
+        <item>K.H.P.S. MASANAGI</item>
+    </string-array>
+    <string-array name="Masarakal_school"><item>GHPS MURARJI VASTHI MASARKAL</item>
+    </string-array>
+    <string-array name="Maski_school"><item>MORARJI DESAI(ST) SW SANTE BAZ</item>
+        <item>MORARJI DESAI(SC) SW MASKI</item>
+    </string-array>
+    <string-array name="Mavina_Halli_school"><item>GHS MAVENA HALLI</item>
+        <item>GHPS, MAVINA HALLI</item>
+    </string-array>
+    <string-array name="Melin_Idgunji_school"></string-array>
+    <string-array name="Mevundi_school"></string-array>
+    <string-array name="Motebennur_school"></string-array>
+    <string-array name="Muchalamb_school"></string-array>
+    <string-array name="Mudanoor_K_school"></string-array>
+    <string-array name="Mudbi_school"></string-array>
+    <string-array name="Mudbool_school"></string-array>
+    <string-array name="Mudhol_school"></string-array>
+    <string-array name="Muguru_school"></string-array>
+    <string-array name="Mugwa_school"></string-array>
+    <string-array name="Mulasavalgi_school"></string-array>
+    <string-array name="Mulawad_school"></string-array>
+    <string-array name="Mullur_school"></string-array>
+    <string-array name="Munavalli_school"></string-array>
+    <string-array name="Munirabad_school"></string-array>
+    <string-array name="Murgod_school"></string-array>
+    <string-array name="Murkawada_school"></string-array>
+    <string-array name="Mustur_school"></string-array>
+    <string-array name="Musuvena_Koppalu_school"></string-array>
+    <string-array name="Muttagi_school"></string-array>
+    <string-array name="Muttur_school"></string-array>
+
+
+
+
+
+
+
+<string-array name="survey_choice">
         <item>Taluk Survey</item>
         <item>School Survey</item>
     </string-array>

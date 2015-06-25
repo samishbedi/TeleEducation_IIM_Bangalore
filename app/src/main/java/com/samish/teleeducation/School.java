@@ -161,7 +161,7 @@ public class School extends ActionBarActivity {
                 school=res.getStringArray(R.array.harobele_school);
                 break;
 
-        /*    case "Nidigere":
+            case "Nidigere":
                 school=res.getStringArray(R.array.Nidigere_school);
                 break;
 
@@ -173,7 +173,7 @@ public class School extends ActionBarActivity {
                 school=res.getStringArray(R.array.Chiradoni_school);
                 break;
             case "G K Halli":
-                school=res.getStringArray(R.array.GKHalli_school);
+                school=res.getStringArray(R.array.G_K_Halli_school);
                 break;
             case "Joladahal":
                 school=res.getStringArray(R.array.Joladahal_school);
@@ -211,7 +211,7 @@ public class School extends ActionBarActivity {
                 break;
 
             case "Ajji Halli":
-                school=res.getStringArray(R.array.AjjiHalli_school);
+                school=res.getStringArray(R.array.Ajji_Halli_school);
                 break;
 
             case "Hirekogaluru":
@@ -250,7 +250,7 @@ public class School extends ActionBarActivity {
                 break;
 
             case "Mavina Hole":
-                school=res.getStringArray(R.array.Mavina Hole_school);
+                school=res.getStringArray(R.array.Mavina_Hole_school);
                 break;
             case "Nalkudure":
                 school=res.getStringArray(R.array.Nalkudure_school);
@@ -260,7 +260,7 @@ public class School extends ActionBarActivity {
                 break;
 
             case "Navile Hal":
-                school=res.getStringArray(R.array.NavileHal_school);
+                school=res.getStringArray(R.array.Navile_Hal_school);
                 break;
 
             case "Santhebennuru":
@@ -294,7 +294,7 @@ public class School extends ActionBarActivity {
 
             case "Medugondanahalli":
                 school=res.getStringArray(R.array.Medugondanahalli_school);
-                break; */
+                break;
 
 
         }

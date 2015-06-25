@@ -2,21 +2,30 @@ package com.samish.teleeducation;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.preference.EditTextPreference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 import android.database.sqlite.*;
 
 
+import java.util.List;
+
+
 public class Ques_Taluk extends ActionBarActivity {
+
+    String imei;
     String t;
     String foname;
     String tiname;
@@ -58,9 +67,8 @@ public class Ques_Taluk extends ActionBarActivity {
         //SQLiteDatabase db1 = this.getWritableDatabase();
         //db.onCreate(db1);
 
-
-
-
+        TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+        imei=telephonyManager.getDeviceId();
 
 
 
@@ -228,6 +236,31 @@ public class Ques_Taluk extends ActionBarActivity {
 
                 return true;
 
+            case R.id.upload:
+
+
+                new Thread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        // TODO Auto-generated method stub
+
+                        runOnUiThread(new Runnable() {
+                            public void run() {
+                                // messageText.setText("uploading started.....");
+                            }
+                        });
+
+                        //db.uploadOldData();
+                      uploadTest();
+
+
+
+                    }
+                }).start();
+
+
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -237,7 +270,47 @@ public class Ques_Taluk extends ActionBarActivity {
 
     }
 
-    
+
+
+    void uploadTest()
+    {
+
+        try
+        {
+            List<String> name=db.values();
+            CALLWSDOTNET objWS = new CALLWSDOTNET("http://203.129.241.19/is/Service.asmx");
+            objWS.AddPropertyInfo("PASSWORD","ii@m_s_urv@y@eg@",CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("IMEI",imei,CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("ID", Integer.parseInt(name.get(0)), CALLWSDOTNET.datatype.INTEGER);
+            objWS.AddPropertyInfo("Taluk_Name",name.get(1), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Field_Officer_Name", name.get(2), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Taluk_Incharge_Name", name.get(3), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Is_TI_given_proper_training_to_update_OMS",name.get(4),CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Does_TI_understand_the_OMS_tool", name.get(5), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Is_The_TI_able_to_make_daily_updates_in_OMS", name.get(6), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Is_TI_able_to_solve_the_problem_in_school_if_any_complaint_is_received",  name.get(7), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Does_ti_have_a_panel_of_moderators", name.get(8), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Moderator_details_Name_School_Class_Sbject_Date", name.get(9), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Whether_Moderator_has_been_trained",name.get(10), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Whether_ti_have_adetailed_plan_for_3_days",name.get(11), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Is_the_detailed_plan_put_oms_tool", name.get(12), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("is_ti_cooperative", name.get(13), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Are_spare_parts_available_in_location", name.get(14), CALLWSDOTNET.datatype.STRING);
+            objWS.AddPropertyInfo("Comments",name.get(15), CALLWSDOTNET.datatype.STRING);
+
+            objWS.invokeWebService("UpdateTalukSurvey");
+
+
+        }
+        catch(Exception ex)
+        {
+            String strEx=ex.getMessage();
+            strEx="";
+
+        }
+    }
+
+
 
     public static class SettingsFragment extends PreferenceFragment  {
         @Override

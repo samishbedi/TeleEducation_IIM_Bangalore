@@ -1,13 +1,28 @@
 package com.samish.teleeducation;
 
 
+import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.*;
 import android.widget.Toast;
+import org.ksoap2.SoapEnvelope;
+import org.ksoap2.serialization.PropertyInfo;
+import org.ksoap2.serialization.SoapObject;
+import org.ksoap2.serialization.SoapPrimitive;
+import org.ksoap2.serialization.SoapSerializationEnvelope;
+import org.ksoap2.transport.HttpTransportSE;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class DatabaseHandler extends SQLiteOpenHelper {
+
+
+
+
 
     // All Static variables
     // Database Version
@@ -15,6 +30,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     // Database Name
     public static final String DATABASE_NAME = "TeleEducation.db";
+
+
 
     // Contacts table name
     public static final String TABLE_TALUK = "Taluk_Survey";
@@ -87,6 +104,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 atten + " TEXT,"+ clr + " TEXT,"+ dbt + " TEXT,"+ teacher + " TEXT,"+ vsc + " TEXT,"+  vsc1 + " TEXT,"+
                 rsn + " TEXT,"+ scomment + " TEXT"+");";
         db.execSQL(CREATE_SCHOOL_TABLE);
+
+
 
 
 
@@ -188,6 +207,130 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db1.insert(TABLE_SCHOOL, null, values_s);
         db1.close(); // Closing database connection
     }
+
+    List<String> values(){
+        List<String> dbl = new ArrayList<String>();
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c;
+        String selectQuery = "SELECT  * FROM " + TABLE_TALUK;
+        c=db.rawQuery(selectQuery,null);
+        c.moveToFirst();
+         do {
+             dbl.add(String.valueOf(c.getInt(0)));
+             dbl.add(c.getString(1));
+             dbl.add(c.getString(2));
+             dbl.add(c.getString(3));
+             dbl.add(c.getString(4));
+             dbl.add(c.getString(5));
+             dbl.add(c.getString(6));
+             dbl.add(c.getString(7));
+             dbl.add(c.getString(8));
+             dbl.add(c.getString(9));
+             dbl.add(c.getString(10));
+             dbl.add(c.getString(11));
+             dbl.add(c.getString(12));
+             dbl.add(c.getString(13));
+             dbl.add(c.getString(14));
+             dbl.add(c.getString(15));
+         }while(c.moveToNext());
+        return dbl;
+    }
+
+
+    void uploadOldData() {
+
+
+        try {
+            //Boolean booError = false;
+            //Boolean NbooContinue = true;
+            SQLiteDatabase db = this.getReadableDatabase();
+
+
+                //hidepopup();
+
+                //showpopup("Checking Location Details In Phone");
+                Cursor objCursorLocation;
+                String selectQuery = "SELECT  * FROM " + TABLE_TALUK;
+
+                objCursorLocation = db.rawQuery(selectQuery, null);
+
+                if (objCursorLocation.moveToFirst()) {
+                    int intNoOfLocationUploaded = 0;
+                    int intTotalCursorsCount = objCursorLocation.getCount();
+                    int intPercentage = 0;
+                    while (objCursorLocation.moveToNext()) {
+                        intNoOfLocationUploaded += 1;
+
+                     //   intPercentage = (int) ((intNoOfLocationUploaded / intTotalCursorsCount) * 100);
+
+                     //   updatepopup("Uploading Location Log To Web Server",intPercentage);
+
+
+
+                        int ID= objCursorLocation.getInt(0);
+                        String Taluk_Name=objCursorLocation.getString(1);
+                        String Field_Officer_Name= objCursorLocation.getString(2);
+                        String Taluk_Incharge_Name= objCursorLocation.getString(3);
+                        String Is_TI_given_proper_training_to_update_OMS= objCursorLocation.getString(4);
+                        String Does_TI_understand_the_OMS_tool= objCursorLocation.getString(5);
+                        String Is_the_TI_able_to_make_daily_updates_in_OMS= objCursorLocation.getString(6);
+                        String Is_TI_able_to_solve_the_problem_in_School_if_any_complaint_is_received= objCursorLocation.getString(7);
+                        String Does_ti_have_a_panel_of_moderators= objCursorLocation.getString(8);
+                        String Moderator_details_Name_School_Class_Sbject_Date= objCursorLocation.getString(9);
+                        String Whether_Moderator_has_been_trained= objCursorLocation.getString(10);
+                        String Whether_TI_have_a_detailed_plan_for_3_days= objCursorLocation.getString(11);
+                        String Is_the_detailed_plan_put_on_oms_tool= objCursorLocation.getString(12);
+                        String is_ti_cooperative= objCursorLocation.getString(13);
+                        String Are_spare_parts_available_in_location= objCursorLocation.getString(14);
+                        String Comments= objCursorLocation.getString(15);
+                        String PASSWORD="ii@m_s_urv@y@eg@";
+
+
+                        CALLWSDOTNET objWS = new CALLWSDOTNET("http://203.129.241.19/is/Service.asmx");
+                        objWS.AddPropertyInfo("PASSWORD",PASSWORD,CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("IMEI","ABC",CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("ID", ID, CALLWSDOTNET.datatype.INTEGER);
+                        objWS.AddPropertyInfo("Taluk_Name", "Samish", CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Field_Officer_Name", Field_Officer_Name, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Taluk_Incharge_Name", Taluk_Incharge_Name, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Is_TI_given_proper_training_to_update_OMS", Is_TI_given_proper_training_to_update_OMS,CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Does_TI_understand_the_OMS_tool", Does_TI_understand_the_OMS_tool, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Is_The_TI_able_to_make_daily_updates_in_OMS", Is_the_TI_able_to_make_daily_updates_in_OMS, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Is_TI_able_to_solve_the_problem_in_school_if_any_complaint_is_received",  Is_TI_able_to_solve_the_problem_in_School_if_any_complaint_is_received, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Does_ti_have_a_panel_of_moderators", Does_ti_have_a_panel_of_moderators, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Moderator_details_Name_School_Class_Sbject_Date", Moderator_details_Name_School_Class_Sbject_Date, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo(" Whether_Moderator_has_been_trained", Whether_Moderator_has_been_trained, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Whether_ti_have_adetailed_plan_for_3_days",Whether_TI_have_a_detailed_plan_for_3_days, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Is_the_detailed_plan_put_oms_tool", Is_the_detailed_plan_put_on_oms_tool, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("is_ti_cooperative", is_ti_cooperative, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Are_spare_parts_available_in_location", Are_spare_parts_available_in_location, CALLWSDOTNET.datatype.STRING);
+                        objWS.AddPropertyInfo("Comments", Comments, CALLWSDOTNET.datatype.STRING);
+
+                        objWS.invokeWebService("UpdateTalukSurvey");
+
+                      ;
+
+            //            if (booLocationInserted.equals("UPDATED")) {
+                                //
+              //              } else {
+                                // booError = true;
+                //NbooContinue = false;
+
+                  //          }
+
+
+                    }
+                }
+
+
+
+            } catch (Exception ex) {
+
+        }
+
+    }
+
 
 
 
