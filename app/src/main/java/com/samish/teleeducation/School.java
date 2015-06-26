@@ -894,6 +894,7 @@ public class School extends ActionBarActivity {
                 school=res.getStringArray(R.array.Devalapur_school);  break;
             case "Hunasikatti":
                 school=res.getStringArray(R.array.Hunasikatti_school);  break;
+
             case "Kadaravalli":
                 school=res.getStringArray(R.array.Kadaravalli_school);  break;
             case "Lakkundi":
