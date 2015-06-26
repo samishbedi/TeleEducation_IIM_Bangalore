@@ -2,17 +2,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context="com.samish.teleeducation.Ques">
 
+    <item android:id="@+id/refresh" android:title="Refresh"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/continue_nosave" android:title="Continue"
+        android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/save_and_continue" android:title="Save and Continue"
         android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/save_and_exit" android:title="Save and Exit"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/upload" android:title="Save and Upload"
+        android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/exit" android:title="Exit"
         android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/continue_nosave" android:title="Continue"
-        android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/refresh" android:title="Refresh"
-        android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/upload" android:title="Save and Upload"
-    android:orderInCategory="100" app:showAsAction="never" />
 
 </menu>
