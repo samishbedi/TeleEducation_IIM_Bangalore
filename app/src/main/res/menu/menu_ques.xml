@@ -12,7 +12,7 @@
         android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/refresh" android:title="Refresh"
         android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/upload" android:title="Upload"
+    <item android:id="@+id/upload" android:title="Save and Upload"
     android:orderInCategory="100" app:showAsAction="never" />
 
 </menu>

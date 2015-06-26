@@ -1,12 +1,15 @@
 package com.samish.teleeducation;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
+import android.telephony.TelephonyManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -18,6 +21,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity{  //Activity for Taluk
@@ -25,12 +30,23 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
     EditText inputSearch;                             //For Search
 //    ArrayList<HashMap<String, String>> productList;
     ArrayAdapter<String> adapter;
+    DatabaseHandler db;
+    String imei;
+    ProgressDialog progress;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        db = new DatabaseHandler(this);
+
+        TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+        imei=telephonyManager.getDeviceId();
+
 
         if( getIntent().getBooleanExtra("Exit", false)){
             finish();
@@ -96,17 +112,113 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Intent intent1 = new Intent(this, MainActivity.class);
-            intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            intent1.putExtra("Exit", true);
-            startActivity(intent1);
-            finish();
-            return true;
+        switch (item.getItemId()) {
+
+            //noinspection SimplifiableIfStatement
+           case R.id.action_settings:
+                Intent intent1 = new Intent(this, MainActivity.class);
+                intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent1.putExtra("Exit", true);
+                startActivity(intent1);
+                finish();
+                return true;
+
+            case R.id.upload:
+
+                progress=new ProgressDialog(this);
+                progress.setMessage("Uploading Data");
+                progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progress.setIndeterminate(true);
+                progress.setProgress(0);
+                progress.show();
+
+                final int totalProgressTime = 100;
+
+                new Thread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        // TODO Auto-generated method stub
+
+                        runOnUiThread(new Runnable() {
+                            public void run() {
+
+
+
+
+
+                            }
+                        });
+                        int jumpTime = 0;
+
+
+                        while (jumpTime < totalProgressTime) {
+                            jumpTime += 3;
+                            progress.setProgress(jumpTime);
+
+                        }
+                        uploadTaluk();
+                        progress.dismiss();
+                        //db.uploadOldData();
+
+
+
+
+
+                    }
+                }).start();
+
+            default:
+                return super.onOptionsItemSelected(item);
+
         }
 
-        return super.onOptionsItemSelected(item);
+
+    }
+
+    void uploadTaluk()
+    {
+
+        try
+        {
+            List<String> name=db.values();
+            Iterator<String> itr=name.iterator();
+            while(itr.hasNext()) {
+                int id=Integer.parseInt(itr.next());
+                CALLWSDOTNET objWS = new CALLWSDOTNET("http://203.129.241.19/is/Service.asmx");
+                objWS.AddPropertyInfo("PASSWORD", "ii@m_s_urv@y@eg@", CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("IMEI", imei, CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("ID", id, CALLWSDOTNET.datatype.INTEGER);
+                objWS.AddPropertyInfo("Taluk_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Field_Officer_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Taluk_Incharge_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_TI_given_proper_training_to_update_OMS", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Does_TI_understand_the_OMS_tool", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_The_TI_able_to_make_daily_updates_in_OMS", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_TI_able_to_solve_the_problem_in_school_if_any_complaint_is_received",itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Does_ti_have_a_panel_of_moderators", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Moderator_details_Name_School_Class_Sbject_Date", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Whether_Moderator_has_been_trained", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Whether_ti_have_adetailed_plan_for_3_days", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_the_detailed_plan_put_oms_tool", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("is_ti_cooperative", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Are_spare_parts_available_in_location", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Comments", itr.next(), CALLWSDOTNET.datatype.STRING);
+
+                if(itr.next().equals("0")) {
+                    objWS.invokeWebService("UpdateTalukSurvey");
+                    db.markUpload(id);
+                }
+            }
+
+
+        }
+        catch(Exception ex)
+        {
+            String strEx=ex.getMessage();
+            strEx="";
+
+        }
     }
 
 

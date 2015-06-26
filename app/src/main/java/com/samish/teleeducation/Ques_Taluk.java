@@ -7,17 +7,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.database.Cursor;
 import android.os.Bundle;
-import android.preference.EditTextPreference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.widget.Toast;
-import android.database.sqlite.*;
 
 
 import java.util.Iterator;
@@ -46,6 +44,8 @@ public class Ques_Taluk extends ActionBarActivity {
     SharedPreferences sharedPref;
 
     DatabaseHandler db;
+    ProgressDialog progress;
+
 
 
     @Override
@@ -70,7 +70,6 @@ public class Ques_Taluk extends ActionBarActivity {
 
         TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
         imei=telephonyManager.getDeviceId();
-
 
 
 
@@ -239,26 +238,96 @@ public class Ques_Taluk extends ActionBarActivity {
 
             case R.id.upload:
 
+                progress=new ProgressDialog(this);
+                progress.setMessage("Uploading Data");
+                progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progress.setIndeterminate(true);
+                progress.setProgress(0);
+                progress.show();
 
-                new Thread(new Runnable() {
+                final int totalProgressTime = 100;
 
-                    @Override
-                    public void run() {
-                        // TODO Auto-generated method stub
+                sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+                foname = sharedPref.getString("pref_key_fo_name", " ");
+                tiname  = sharedPref.getString("pref_key_ti_name", " ");
+                t1b=sharedPref.getBoolean("pref_key_t1", false);
+                t1 = (t1b) ? "Yes" : "No";
+                t2b=sharedPref.getBoolean("pref_key_t2", false);
+                t2 = (t2b) ? "Yes" : "No";
+                t3b=sharedPref.getBoolean("pref_key_t3", false);
+                t3 = (t3b) ? "Yes" : "No";
+                t4b=sharedPref.getBoolean("pref_key_t4", false);
+                t4 = (t4b) ? "Yes" : "No";
+                t5b=sharedPref.getBoolean("pref_key_t5", false);
+                t5 = (t5b) ? "Yes" : "No";
+                t5_moderator = sharedPref.getString("pref_t5_moderator", " ");
+                t6b=sharedPref.getBoolean("pref_key_t6", false);
+                t6 = (t6b) ? "Yes" : "No";
+                t7b=sharedPref.getBoolean("pref_key_t7", false);
+                t7 = (t7b) ? "Yes" : "No";
+                t8b=sharedPref.getBoolean("pref_key_t8", false);
+                t8 = (t8b) ? "Yes" : "No";
+                t9b=sharedPref.getBoolean("pref_key_t9", false);
+                t9 = (t9b) ? "Yes" : "No";
+                t10b=sharedPref.getBoolean("pref_key_t10", false);
+                t10 = (t10b) ? "Yes" : "No";
+                t5_comment = sharedPref.getString("pref_tcomment", " ");
 
-                        runOnUiThread(new Runnable() {
-                            public void run() {
-                                // messageText.setText("uploading started.....");
+                if((foname.equals(" "))||foname.length()==0){
+                    progress.hide();
+                    Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
+
+                }
+                if(tiname.equals(" ")||tiname.length()==0){
+                    progress.hide();
+                    Toast.makeText(this, "ENTER A VALID TALUK INCHARGE'S NAME", Toast.LENGTH_SHORT).show();
+                }else {
+
+
+                    db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+
+                    new Thread(new Runnable() {
+
+
+                        @Override
+                        public void run() {
+                            // TODO Auto-generated method stub
+
+
+                            runOnUiThread(new Runnable() {
+                                public void run() {
+                                    // messageText.setText("uploading started.....");
+
+
+                                }
+
+                            });
+
+                            int jumpTime = 0;
+
+
+                            while (jumpTime < totalProgressTime) {
+                                jumpTime += 3;
+                                progress.setProgress(jumpTime);
+
                             }
-                        });
 
-                        //db.uploadOldData();
-                      uploadTest();
+                            //db.uploadOldData();
+                            uploadTaluk();
+
+                            progress.dismiss();
 
 
 
-                    }
-                }).start();
+                        }
+                    }).start();
+
+
+
+                }
+
+
+
 
 
 
@@ -273,7 +342,7 @@ public class Ques_Taluk extends ActionBarActivity {
 
 
 
-    void uploadTest()
+    void uploadTaluk()
     {
 
         try
