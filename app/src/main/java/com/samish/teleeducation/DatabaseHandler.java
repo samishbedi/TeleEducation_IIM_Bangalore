@@ -84,6 +84,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final String scomment = "Comments";
 
     public static final String uploaded="Uploaded";
+    public static final String uploaded_s="Uploaded_S";
 
 
     public DatabaseHandler(Context context) {
@@ -104,7 +105,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + fo_name_school + " TEXT," + bc + " TEXT,"+ laptop + " TEXT,"+ proj + " TEXT,"+ modem + " TEXT,"+hugh + " TEXT,"+ mob + " TEXT,"+ant + " TEXT,"
                 + sol + " TEXT,"+ ups + " TEXT,"+ classcond + " TEXT,"+ crowd + " TEXT,"+ strt + " TEXT,"+ prnt + " TEXT,"+ notes + " TEXT,"+ prop + " TEXT,"+
                 atten + " TEXT,"+ clr + " TEXT,"+ dbt + " TEXT,"+ teacher + " TEXT,"+ vsc + " TEXT,"+  vsc1 + " TEXT,"+
-                rsn + " TEXT,"+ scomment + " TEXT"+");";
+                rsn + " TEXT,"+ scomment + " TEXT,"+ uploaded_s + " TEXT"+");";
         db.execSQL(CREATE_SCHOOL_TABLE);
 
 
@@ -202,6 +203,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values_s.put(vsc1, vsc1s);
         values_s.put(rsn, rsns);
         values_s.put(scomment, scomments);
+        values_s.put(uploaded_s, "0");
 
 
 
@@ -236,7 +238,50 @@ public class DatabaseHandler extends SQLiteOpenHelper {
              dbl.add(c.getString(14));
              dbl.add(c.getString(15));
              dbl.add(c.getString(16));
+
          }while(c.moveToNext());
+        return dbl;
+    }
+
+    List<String> values_school(){
+        List<String> dbl = new ArrayList<String>();
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c;
+        String selectQuery = "SELECT  * FROM " + TABLE_SCHOOL;
+        c=db.rawQuery(selectQuery,null);
+        c.moveToFirst();
+        do {
+            dbl.add(String.valueOf(c.getInt(0)));
+            dbl.add(c.getString(1));
+            dbl.add(c.getString(2));
+            dbl.add(c.getString(3));
+            dbl.add(c.getString(4));
+            dbl.add(c.getString(5));
+            dbl.add(c.getString(6));
+            dbl.add(c.getString(7));
+            dbl.add(c.getString(8));
+            dbl.add(c.getString(9));
+            dbl.add(c.getString(10));
+            dbl.add(c.getString(11));
+            dbl.add(c.getString(12));
+            dbl.add(c.getString(13));
+            dbl.add(c.getString(14));
+            dbl.add(c.getString(15));
+            dbl.add(c.getString(16));
+            dbl.add(c.getString(17));
+            dbl.add(c.getString(18));
+            dbl.add(c.getString(19));
+            dbl.add(c.getString(20));
+            dbl.add(c.getString(21));
+            dbl.add(c.getString(22));
+            dbl.add(c.getString(23));
+            dbl.add(c.getString(24));
+            dbl.add(c.getString(25));
+            dbl.add(c.getString(26));
+            dbl.add(c.getString(27));
+            dbl.add(c.getString(28));
+        }while(c.moveToNext());
         return dbl;
     }
 

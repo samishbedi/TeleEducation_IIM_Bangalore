@@ -14,6 +14,9 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
 
+import java.util.Iterator;
+import java.util.List;
+
 
 public class Ques extends ActionBarActivity {
 
@@ -102,56 +105,55 @@ public class Ques extends ActionBarActivity {
             case R.id.save_and_continue:
                 sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                 fo_name_school = sharedPref.getString("pref_key_fo_name1", " ");
-                bcb=sharedPref.getBoolean("pref_key_bc", false);
+                bcb = sharedPref.getBoolean("pref_key_bc", false);
                 bc = (bcb) ? "Yes" : "No";
-                laptopb=sharedPref.getBoolean("pref_key_laptop", false);
+                laptopb = sharedPref.getBoolean("pref_key_laptop", false);
                 laptop = (laptopb) ? "Yes" : "No";
-                projb=sharedPref.getBoolean("pref_key_proj", false);
-                proj= (projb) ? "Yes" : "No";
-                modemb=sharedPref.getBoolean("pref_key_mod", false);
+                projb = sharedPref.getBoolean("pref_key_proj", false);
+                proj = (projb) ? "Yes" : "No";
+                modemb = sharedPref.getBoolean("pref_key_mod", false);
                 modem = (modemb) ? "Yes" : "No";
-                hughb=sharedPref.getBoolean("pref_key_hugh", false);
+                hughb = sharedPref.getBoolean("pref_key_hugh", false);
                 hugh = (hughb) ? "Yes" : "No";
-                antb=sharedPref.getBoolean("pref_key_ant", false);
+                antb = sharedPref.getBoolean("pref_key_ant", false);
                 ant = (antb) ? "Yes" : "No";
-                solb=sharedPref.getBoolean("pref_key_sol", false);
+                solb = sharedPref.getBoolean("pref_key_sol", false);
                 sol = (solb) ? "Yes" : "No";
-                mobb=sharedPref.getBoolean("pref_key_mob", false);
+                mobb = sharedPref.getBoolean("pref_key_mob", false);
                 mob = (mobb) ? "Yes" : "No";
-                upsb=sharedPref.getBoolean("pref_key_ups", false);
+                upsb = sharedPref.getBoolean("pref_key_ups", false);
                 ups = (upsb) ? "Yes" : "No";
-                classcondb=sharedPref.getBoolean("pref_key_classcond", false);
-                classcond= (classcondb) ? "Yes" : "No";
-                crowdb=sharedPref.getBoolean("pref_key_crowd", false);
-                crowd= (crowdb) ? "Yes" : "No";
-                notesb=sharedPref.getBoolean("pref_key_notes", false);
-                notes= (notesb) ? "Yes" : "No";
-                propb=sharedPref.getBoolean("pref_key_prop", false);
-                prop= (propb) ? "Yes" : "No";
-                attenb=sharedPref.getBoolean("pref_key_atten", false);
-                atten= (attenb) ? "Yes" : "No";
-                clrb=sharedPref.getBoolean("pref_key_clr", false);
-                clr= (clrb) ? "Yes" : "No";
-                dbtb=sharedPref.getBoolean("pref_key_dbt", false);
-                dbt= (dbtb) ? "Yes" : "No";
-                teacherb=sharedPref.getBoolean("pref_key_teacher", false);
-                teacher= (teacherb) ? "Yes" : "No";
-                vscb=sharedPref.getBoolean("pref_key_vsc", false);
-                vsc= (vscb) ? "Yes" : "No";
-                vsc1b=sharedPref.getBoolean("pref_key_vsc_1", false);
-                vsc1= (vsc1b) ? "Yes" : "No";
+                classcondb = sharedPref.getBoolean("pref_key_classcond", false);
+                classcond = (classcondb) ? "Yes" : "No";
+                crowdb = sharedPref.getBoolean("pref_key_crowd", false);
+                crowd = (crowdb) ? "Yes" : "No";
+                notesb = sharedPref.getBoolean("pref_key_notes", false);
+                notes = (notesb) ? "Yes" : "No";
+                propb = sharedPref.getBoolean("pref_key_prop", false);
+                prop = (propb) ? "Yes" : "No";
+                attenb = sharedPref.getBoolean("pref_key_atten", false);
+                atten = (attenb) ? "Yes" : "No";
+                clrb = sharedPref.getBoolean("pref_key_clr", false);
+                clr = (clrb) ? "Yes" : "No";
+                dbtb = sharedPref.getBoolean("pref_key_dbt", false);
+                dbt = (dbtb) ? "Yes" : "No";
+                teacherb = sharedPref.getBoolean("pref_key_teacher", false);
+                teacher = (teacherb) ? "Yes" : "No";
+                vscb = sharedPref.getBoolean("pref_key_vsc", false);
+                vsc = (vscb) ? "Yes" : "No";
+                vsc1b = sharedPref.getBoolean("pref_key_vsc_1", false);
+                vsc1 = (vsc1b) ? "Yes" : "No";
 
                 strt = sharedPref.getString("pref_key_strt", "0");
-                prnt = sharedPref.getString("pref_key_prnt","0");
+                prnt = sharedPref.getString("pref_key_prnt", "0");
                 rsn = sharedPref.getString("pref_rsn", " ");
                 scomment = sharedPref.getString("pref_comment", " ");
 
-                if((fo_name_school.equals(" "))||fo_name_school.length()==0){
+                if ((fo_name_school.equals(" ")) || fo_name_school.length() == 0) {
                     Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
-                }
-                else if(Integer.parseInt(prnt)>Integer.parseInt(strt)){
+                } else if (Integer.parseInt(prnt) > Integer.parseInt(strt)) {
                     Toast.makeText(this, "ENTER VALID VALUES FOR STRENTH AND PRESENCE OF STUDENTS", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
 
                     db.insert_school(tname, vname, name, fo_name_school, bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment);
                     // bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment
@@ -171,56 +173,55 @@ public class Ques extends ActionBarActivity {
             case R.id.save_and_exit:
                 sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                 fo_name_school = sharedPref.getString("pref_key_fo_name1", " ");
-                bcb=sharedPref.getBoolean("pref_key_bc", false);
+                bcb = sharedPref.getBoolean("pref_key_bc", false);
                 bc = (bcb) ? "Yes" : "No";
-                laptopb=sharedPref.getBoolean("pref_key_laptop", false);
+                laptopb = sharedPref.getBoolean("pref_key_laptop", false);
                 laptop = (laptopb) ? "Yes" : "No";
-                projb=sharedPref.getBoolean("pref_key_proj", false);
-                proj= (projb) ? "Yes" : "No";
-                modemb=sharedPref.getBoolean("pref_key_mod", false);
+                projb = sharedPref.getBoolean("pref_key_proj", false);
+                proj = (projb) ? "Yes" : "No";
+                modemb = sharedPref.getBoolean("pref_key_mod", false);
                 modem = (modemb) ? "Yes" : "No";
-                hughb=sharedPref.getBoolean("pref_key_hugh", false);
+                hughb = sharedPref.getBoolean("pref_key_hugh", false);
                 hugh = (hughb) ? "Yes" : "No";
-                antb=sharedPref.getBoolean("pref_key_ant", false);
+                antb = sharedPref.getBoolean("pref_key_ant", false);
                 ant = (antb) ? "Yes" : "No";
-                solb=sharedPref.getBoolean("pref_key_sol", false);
+                solb = sharedPref.getBoolean("pref_key_sol", false);
                 sol = (solb) ? "Yes" : "No";
-                mobb=sharedPref.getBoolean("pref_key_mob", false);
+                mobb = sharedPref.getBoolean("pref_key_mob", false);
                 mob = (mobb) ? "Yes" : "No";
-                upsb=sharedPref.getBoolean("pref_key_ups", false);
+                upsb = sharedPref.getBoolean("pref_key_ups", false);
                 ups = (upsb) ? "Yes" : "No";
-                classcondb=sharedPref.getBoolean("pref_key_classcond", false);
-                classcond= (classcondb) ? "Yes" : "No";
-                crowdb=sharedPref.getBoolean("pref_key_crowd", false);
-                crowd= (crowdb) ? "Yes" : "No";
-                notesb=sharedPref.getBoolean("pref_key_notes", false);
-                notes= (notesb) ? "Yes" : "No";
-                propb=sharedPref.getBoolean("pref_key_prop", false);
-                prop= (propb) ? "Yes" : "No";
-                attenb=sharedPref.getBoolean("pref_key_atten", false);
-                atten= (attenb) ? "Yes" : "No";
-                clrb=sharedPref.getBoolean("pref_key_clr", false);
-                clr= (clrb) ? "Yes" : "No";
-                dbtb=sharedPref.getBoolean("pref_key_dbt", false);
-                dbt= (dbtb) ? "Yes" : "No";
-                teacherb=sharedPref.getBoolean("pref_key_teacher", false);
-                teacher= (teacherb) ? "Yes" : "No";
-                vscb=sharedPref.getBoolean("pref_key_vsc", false);
-                vsc= (vscb) ? "Yes" : "No";
-                vsc1b=sharedPref.getBoolean("pref_key_vsc_1", false);
-                vsc1= (vsc1b) ? "Yes" : "No";
+                classcondb = sharedPref.getBoolean("pref_key_classcond", false);
+                classcond = (classcondb) ? "Yes" : "No";
+                crowdb = sharedPref.getBoolean("pref_key_crowd", false);
+                crowd = (crowdb) ? "Yes" : "No";
+                notesb = sharedPref.getBoolean("pref_key_notes", false);
+                notes = (notesb) ? "Yes" : "No";
+                propb = sharedPref.getBoolean("pref_key_prop", false);
+                prop = (propb) ? "Yes" : "No";
+                attenb = sharedPref.getBoolean("pref_key_atten", false);
+                atten = (attenb) ? "Yes" : "No";
+                clrb = sharedPref.getBoolean("pref_key_clr", false);
+                clr = (clrb) ? "Yes" : "No";
+                dbtb = sharedPref.getBoolean("pref_key_dbt", false);
+                dbt = (dbtb) ? "Yes" : "No";
+                teacherb = sharedPref.getBoolean("pref_key_teacher", false);
+                teacher = (teacherb) ? "Yes" : "No";
+                vscb = sharedPref.getBoolean("pref_key_vsc", false);
+                vsc = (vscb) ? "Yes" : "No";
+                vsc1b = sharedPref.getBoolean("pref_key_vsc_1", false);
+                vsc1 = (vsc1b) ? "Yes" : "No";
 
                 strt = sharedPref.getString("pref_key_strt", "0");
-                prnt = sharedPref.getString("pref_key_prnt","0");
+                prnt = sharedPref.getString("pref_key_prnt", "0");
                 rsn = sharedPref.getString("pref_rsn", " ");
                 scomment = sharedPref.getString("pref_comment", " ");
 
-                if((fo_name_school.equals(" "))||fo_name_school.length()==0){
+                if ((fo_name_school.equals(" ")) || fo_name_school.length() == 0) {
                     Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
-                }
-                else if(Integer.parseInt(prnt)>Integer.parseInt(strt)){
+                } else if (Integer.parseInt(prnt) > Integer.parseInt(strt)) {
                     Toast.makeText(this, "ENTER VALID VALUES FOR STRENGTH AND PRESENCE OF STUDENTS IN CLASS", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     db.insert_school(tname, vname, name, fo_name_school, bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment);
                     Toast.makeText(this, "Data Saved", Toast.LENGTH_SHORT).show();
                     sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -234,7 +235,6 @@ public class Ques extends ActionBarActivity {
                     finish();
                 }
                 return true;
-
 
 
             case R.id.exit:
@@ -269,20 +269,80 @@ public class Ques extends ActionBarActivity {
                 editor4.clear();
                 editor4.commit();
                 finish();
-                Intent ref = new Intent(getApplicationContext(),Ques.class);
-                ref.putExtra("Sname",name);
+                Intent ref = new Intent(getApplicationContext(), Ques.class);
+                ref.putExtra("Sname", name);
                 startActivity(ref);
+
+                return true;
+
+            case R.id.upload:
+
+                uploadSchool();
+                sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+                SharedPreferences.Editor editor5 = sharedPref.edit();
+                editor5.clear();
+                editor5.commit();
+
 
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
-
-
-
-
     }
+
+
+    void uploadSchool()
+    {
+
+      //  try
+        //{
+            List<String> name=db.values_school();
+            Toast.makeText(this, name.get(0)+name.get(1)+name.get(28), Toast.LENGTH_SHORT).show();
+
+           /*  Iterator<String> itr=name.iterator();
+            while(itr.hasNext()) {
+
+               int id=Integer.parseInt(itr.next());
+                CALLWSDOTNET objWS = new CALLWSDOTNET("http://203.129.241.19/is/Service.asmx");
+                objWS.AddPropertyInfo("PASSWORD", "ii@m_s_urv@y@eg@", CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("IMEI", imei, CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("ID", id, CALLWSDOTNET.datatype.INTEGER);
+                objWS.AddPropertyInfo("Taluk_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Field_Officer_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Taluk_Incharge_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_TI_given_proper_training_to_update_OMS", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Does_TI_understand_the_OMS_tool", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_The_TI_able_to_make_daily_updates_in_OMS", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_TI_able_to_solve_the_problem_in_school_if_any_complaint_is_received",itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Does_ti_have_a_panel_of_moderators", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Moderator_details_Name_School_Class_Sbject_Date", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Whether_Moderator_has_been_trained", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Whether_ti_have_adetailed_plan_for_3_days", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Is_the_detailed_plan_put_oms_tool", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("is_ti_cooperative", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Are_spare_parts_available_in_location", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Comments", itr.next(), CALLWSDOTNET.datatype.STRING);
+
+                if(itr.next().equals("0")) {
+                    objWS.invokeWebService("UpdateTalukSurvey");
+                    db.markUpload(id);
+                }
+            }*/
+
+
+      //  }
+        //catch(Exception ex)
+       // {
+          //  String strEx=ex.getMessage();
+         //   strEx="";
+
+        //}
+    }
+
+
+
+
 
     public static class SettingsFragment extends PreferenceFragment  {
         @Override
