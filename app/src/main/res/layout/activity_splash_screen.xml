@@ -6,13 +6,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:orientation="vertical">
 
+
+
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_marginTop="50dp"
-        android:layout_width="250dp"
-        android:layout_height="346dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="290dp"
+        android:layout_height="240dp"
         android:src="@drawable/entry"
         android:layout_gravity="center"/>
+
+<!--    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Satellite and Advanced Multimedia Education"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="12.6dp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="198dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="©Fuzzy Logic"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textSize="12.6dp"
+        android:textColor="#413D3C"
+        android:gravity="center"/> -->
 
 
 
