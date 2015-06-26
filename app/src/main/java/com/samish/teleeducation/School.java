@@ -119,6 +119,10 @@ public class School extends ActionBarActivity {
                 school=res.getStringArray(R.array.uyyamballi_school);
                 break;
 
+            case "Balliganudu":
+                school=res.getStringArray(R.array.Balliganudu_school);
+                break;
+
             case "Herindyapanahalli":
                 school=res.getStringArray(R.array.herindyapanahalli_school);
                 break;
@@ -175,6 +179,9 @@ public class School extends ActionBarActivity {
             case "G K Halli":
                 school=res.getStringArray(R.array.G_K_Halli_school);
                 break;
+            case "Katthaleger":
+                school=res.getStringArray(R.array.Katthaleger_school);
+                break;
             case "Joladahal":
                 school=res.getStringArray(R.array.Joladahal_school);
                 break;
@@ -217,6 +224,10 @@ public class School extends ActionBarActivity {
             case "Hirekogaluru":
                 school=res.getStringArray(R.array.Hirekogaluru_school);
                 break;
+            case "Kotihal":
+                school=res.getStringArray(R.array.Kotihal_school);
+                break;
+
             case "Durvigere":
                 school=res.getStringArray(R.array.Durvigere_school);
                 break;
@@ -441,7 +452,7 @@ public class School extends ActionBarActivity {
                 break;
 
             case "Guddadarangvanahally":
-                school=res.getStringArray(R.array.Guddadarangavanahally_school);
+                school=res.getStringArray(R.array.Guddadarangvanahally_school);
                 break;
 
             case "Guthinadu G.Hatti":
@@ -479,6 +490,11 @@ public class School extends ActionBarActivity {
             case "Belagatta":
                 school=res.getStringArray(R.array.Belagatta_school);
                 break;
+
+            case "Vadnal":
+                school=res.getStringArray(R.array.Vadnal_school);
+                break;
+
 
             case "Alagavadi":
                 school=res.getStringArray(R.array.Alagavadi_school);
@@ -626,6 +642,10 @@ public class School extends ActionBarActivity {
                 school=res.getStringArray(R.array.Ronur_school);  break;
             case "Somayajilapalli":
                 school=res.getStringArray(R.array.Somayajilapalli_school);  break;
+
+            case "Somalapura":
+                school=res.getStringArray(R.array.Somalapura_school);  break;
+
             case "Thadigol":
                 school=res.getStringArray(R.array.Thadigol_school);  break;
             case "Kurigepalli":
@@ -840,12 +860,18 @@ public class School extends ActionBarActivity {
                 school=res.getStringArray(R.array.Karadi_school);  break;
             case "Marol":
                 school=res.getStringArray(R.array.Marol_school);  break;
+            case "Marol Hunagund":
+                school=res.getStringArray(R.array.Marol_hunagund_school);  break;
             case "Nagur":
                 school=res.getStringArray(R.array.Nagur_school);  break;
             case "Nandawadgi":
                 school=res.getStringArray(R.array.Nandawadgi_school);  break;
             case "Sangam":
                 school=res.getStringArray(R.array.Sangam_school);  break;
+            case "Sangam Hunagund":
+                school=res.getStringArray(R.array.Sangam_hunagund_school);  break;
+            case "Udri Vaddigere":
+                school=res.getStringArray(R.array.Udri_Vaddigere_school);  break;
             case "Sulebhavi":
                 school=res.getStringArray(R.array.Sulebhavi_school);  break;
             case "Kandagal":
@@ -1563,6 +1589,18 @@ public class School extends ActionBarActivity {
             case "Dodde Bagelu":
                 school=res.getStringArray(R.array.Dodde_Bagelu_school);  break;
 
+            case "Mudigere":
+                school=res.getStringArray(R.array.Mudigere_school);  break;
+
+
+            case "Medikere":
+                school=res.getStringArray(R.array.Medikere_school);  break;
+
+            case "Kuppahalli":
+                school=res.getStringArray(R.array.Kuppahalli_school);  break;
+
+            case "Porshathalli":
+                school=res.getStringArray(R.array.Porshathalli_school);  break;
 
 
 

@@ -363,8 +363,12 @@
         <item>GURUSHNTHESWARA HS GODABANAHAL</item>
     </string-array>
 
-    <string-array name="Guddadarangavanahally_school">
+    <string-array name="Guddadarangvanahally_school">
         <item>GOVT HS G.R.HALLI</item>
+    </string-array>
+
+    <string-array name="Guddadarangavanahally_school">
+        <item>GMHPS G R HALLY</item>
     </string-array>
 
     <string-array name="GUTHINADU_G_HATTI">
@@ -519,6 +523,7 @@
     </string-array>
 
     <string-array name="G_K_Halli_school">
+        <item>GHS-G K HALLI</item>
     </string-array>
 
     <string-array name="Goppenahalli_school">
@@ -579,6 +584,7 @@
     </string-array>
 
     <string-array name="Katthaleger_school">
+        <item>HPS - KATTHALEGER</item>
     </string-array>
 
     <string-array name="Kerebilachi_school">
@@ -2525,10 +2531,10 @@
     <item>Hire Magi</item>
     <item>Hire Singanagutti</item>
     <item>Karadi</item>
-    <item>Marol</item>
+    <item>Marol Hunagund</item>
     <item>Nagur</item>
     <item>Nandawadgi</item>
-    <item>Sangam</item>
+    <item>Sangam Hunagund</item>
     <item>Sulebhavi</item>
     <item>Kandagal</item>
     <item>Ingalgi</item>
