@@ -2,23 +2,29 @@ package com.samish.teleeducation;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.app.Service;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 
 import android.telephony.TelephonyManager;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -33,6 +39,7 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
     DatabaseHandler db;
     String imei;
     ProgressDialog progress;
+    String m_Text;
 
 
 
@@ -130,43 +137,79 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
                 progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 progress.setIndeterminate(true);
                 progress.setProgress(0);
-                progress.show();
+
 
                 final int totalProgressTime = 100;
 
-                new Thread(new Runnable() {
+                android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
+                builder.setTitle("Enter the validation code");
 
+                final EditText input = new EditText(this);
+
+                input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                builder.setView(input);
+
+                builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
                     @Override
-                    public void run() {
-                        // TODO Auto-generated method stub
-
-                        runOnUiThread(new Runnable() {
-                            public void run() {
-
+                    public void onClick(DialogInterface dialog, int which) {
+                        m_Text = input.getText().toString();
+                        progress.show();
+                        if (m_Text.equals("tele")) {
 
 
 
+                            new Thread(new Runnable() {
 
-                            }
-                        });
-                        int jumpTime = 0;
+                                @Override
+                                public void run() {
+                                    // TODO Auto-generated method stub
+
+                                    runOnUiThread(new Runnable() {
+                                        public void run() {
 
 
-                        while (jumpTime < totalProgressTime) {
-                            jumpTime += 3;
-                            progress.setProgress(jumpTime);
+                                        }
+                                    });
+                                    int jumpTime = 0;
 
+
+                                    while (jumpTime < totalProgressTime) {
+                                        jumpTime += 3;
+                                        progress.setProgress(jumpTime);
+
+                                    }
+                                    uploadTaluk();
+                                    progress.dismiss();
+                                    //db.uploadOldData();
+
+
+                                }
+                            }).start();
+
+                           ok();
+
+
+
+
+
+                        } else if (!m_Text.equals("tele")) {
+                            Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
                         }
-                        uploadTaluk();
-                        progress.dismiss();
-                        //db.uploadOldData();
-
-
-
-
-
                     }
-                }).start();
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+
+
+                builder.show();
+
+
+
+
 
             default:
                 return super.onOptionsItemSelected(item);
@@ -174,6 +217,13 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
         }
 
 
+    }
+
+    void ok(){
+
+        Intent main2 = new Intent(getApplicationContext(), MainActivity.class);
+
+        startActivity(main2);
     }
 
     void uploadTaluk()

@@ -4,6 +4,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -11,10 +12,13 @@ import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AlertDialog;
 import android.telephony.TelephonyManager;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -45,6 +49,9 @@ public class Ques_Taluk extends ActionBarActivity {
 
     DatabaseHandler db;
     ProgressDialog progress;
+    String m_Text="";
+
+
 
 
 
@@ -101,105 +108,154 @@ public class Ques_Taluk extends ActionBarActivity {
         int id = item.getItemId();
         switch (item.getItemId()) {
             case R.id.save_and_continue:
+
+
+
                 sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                 foname = sharedPref.getString("pref_key_fo_name", " ");
-                tiname  = sharedPref.getString("pref_key_ti_name", " ");
-                t1b=sharedPref.getBoolean("pref_key_t1", false);
+                tiname = sharedPref.getString("pref_key_ti_name", " ");
+                t1b = sharedPref.getBoolean("pref_key_t1", false);
                 t1 = (t1b) ? "Yes" : "No";
-                t2b=sharedPref.getBoolean("pref_key_t2", false);
+                t2b = sharedPref.getBoolean("pref_key_t2", false);
                 t2 = (t2b) ? "Yes" : "No";
-                t3b=sharedPref.getBoolean("pref_key_t3", false);
+                t3b = sharedPref.getBoolean("pref_key_t3", false);
                 t3 = (t3b) ? "Yes" : "No";
-                t4b=sharedPref.getBoolean("pref_key_t4", false);
+                t4b = sharedPref.getBoolean("pref_key_t4", false);
                 t4 = (t4b) ? "Yes" : "No";
-                t5b=sharedPref.getBoolean("pref_key_t5", false);
+                t5b = sharedPref.getBoolean("pref_key_t5", false);
                 t5 = (t5b) ? "Yes" : "No";
                 t5_moderator = sharedPref.getString("pref_t5_moderator", " ");
-                t6b=sharedPref.getBoolean("pref_key_t6", false);
+                t6b = sharedPref.getBoolean("pref_key_t6", false);
                 t6 = (t6b) ? "Yes" : "No";
-                t7b=sharedPref.getBoolean("pref_key_t7", false);
+                t7b = sharedPref.getBoolean("pref_key_t7", false);
                 t7 = (t7b) ? "Yes" : "No";
-                t8b=sharedPref.getBoolean("pref_key_t8", false);
+                t8b = sharedPref.getBoolean("pref_key_t8", false);
                 t8 = (t8b) ? "Yes" : "No";
-                t9b=sharedPref.getBoolean("pref_key_t9", false);
+                t9b = sharedPref.getBoolean("pref_key_t9", false);
                 t9 = (t9b) ? "Yes" : "No";
-                t10b=sharedPref.getBoolean("pref_key_t10", false);
+                t10b = sharedPref.getBoolean("pref_key_t10", false);
                 t10 = (t10b) ? "Yes" : "No";
                 t5_comment = sharedPref.getString("pref_tcomment", " ");
 
-                if((foname.equals(" "))||foname.length()==0){
+                if ((foname.equals(" ")) || foname.length() == 0) {
                     Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
                 }
-                if(tiname.equals(" ")||tiname.length()==0){
+                if (tiname.equals(" ") || tiname.length() == 0) {
                     Toast.makeText(this, "ENTER A VALID TALUK INCHARGE'S NAME", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("Enter the validation code");
+
+                    final EditText input = new EditText(this);
+
+                    input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    builder.setView(input);
+
+                    builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            m_Text = input.getText().toString();
+                            if (m_Text.equals("tele")) {
 
 
-                    db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
-                    Toast.makeText(this, "Data Saved", Toast.LENGTH_SHORT).show();
+                                db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+                                Toast.makeText(getApplicationContext(), "Data Saved", Toast.LENGTH_SHORT).show();
 
-                    sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-                    SharedPreferences.Editor editor3 = sharedPref.edit();
-                    editor3.clear();
-                    editor3.commit();
+                                ok();
 
-                    Intent main = new Intent(getApplicationContext(), MainActivity.class);
 
-                    startActivity(main);
+                            } else if (!m_Text.equals("tele")) {
+                                Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+
+
+                    builder.show();
+
                 }
 
                 return true;
             case R.id.save_and_exit:
                 sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                 foname = sharedPref.getString("pref_key_fo_name", " ");
-                tiname  = sharedPref.getString("pref_key_ti_name", " ");
-                t1b=sharedPref.getBoolean("pref_key_t1", false);
+                tiname = sharedPref.getString("pref_key_ti_name", " ");
+                t1b = sharedPref.getBoolean("pref_key_t1", false);
                 t1 = (t1b) ? "Yes" : "No";
-                t2b=sharedPref.getBoolean("pref_key_t2", false);
+                t2b = sharedPref.getBoolean("pref_key_t2", false);
                 t2 = (t2b) ? "Yes" : "No";
-                t3b=sharedPref.getBoolean("pref_key_t3", false);
+                t3b = sharedPref.getBoolean("pref_key_t3", false);
                 t3 = (t3b) ? "Yes" : "No";
-                t4b=sharedPref.getBoolean("pref_key_t4", false);
+                t4b = sharedPref.getBoolean("pref_key_t4", false);
                 t4 = (t4b) ? "Yes" : "No";
-                t5b=sharedPref.getBoolean("pref_key_t5", false);
+                t5b = sharedPref.getBoolean("pref_key_t5", false);
                 t5 = (t5b) ? "Yes" : "No";
                 t5_moderator = sharedPref.getString("pref_t5_moderator", " ");
-                t6b=sharedPref.getBoolean("pref_key_t6", false);
+                t6b = sharedPref.getBoolean("pref_key_t6", false);
                 t6 = (t6b) ? "Yes" : "No";
-                t7b=sharedPref.getBoolean("pref_key_t7", false);
+                t7b = sharedPref.getBoolean("pref_key_t7", false);
                 t7 = (t7b) ? "Yes" : "No";
-                t8b=sharedPref.getBoolean("pref_key_t8", false);
+                t8b = sharedPref.getBoolean("pref_key_t8", false);
                 t8 = (t8b) ? "Yes" : "No";
-                t9b=sharedPref.getBoolean("pref_key_t9", false);
+                t9b = sharedPref.getBoolean("pref_key_t9", false);
                 t9 = (t9b) ? "Yes" : "No";
-                t10b=sharedPref.getBoolean("pref_key_t10", false);
+                t10b = sharedPref.getBoolean("pref_key_t10", false);
                 t10 = (t10b) ? "Yes" : "No";
                 t5_comment = sharedPref.getString("pref_tcomment", " ");
 
-                if((foname.equals(" "))||foname.length()==0){
+                if ((foname.equals(" ")) || foname.length() == 0) {
                     Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
                 }
-                if(tiname.equals(" ")||tiname.length()==0){
+                if (tiname.equals(" ") || tiname.length() == 0) {
                     Toast.makeText(this, "ENTER A VALID TALUK INCHARGE'S NAME", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("Enter the validation code");
+
+                    final EditText input = new EditText(this);
+
+                    input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    builder.setView(input);
+
+                    builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            m_Text = input.getText().toString();
+                            if (m_Text.equals("tele")) {
 
 
-                    db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
-                    Toast.makeText(this, "Data Saved", Toast.LENGTH_SHORT).show();
+                                db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+                                Toast.makeText(getApplicationContext(), "Data Saved", Toast.LENGTH_SHORT).show();
 
-                    sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-                    SharedPreferences.Editor editor2 = sharedPref.edit();
-                    editor2.clear();
-                    editor2.commit();
-                    Intent intent = new Intent(this, MainActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra("Exit", true);
-                    startActivity(intent);
-                    finish();
+                                ok_exit();
+
+
+                            } else if (!m_Text.equals("tele")) {
+                                Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+
+
+                    builder.show();
+
+
                 }
                 return true;
-
-
 
 
             case R.id.exit:
@@ -233,8 +289,8 @@ public class Ques_Taluk extends ActionBarActivity {
                 editor4.clear();
                 editor4.commit();
                 finish();
-                Intent ref = new Intent(getApplicationContext(),Ques_Taluk.class);
-                ref.putExtra("Name",t);
+                Intent ref = new Intent(getApplicationContext(), Ques_Taluk.class);
+                ref.putExtra("Name", t);
                 startActivity(ref);
 
 
@@ -242,102 +298,128 @@ public class Ques_Taluk extends ActionBarActivity {
 
             case R.id.upload:
 
-                progress=new ProgressDialog(this);
+                progress = new ProgressDialog(this);
                 progress.setMessage("Uploading Data");
                 progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 progress.setIndeterminate(true);
                 progress.setProgress(0);
-                progress.show();
+
 
                 final int totalProgressTime = 100;
 
                 sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                 foname = sharedPref.getString("pref_key_fo_name", " ");
-                tiname  = sharedPref.getString("pref_key_ti_name", " ");
-                t1b=sharedPref.getBoolean("pref_key_t1", false);
+                tiname = sharedPref.getString("pref_key_ti_name", " ");
+                t1b = sharedPref.getBoolean("pref_key_t1", false);
                 t1 = (t1b) ? "Yes" : "No";
-                t2b=sharedPref.getBoolean("pref_key_t2", false);
+                t2b = sharedPref.getBoolean("pref_key_t2", false);
                 t2 = (t2b) ? "Yes" : "No";
-                t3b=sharedPref.getBoolean("pref_key_t3", false);
+                t3b = sharedPref.getBoolean("pref_key_t3", false);
                 t3 = (t3b) ? "Yes" : "No";
-                t4b=sharedPref.getBoolean("pref_key_t4", false);
+                t4b = sharedPref.getBoolean("pref_key_t4", false);
                 t4 = (t4b) ? "Yes" : "No";
-                t5b=sharedPref.getBoolean("pref_key_t5", false);
+                t5b = sharedPref.getBoolean("pref_key_t5", false);
                 t5 = (t5b) ? "Yes" : "No";
                 t5_moderator = sharedPref.getString("pref_t5_moderator", " ");
-                t6b=sharedPref.getBoolean("pref_key_t6", false);
+                t6b = sharedPref.getBoolean("pref_key_t6", false);
                 t6 = (t6b) ? "Yes" : "No";
-                t7b=sharedPref.getBoolean("pref_key_t7", false);
+                t7b = sharedPref.getBoolean("pref_key_t7", false);
                 t7 = (t7b) ? "Yes" : "No";
-                t8b=sharedPref.getBoolean("pref_key_t8", false);
+                t8b = sharedPref.getBoolean("pref_key_t8", false);
                 t8 = (t8b) ? "Yes" : "No";
-                t9b=sharedPref.getBoolean("pref_key_t9", false);
+                t9b = sharedPref.getBoolean("pref_key_t9", false);
                 t9 = (t9b) ? "Yes" : "No";
-                t10b=sharedPref.getBoolean("pref_key_t10", false);
+                t10b = sharedPref.getBoolean("pref_key_t10", false);
                 t10 = (t10b) ? "Yes" : "No";
                 t5_comment = sharedPref.getString("pref_tcomment", " ");
 
-                if((foname.equals(" "))||foname.length()==0){
+                if ((foname.equals(" ")) || foname.length() == 0) {
                     progress.hide();
                     Toast.makeText(this, "ENTER A VALID FIELD OFFICER'S NAME", Toast.LENGTH_SHORT).show();
 
                 }
-                if(tiname.equals(" ")||tiname.length()==0){
+                if (tiname.equals(" ") || tiname.length() == 0) {
                     progress.hide();
                     Toast.makeText(this, "ENTER A VALID TALUK INCHARGE'S NAME", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("Enter the validation code");
+
+                    final EditText input = new EditText(this);
+
+                    input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    builder.setView(input);
 
 
-                    db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
-
-                    new Thread(new Runnable() {
 
 
+                    builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
                         @Override
-                        public void run() {
-                            // TODO Auto-generated method stub
+                        public void onClick(DialogInterface dialog, int which) {
+                            m_Text = input.getText().toString();
+                            if (m_Text.equals("tele")) {
+                                progress.show();
+
+                                db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+
+                                new Thread(new Runnable() {
 
 
-                            runOnUiThread(new Runnable() {
-                                public void run() {
-                                    // messageText.setText("uploading started.....");
+                                    @Override
+                                    public void run() {
+                                        // TODO Auto-generated method stub
 
 
-                                }
-
-                            });
-
-                            int jumpTime = 0;
+                                        runOnUiThread(new Runnable() {
+                                            public void run() {
+                                                // messageText.setText("uploading started.....");
 
 
-                            while (jumpTime < totalProgressTime) {
-                                jumpTime += 3;
-                                progress.setProgress(jumpTime);
+                                            }
 
+                                        });
+
+                                        int jumpTime = 0;
+
+
+                                        while (jumpTime < totalProgressTime) {
+                                            jumpTime += 3;
+                                            progress.setProgress(jumpTime);
+
+                                        }
+
+                                        //db.uploadOldData();
+                                       uploadTaluk();
+
+                                        progress.dismiss();
+
+
+                                    }
+                                }).start();
+
+                                Toast.makeText(getApplicationContext(), "Data Saved and Uploaded", Toast.LENGTH_SHORT).show();
+                                ok();
+
+
+                            } else if (!m_Text.equals("tele")) {
+                                Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
                             }
-
-                            //db.uploadOldData();
-                            uploadTaluk();
-
-                            progress.dismiss();
-
-
-
                         }
-                    }).start();
-
-                    Toast.makeText(this, "Data Saved and Uploaded", Toast.LENGTH_SHORT).show();
-
-                    sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-                    SharedPreferences.Editor editor6 = sharedPref.edit();
-                    editor6.clear();
-                    editor6.commit();
-
+                    });
+                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
 
 
-                }
+                    builder.show();
 
 
+
+                    }
 
 
 
@@ -349,6 +431,29 @@ public class Ques_Taluk extends ActionBarActivity {
 
 
 
+    }
+
+
+    void ok(){
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor5 = sharedPref.edit();
+        editor5.clear();
+        editor5.commit();
+        Intent main2 = new Intent(getApplicationContext(), MainActivity.class);
+
+        startActivity(main2);
+    }
+
+    void ok_exit(){
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor1 = sharedPref.edit();
+        editor1.clear();
+        editor1.commit();
+        Intent intent1 = new Intent(this, MainActivity.class);
+        intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent1.putExtra("Exit", true);
+        startActivity(intent1);
+        finish();
     }
 
 
