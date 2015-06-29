@@ -290,10 +290,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
 
-        values.put(uploaded,"1");
+        values.put(uploaded, "1");
 
         // updating row
         return db.update(TABLE_TALUK, values, KEY_ID + "=" + ID, null);
+    }
+
+    int markUpload_s(int ID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+
+        values.put(uploaded_s,"1");
+
+        // updating row
+        return db.update(TABLE_SCHOOL, values, KEY_ID + "=" + ID, null);
     }
 
 

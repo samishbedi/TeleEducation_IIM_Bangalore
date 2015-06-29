@@ -153,11 +153,9 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         m_Text = input.getText().toString();
-                        progress.show();
+
                         if (m_Text.equals("tele")) {
-
-
-
+                            progress.show();
                             new Thread(new Runnable() {
 
                                 @Override
@@ -179,6 +177,7 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
 
                                     }
                                     uploadTaluk();
+                                    uploadSchool();
                                     progress.dismiss();
                                     //db.uploadOldData();
 
@@ -259,6 +258,66 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
                     objWS.invokeWebService("UpdateTalukSurvey");
                     db.markUpload(id);
                 }
+            }
+
+
+        }
+        catch(Exception ex)
+        {
+            String strEx=ex.getMessage();
+            strEx="";
+
+        }
+    }
+
+    void uploadSchool() {
+
+        try {
+            List<String> name = db.values_school();
+            // Toast.makeText(this, name.get(0)+name.get(1)+name.get(28), Toast.LENGTH_SHORT).show();
+
+            Iterator<String> itr=name.iterator();
+            while(itr.hasNext()) {
+
+                int id = Integer.parseInt(itr.next());
+                CALLWSDOTNET objWS = new CALLWSDOTNET("http://203.129.241.19/is/Service.asmx");
+                objWS.AddPropertyInfo("PASSWORD", "ii@m_s_urv@y@eg@", CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("IMEI", imei, CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("ID", id, CALLWSDOTNET.datatype.INTEGER);
+                objWS.AddPropertyInfo("Taluk_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Village_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("School_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Field_Officer_Name", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("IS_barcode_labelled", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Laptop", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Projector", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Modem", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Hughes_Modem",itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Mobile", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Antennae", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Solar", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("UPS_Battery", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Class_Condition", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Class_Over_Crowded", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Class_Strength", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Class_Presence", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Student_Notes", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Class_Running_properly", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Students_attentive", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Audio_Clarity", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Student_clarify_doubts_Through_Mobile", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Teacher_Providing_Assistance", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("VSC_Present", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("VSC_Updated", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Reason_for_class_running_late", itr.next(), CALLWSDOTNET.datatype.STRING);
+                objWS.AddPropertyInfo("Comments", itr.next(), CALLWSDOTNET.datatype.STRING);
+
+
+                if(itr.next().equals("0")) {
+                    objWS.invokeWebService("UpdateSchoolSurvey");
+                    db.markUpload_s(id);
+                }
+
             }
 
 
