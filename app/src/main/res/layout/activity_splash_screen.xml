@@ -2,42 +2,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:orientation="vertical">
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:layout_weight="1">
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
 
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_marginTop="80dp"
-        android:layout_width="290dp"
-        android:layout_height="240dp"
-        android:src="@drawable/entry"
-        android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/entry"
+            android:layout_gravity="center" />
 
-<!--    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="22dp"
-        android:text="Satellite and Advanced Multimedia Education"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:typeface="serif"
-        android:textSize="12.6dp"
-        android:textColor="#000000"
-        android:gravity="center"/>
+       <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satellite and Advanced Multimedia Education"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="#000000"
+            android:gravity="center"/>
+    </LinearLayout>
 
     <TextView
-        android:layout_marginTop="198dp"
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:text="©Fuzzy Logic"
-        android:textStyle="italic"
-        android:typeface="serif"
+        android:text="Powered by ©Fuzzy Logic"
+
+        android:typeface="monospace"
         android:textSize="12.6dp"
         android:textColor="#413D3C"
-        android:gravity="center"/> -->
+        android:gravity="bottom|center"
+        android:layout_weight="0.3"
+        android:layout_gravity="center"/>
+
 
 
 
