@@ -11,59 +11,59 @@
         android:title="Check the Infrastructure"
         android:summary="Whether the following Hardware in good condition or not?"
         android:key="pref_key_storage_infra">
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_bc"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
             android:summary="Is barcode labelled?"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_laptop"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
             android:summary="Laptop"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_proj"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
             android:summary="Projector"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_mod"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
             android:summary="Modem"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_hugh"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
 
             android:summary="Hughes Modem"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_mob"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
 
             android:summary="Mobile"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_ant"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
 
             android:summary="Antennae"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_sol"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
 
             android:summary="Solar"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_ups"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
@@ -76,14 +76,14 @@
     <PreferenceCategory
         android:title="Check the School conditions"
         android:key="pref_key_storage_school">
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_classcond"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
 
             android:summary="Are the class room in good condition?"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_crowd"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
@@ -108,21 +108,21 @@
 
 
 
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_notes"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
 
             android:summary="Are students taking notes while class was running?"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_prop"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
 
             android:summary="Was class running properly?"
             android:defaultValue="false" />
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_atten"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
@@ -130,7 +130,7 @@
             android:summary="Were/are students attentive in the class?"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_clr"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
@@ -139,7 +139,7 @@
             android:defaultValue="false" />
 
 
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_dbt"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
@@ -147,7 +147,7 @@
             android:summary="Are students able to clarify the doubt through mobile phone?"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_teacher"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
@@ -155,7 +155,7 @@
             android:summary="Was teacher present and providing assistance if any problem occurred?"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_vsc"
             android:switchTextOff="No"
             android:switchTextOn="Yes"
@@ -163,7 +163,7 @@
             android:summary="Was VSC present?"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.samish.teleeducation.Pref
             android:key="pref_key_vsc_1"
             android:switchTextOff="No"
             android:switchTextOn="Yes"

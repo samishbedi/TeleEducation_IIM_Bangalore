@@ -325,6 +325,8 @@ public class Ques extends ActionBarActivity {
                 finish();
                 Intent ref = new Intent(getApplicationContext(), Ques.class);
                 ref.putExtra("Sname", name);
+                ref.putExtra("Vname", vname);
+                ref.putExtra("Tname", tname);
                 startActivity(ref);
 
                 return true;
