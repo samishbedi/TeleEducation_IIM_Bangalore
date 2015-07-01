@@ -1,4 +1,4 @@
-package com.samish.teleeducation;
+package com.fuzzylogic.teleeducationaudit;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -13,6 +13,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import com.samish.teleeducation.R;
 
 import java.util.Arrays;
 

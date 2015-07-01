@@ -1,4 +1,4 @@
-package com.samish.teleeducation;
+package com.fuzzylogic.teleeducationaudit;
 
 import android.content.Context;
 import android.preference.SwitchPreference;

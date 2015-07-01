@@ -1,4 +1,4 @@
-package com.samish.teleeducation;
+package com.fuzzylogic.teleeducationaudit;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -19,9 +19,10 @@ import android.telephony.TelephonyManager;
 import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.samish.teleeducation.R;
 
 import java.util.Iterator;
 import java.util.List;

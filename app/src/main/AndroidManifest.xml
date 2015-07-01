@@ -11,45 +11,45 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.fuzzylogic.teleeducationaudit.MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name=".Village"
+            android:name="com.fuzzylogic.teleeducationaudit.Village"
             android:label="@string/title_activity_village"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.fuzzylogic.teleeducationaudit.MainActivity"
             android:windowSoftInputMode="stateHidden" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.samish.teleeducation.MainActivity" />
+                android:value="com.fuzzylogic.teleeducationaudit.MainActivity" />
         </activity>
         <activity
-            android:name=".School"
+            android:name="com.fuzzylogic.teleeducationaudit.School"
             android:label="@string/title_activity_school"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.fuzzylogic.teleeducationaudit.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.samish.teleeducation.MainActivity" />
+                android:value="com.fuzzylogic.teleeducationaudit.MainActivity" />
         </activity>
         <activity
-            android:name=".Ques"
+            android:name="com.fuzzylogic.teleeducationaudit.Ques"
             android:label="@string/title_activity_ques"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.fuzzylogic.teleeducationaudit.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.samish.teleeducation.MainActivity" />
+                android:value="com.fuzzylogic.teleeducationaudit.MainActivity" />
         </activity>
         <activity
-            android:name=".Ques_Taluk"
+            android:name="com.fuzzylogic.teleeducationaudit.Ques_Taluk"
             android:label="@string/title_activity_ques"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.fuzzylogic.teleeducationaudit.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.samish.teleeducation.MainActivity" />
+                android:value="com.fuzzylogic.teleeducationaudit.MainActivity" />
         </activity>
         <activity
-            android:name=".SplashScreen"
+            android:name="com.fuzzylogic.teleeducationaudit.SplashScreen"
             android:label="@string/app_name"
             android:theme="@style/ActionTheme">
             <intent-filter>

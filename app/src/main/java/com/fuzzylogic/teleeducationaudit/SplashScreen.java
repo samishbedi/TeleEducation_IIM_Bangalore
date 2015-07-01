@@ -1,4 +1,4 @@
-package com.samish.teleeducation;
+package com.fuzzylogic.teleeducationaudit;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.os.Handler;
-import android.view.Window;
+
+import com.samish.teleeducation.R;
 
 
 public class SplashScreen extends ActionBarActivity {
