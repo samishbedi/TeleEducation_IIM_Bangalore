@@ -8,6 +8,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
@@ -16,6 +18,7 @@ import android.telephony.TelephonyManager;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,6 +29,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -132,79 +138,81 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
 
             case R.id.upload:
 
-                progress=new ProgressDialog(this);
-                progress.setMessage("Uploading Data");
-                progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                progress.setIndeterminate(true);
-                progress.setProgress(0);
+                if(isOnline(getApplicationContext()) && checkInternetConnection()) {
+
+                    progress = new ProgressDialog(this);
+                    progress.setMessage("Uploading Data");
+                    progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                    progress.setIndeterminate(true);
+                    progress.setProgress(0);
 
 
-                final int totalProgressTime = 100;
+                    final int totalProgressTime = 100;
 
-                android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
-                builder.setTitle("Enter the validation code");
+                    android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
+                    builder.setTitle("Enter the validation code");
 
-                final EditText input = new EditText(this);
+                    final EditText input = new EditText(this);
 
-                input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                builder.setView(input);
+                    input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    builder.setView(input);
 
-                builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        m_Text = input.getText().toString();
+                    builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            m_Text = input.getText().toString();
 
-                        if (m_Text.equals("tele")) {
-                            progress.show();
-                            new Thread(new Runnable() {
+                            if (m_Text.equals("tele")) {
+                                progress.show();
+                                new Thread(new Runnable() {
 
-                                @Override
-                                public void run() {
-                                    // TODO Auto-generated method stub
+                                    @Override
+                                    public void run() {
+                                        // TODO Auto-generated method stub
 
-                                    runOnUiThread(new Runnable() {
-                                        public void run() {
+                                        runOnUiThread(new Runnable() {
+                                            public void run() {
 
+
+                                            }
+                                        });
+                                        int jumpTime = 0;
+
+
+                                        while (jumpTime < totalProgressTime) {
+                                            jumpTime += 3;
+                                            progress.setProgress(jumpTime);
 
                                         }
-                                    });
-                                    int jumpTime = 0;
+                                        uploadTaluk();
+                                        uploadSchool();
+                                        progress.dismiss();
+                                        //db.uploadOldData();
 
-
-                                    while (jumpTime < totalProgressTime) {
-                                        jumpTime += 3;
-                                        progress.setProgress(jumpTime);
 
                                     }
-                                    uploadTaluk();
-                                    uploadSchool();
-                                    progress.dismiss();
-                                    //db.uploadOldData();
+                                }).start();
+
+                                ok();
 
 
-                                }
-                            }).start();
-
-                           ok();
-
-
-
-
-
-                        } else if (!m_Text.equals("tele")) {
-                            Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                            } else if (!m_Text.equals("tele")) {
+                                Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                    }
-                });
-                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
+                    });
+                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
 
 
-                builder.show();
+                    builder.show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "No internet access", Toast.LENGTH_SHORT).show();
+                }
 
 
 
@@ -328,6 +336,34 @@ public class MainActivity extends ActionBarActivity{  //Activity for Taluk
             strEx="";
 
         }
+    }
+
+    public static boolean isOnline(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnected()) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean checkInternetConnection()
+    {
+
+        ConnectivityManager connectivity = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if (connectivity != null)
+        {
+            NetworkInfo[] inf = connectivity.getAllNetworkInfo();
+            if (inf != null)
+                for (int i = 0; i < inf.length; i++)
+                    if (inf[i].getState() == NetworkInfo.State.CONNECTED)
+                    {
+                        return true;
+                    }
+
+        }
+        return false;
     }
 
 

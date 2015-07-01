@@ -13,7 +13,7 @@ public class SplashScreen extends ActionBarActivity {
 
 
         // Splash screen timer
-        private static int SPLASH_TIME_OUT = 2200;
+        private static int SPLASH_TIME_OUT = 3000;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {

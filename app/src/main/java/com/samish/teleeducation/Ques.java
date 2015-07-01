@@ -8,6 +8,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
@@ -392,77 +394,83 @@ public class Ques extends ActionBarActivity {
                 } else if (Integer.parseInt(prnt) > Integer.parseInt(strt)) {
                     Toast.makeText(this, "ENTER VALID VALUES FOR STRENTH AND PRESENCE OF STUDENTS", Toast.LENGTH_SHORT).show();
                 } else {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                    builder.setTitle("Enter the validation code");
 
-                    final EditText input = new EditText(this);
+                    if(isOnline(getApplicationContext()) && checkInternetConnection()) {
 
 
-                    input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    builder.setView(input);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                        builder.setTitle("Enter the validation code");
+
+                        final EditText input = new EditText(this);
 
 
+                        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        builder.setView(input);
 
 
-                    builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            m_Text = input.getText().toString();
-                            if (m_Text.equals("tele")) {
-                                progress.show();
+                        builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                m_Text = input.getText().toString();
+                                if (m_Text.equals("tele")) {
+                                    progress.show();
 
-                                db.insert_school(tname, vname, name, fo_name_school, bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment);
-                                // bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment
-                                new Thread(new Runnable() {
-
-
-                                    @Override
-                                    public void run() {
-                                        // TODO Auto-generated method stub
+                                    db.insert_school(tname, vname, name, fo_name_school, bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment);
+                                    // bc, laptop, proj, modem, hugh, mob, ant, sol, ups, classcond, crowd, strt, prnt, notes, prop, atten, clr, dbt, teacher, vsc, vsc1, rsn, scomment
+                                    new Thread(new Runnable() {
 
 
-                                        runOnUiThread(new Runnable() {
-                                            public void run() {
-                                                // messageText.setText("uploading started.....");
+                                        @Override
+                                        public void run() {
+                                            // TODO Auto-generated method stub
 
 
+                                            runOnUiThread(new Runnable() {
+                                                public void run() {
+                                                    // messageText.setText("uploading started.....");
+
+
+                                                }
+
+                                            });
+
+                                            int jumpTime = 0;
+
+
+                                            while (jumpTime < totalProgressTime) {
+                                                jumpTime += 3;
+                                                progress.setProgress(jumpTime);
+
+
+                                                uploadSchool();
                                             }
 
-                                        });
 
-                                        int jumpTime = 0;
-
-
-                                        while (jumpTime < totalProgressTime) {
-                                            jumpTime += 3;
-                                            progress.setProgress(jumpTime);
-
-
-                                            uploadSchool();
                                         }
+                                    }).start();
+
+                                    Toast.makeText(getApplicationContext(), "Data Saved and Uploaded", Toast.LENGTH_SHORT).show();
+                                    ok();
 
 
-                                    }
-                                }).start();
-
-                                Toast.makeText(getApplicationContext(), "Data Saved and Uploaded", Toast.LENGTH_SHORT).show();
-                                ok();
-
-
-                            } else if (!m_Text.equals("tele")) {
-                                Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                                } else if (!m_Text.equals("tele")) {
+                                    Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                                }
                             }
-                        }
-                    });
-                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
+                        });
+                        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
 
 
-                    builder.show();
+                        builder.show();
+                    }else{
+                        Toast.makeText(getApplicationContext(), "No internet access", Toast.LENGTH_SHORT).show();
+
+                    }
 
                 }
 
@@ -497,6 +505,34 @@ public class Ques extends ActionBarActivity {
         intent1.putExtra("Exit", true);
         startActivity(intent1);
         finish();
+    }
+
+    public static boolean isOnline(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnected()) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean checkInternetConnection()
+    {
+
+        ConnectivityManager connectivity = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if (connectivity != null)
+        {
+            NetworkInfo[] inf = connectivity.getAllNetworkInfo();
+            if (inf != null)
+                for (int i = 0; i < inf.length; i++)
+                    if (inf[i].getState() == NetworkInfo.State.CONNECTED)
+                    {
+                        return true;
+                    }
+
+        }
+        return false;
     }
 
 

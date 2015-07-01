@@ -8,6 +8,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
@@ -343,79 +345,83 @@ public class Ques_Taluk extends ActionBarActivity {
                     Toast.makeText(this, "ENTER A VALID TALUK INCHARGE'S NAME", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                    builder.setTitle("Enter the validation code");
+                    if(isOnline(getApplicationContext()) && checkInternetConnection()) {
 
-                    final EditText input = new EditText(this);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                        builder.setTitle("Enter the validation code");
 
-                    input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    builder.setView(input);
+                        final EditText input = new EditText(this);
 
-
-
-
-                    builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            m_Text = input.getText().toString();
-                            if (m_Text.equals("tele")) {
-                                progress.show();
-
-                                db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
-
-                                new Thread(new Runnable() {
+                        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        builder.setView(input);
 
 
-                                    @Override
-                                    public void run() {
-                                        // TODO Auto-generated method stub
+                        builder.setPositiveButton("Enter", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                m_Text = input.getText().toString();
+                                if (m_Text.equals("tele")) {
+                                    progress.show();
+
+                                    db.insert_taluk(t, foname, tiname, t1, t2, t3, t4, t5, t5_moderator, t6, t7, t8, t9, t10, t5_comment);
+
+                                    new Thread(new Runnable() {
 
 
-                                        runOnUiThread(new Runnable() {
-                                            public void run() {
-                                                // messageText.setText("uploading started.....");
+                                        @Override
+                                        public void run() {
+                                            // TODO Auto-generated method stub
 
+
+                                            runOnUiThread(new Runnable() {
+                                                public void run() {
+                                                    // messageText.setText("uploading started.....");
+
+
+                                                }
+
+                                            });
+
+                                            int jumpTime = 0;
+
+
+                                            while (jumpTime < totalProgressTime) {
+                                                jumpTime += 3;
+                                                progress.setProgress(jumpTime);
 
                                             }
 
-                                        });
+                                            //db.uploadOldData();
+                                            uploadTaluk();
 
-                                        int jumpTime = 0;
+                                            progress.dismiss();
 
-
-                                        while (jumpTime < totalProgressTime) {
-                                            jumpTime += 3;
-                                            progress.setProgress(jumpTime);
 
                                         }
+                                    }).start();
 
-                                        //db.uploadOldData();
-                                       uploadTaluk();
-
-                                        progress.dismiss();
-
-
-                                    }
-                                }).start();
-
-                                Toast.makeText(getApplicationContext(), "Data Saved and Uploaded", Toast.LENGTH_SHORT).show();
-                                ok();
+                                    Toast.makeText(getApplicationContext(), "Data Saved and Uploaded", Toast.LENGTH_SHORT).show();
+                                    ok();
 
 
-                            } else if (!m_Text.equals("tele")) {
-                                Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                                } else if (!m_Text.equals("tele")) {
+                                    Toast.makeText(getApplicationContext(), "Validation failed", Toast.LENGTH_SHORT).show();
+                                }
                             }
-                        }
-                    });
-                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
+                        });
+                        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
 
 
-                    builder.show();
+                        builder.show();
+                    }else{
+                        Toast.makeText(getApplicationContext(), "No internet access", Toast.LENGTH_SHORT).show();
+
+                    }
 
 
 
@@ -431,6 +437,34 @@ public class Ques_Taluk extends ActionBarActivity {
 
 
 
+    }
+
+    public static boolean isOnline(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnected()) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean checkInternetConnection()
+    {
+
+        ConnectivityManager connectivity = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if (connectivity != null)
+        {
+            NetworkInfo[] inf = connectivity.getAllNetworkInfo();
+            if (inf != null)
+                for (int i = 0; i < inf.length; i++)
+                    if (inf[i].getState() == NetworkInfo.State.CONNECTED)
+                    {
+                        return true;
+                    }
+
+        }
+        return false;
     }
 
 
